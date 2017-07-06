@@ -1,0 +1,5912 @@
+{
+    "TANCCA": {
+        "name": "TANCCA",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 11:00 PM",
+                "Tuesday: 11:00 AM – 11:00 PM",
+                "Wednesday: 11:00 AM – 11:00 PM",
+                "Thursday: 11:00 AM – 11:00 PM",
+                "Friday: 11:00 AM – 11:00 PM",
+                "Saturday: 11:00 AM – 12:00 AM",
+                "Sunday: 11:00 AM – 12:00 AM"
+            ]
+        },
+        "address": "18423 Colima Rd, Rowland Heights, CA 91748, USA",
+        "phone": "(626) 723-4306",
+        "coords": {
+            "lat": 33.98873329999999,
+            "lng": -117.9033421
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+        "photos": {
+            "height": 3024,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/104561203609412349733/photos\">Landy</a>"
+            ],
+            "photo_reference": "CmRaAAAAuiNoHxgrThritaicTIXhv-TPArto46xdXrozHsIesDTvBsH9F1HAdviP3wbPfFkjEZxG5bUk12KZfcWWOMOfd2YewZzFGSlh7sISKf9wYpCIOYpifW05hhrV1mj3OPLfEhDVO7-csYo11YoeEac3P3_BGhTNY0l_HlUSu1hIgQY-lRpS5VvAGw",
+            "width": 4032
+        },
+        "types": [
+            "cafe",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    "스쿨푸드 School Food Enterprises": {
+        "name": "스쿨푸드 School Food Enterprises",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 10:00 PM",
+                "Tuesday: 11:00 AM – 10:00 PM",
+                "Wednesday: 11:00 AM – 10:00 PM",
+                "Thursday: 11:00 AM – 10:00 PM",
+                "Friday: 11:00 AM – 10:00 PM",
+                "Saturday: 11:00 AM – 10:00 PM",
+                "Sunday: 11:00 AM – 10:00 PM"
+            ]
+        },
+        "address": "621 S Western Ave #301, Los Angeles, CA 90005, USA",
+        "phone": "(213) 380-3663",
+        "coords": {
+            "lat": 34.06276920000001,
+            "lng": -118.3093674
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 1536,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/116597530187474038643/photos\">Scott Leavitt</a>"
+            ],
+            "photo_reference": "CmRaAAAAR0is1RyrYlKTpfJNPvQy2f5qYeD6bNn9wwUmdcpFuF45S_dGPJIILIWa3Coh4-t-vdVWfgPfUY3vqTfTet5zXrDoqZML-42XEpFkfVsIWzDQoddO7bvVanVpA9F_f9Q1EhBLfPTUP96cMN72NW_s7AxAGhSJPSBGPJsHU_hXswCFl_LpMsceZg",
+            "width": 2048
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.schoolfood.co.kr/"
+    },
+    "Cafe Dulce": {
+        "name": "Cafe Dulce",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "0800"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 8:00 AM – 10:00 PM",
+                "Tuesday: 8:00 AM – 10:00 PM",
+                "Wednesday: 8:00 AM – 10:00 PM",
+                "Thursday: 8:00 AM – 10:00 PM",
+                "Friday: 8:00 AM – 10:00 PM",
+                "Saturday: 8:00 AM – 10:00 PM",
+                "Sunday: 8:00 AM – 10:00 PM"
+            ]
+        },
+        "address": "134 Japanese Village Plaza Mall, Los Angeles, CA 90012, USA",
+        "phone": "(213) 346-9910",
+        "coords": {
+            "lat": 34.04884790000001,
+            "lng": -118.2404543
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+        "photos": {
+            "height": 732,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/102709486610693063951/photos\">Tim Gideon</a>"
+            ],
+            "photo_reference": "CmRaAAAAlNLyTfyNgq8HYkpZCCAH8xQx-lZXVdBFyZviFSCtMSDHpwCDg52bvlz72vwUpclCMUQxF4lz3r2FKBDIkqI1frqs9PNN6pagoN-EUvfOWPe1ljYRQzAd727d42GtUrwmEhADkHUQK5Y3YYnl-YJmdiO1GhS_M_5i0Gh6cQXKWtueHAsMDsjClg",
+            "width": 749
+        },
+        "types": [
+            "cafe",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://cafedulce.co/"
+    },
+    "Hwa Sun Ji": {
+        "name": "Hwa Sun Ji",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1200"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 12:00 PM – 12:00 AM",
+                "Tuesday: 12:00 PM – 12:00 AM",
+                "Wednesday: 12:00 PM – 12:00 AM",
+                "Thursday: 12:00 PM – 12:00 AM",
+                "Friday: 12:00 PM – 12:00 AM",
+                "Saturday: 12:00 PM – 12:00 AM",
+                "Sunday: 12:00 – 11:00 PM"
+            ]
+        },
+        "address": "3952 Wilshire Blvd, Los Angeles, CA 90010, USA",
+        "phone": "(213) 382-5302",
+        "coords": {
+            "lat": 34.061534,
+            "lng": -118.313194
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+        "photos": {
+            "height": 2988,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/100435880280656818067/photos\">Edna Banayat</a>"
+            ],
+            "photo_reference": "CmRaAAAAGIQKIgF70cQktK90IFro1gmq3_OQCohNLvxt2NM97bCLqDgilXdjtCl7-6IGvtkcUTilP4J18xOZNrJQRF7DF4kQpnv2Mci-CZqlPn3KrhljaysvW5A08fYyVAc_s4QVEhD9ubIcIEOpCk-Z9fsWsN4HGhQSVk8ZegqotqdD8uehG3i91kxrXQ",
+            "width": 5312
+        },
+        "types": [
+            "cafe",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    "Best Western Plus LA Mid-Town Hotel": {
+        "name": "Best Western Plus LA Mid-Town Hotel",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "open": {
+                        "day": 0,
+                        "time": "0000"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: Open 24 hours",
+                "Tuesday: Open 24 hours",
+                "Wednesday: Open 24 hours",
+                "Thursday: Open 24 hours",
+                "Friday: Open 24 hours",
+                "Saturday: Open 24 hours",
+                "Sunday: Open 24 hours"
+            ]
+        },
+        "address": "603 S New Hampshire Ave, Los Angeles, CA 90005, USA",
+        "phone": "(213) 385-4444",
+        "coords": {
+            "lat": 34.0633841,
+            "lng": -118.2932426
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+        "photos": {
+            "height": 1365,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/101241915903443108886/photos\">Best Western Plus LA Mid-Town Hotel</a>"
+            ],
+            "photo_reference": "CmRaAAAA2ZxxYvR_fWC4b9vO2hni04IGunsuZfvaPhgX2OorWevXnRBG8uEPOkjCAIloCAbv0HhUT-eUCbBUsI8LC1lCyyrbnhio_BmbyVPF9B1psxzWesM-bVpkB4UfhgAGXcznEhCTJbOblJBAHqcMeIkqOAFHGhRZFfCPIbBS7Nr_bnmGM7zWqEyFCA",
+            "width": 2048
+        },
+        "types": [
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "https://www.bestwestern.com/en_US/book/hotel-details.05724.html?iata=00171880&ssob=BLBWI0004G&cid=BLBWI0004G:google:gmb:05724"
+    },
+    "By Chloe": {
+        "name": "By Chloe",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1000"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 10:00 PM",
+                "Tuesday: 11:00 AM – 10:00 PM",
+                "Wednesday: 11:00 AM – 11:00 PM",
+                "Thursday: 11:00 AM – 11:00 PM",
+                "Friday: 11:00 AM – 11:00 PM",
+                "Saturday: 10:00 AM – 11:00 PM",
+                "Sunday: 10:00 AM – 10:00 PM"
+            ]
+        },
+        "address": "2520 Glendale Blvd, Los Angeles, CA 90039, USA",
+        "phone": "(424) 675-7618",
+        "coords": {
+            "lat": 34.1031997,
+            "lng": -118.2586152
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 2988,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/104636687373132435944/photos\">Jeannette G.</a>"
+            ],
+            "photo_reference": "CmRaAAAAbE_5w2bhb8nFijTp5BJWykuH8sw979MG5usH46Hc8yOMJPcmuhCIvHr3iF6irNggfbmXeFOD7yCA2xEOzI-UAo59xsm288q8HzkdFyy_CTFSiFGzTdSnWNRmrQ4V9GxJEhBpJX5p6P2hHepuky_mBFJVGhSjjtl9qc_xS97hx-V6rA6AKoPi5A",
+            "width": 5312
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://eatbychloe.com/"
+    },
+    "Blockheads Shavery": {
+        "name": "Blockheads Shavery",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1230"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2230"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1230"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2230"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1230"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2230"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1230"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2230"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1230"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1230"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1230"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 12:30 – 10:30 PM",
+                "Tuesday: 12:30 – 10:30 PM",
+                "Wednesday: 12:30 – 10:30 PM",
+                "Thursday: 12:30 – 10:30 PM",
+                "Friday: 12:30 – 11:00 PM",
+                "Saturday: 12:30 – 11:00 PM",
+                "Sunday: 12:30 – 10:00 PM"
+            ]
+        },
+        "address": "11311 Mississippi Ave, Los Angeles, CA 90025, USA",
+        "phone": "(310) 445-8725",
+        "coords": {
+            "lat": 34.0394469,
+            "lng": -118.4429043
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+        "photos": {
+            "height": 2992,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/115222410220774291674/photos\">Josh King</a>"
+            ],
+            "photo_reference": "CmRaAAAAWlSCPF6ujC2gExSpJ3yBVdBO2PVXA9sLIs7rjj3DsOqVibaBrB6ISX4NxkJJlB2a6Ja8MVxJSjpX80lY1AZCbGKRIOBpQmnEsp6yrGqbr_UlPsknnozLsFhKpQljpYVeEhAYIbSATXa46_RmLjSc4NCgGhTMvFEtrv7SbQAPIKbX-WwctsAEAg",
+            "width": 4000
+        },
+        "types": [
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.blockheadsshavery.com/"
+    },
+    "Sumo Dog": {
+        "name": "Sumo Dog",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1130"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:30 AM – 10:00 PM",
+                "Tuesday: 11:30 AM – 10:00 PM",
+                "Wednesday: 11:30 AM – 10:00 PM",
+                "Thursday: 11:30 AM – 2:00 AM",
+                "Friday: 11:30 AM – 2:00 AM",
+                "Saturday: 11:30 AM – 2:00 AM",
+                "Sunday: 11:30 AM – 10:00 PM"
+            ]
+        },
+        "address": "516 S Western Ave, Los Angeles, CA 90020, USA",
+        "phone": "(213) 375-7755",
+        "coords": {
+            "lat": 34.0648848,
+            "lng": -118.3088451
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 3024,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/116789692419265580726/photos\">Paul Roth</a>"
+            ],
+            "photo_reference": "CmReAAAA-FucNlXESQU2KqVNgIjktO189_0UqqUgJ3zYniBAwdzCVcQHHa3VvPCQMOXKiOebWuPGWL-vnpUtGMuzxGL5G8aEKv7i0fuUBJ1NVZfKFktjTtg5pzo30lOxYm8ozrobEhABvXxAbeDcsoUwozSyXkz8GhQzV-HdtbmfrvH-rqt0yEhXAdJFhQ",
+            "width": 4032
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.eatsumodog.com/"
+    },
+    "Spread Mediterranean Kitchen": {
+        "name": "Spread Mediterranean Kitchen",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 10:00 PM",
+                "Tuesday: 11:00 AM – 10:00 PM",
+                "Wednesday: 11:00 AM – 10:00 PM",
+                "Thursday: 11:00 AM – 11:00 PM",
+                "Friday: 11:00 AM – 11:00 PM",
+                "Saturday: 11:00 AM – 11:00 PM",
+                "Sunday: 11:00 AM – 10:00 PM"
+            ]
+        },
+        "address": "334 S Main St, Los Angeles, CA 90013, USA",
+        "phone": "(213) 537-0284",
+        "coords": {
+            "lat": 34.04836689999999,
+            "lng": -118.2466782
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 3024,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/115937929263560755792/photos\">Majken Kiyohara</a>"
+            ],
+            "photo_reference": "CmRaAAAACWPYiC9uvbJUq1EbK8_aVajkJUGl-oTkWbhKzOcvudxgmUNVspkSUtZrVu9bn2JAM3kYX9w3WKIU8zgmncU9rBKxCvtqD9oMu2okPmg5KbpgA3p5Lc-kMflwzAhL6uqiEhD0Uh2hCdB-mrTMSYUDTKUeGhS5zT7EmPJGyPYHSI5FsEvFH19ULw",
+            "width": 4032
+        },
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://spreadkitchen.com/"
+    },
+    "RING Baked Tofu Donuts": {
+        "name": "RING Baked Tofu Donuts",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "1800"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "1500"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "1500"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "1500"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "1500"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "1800"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1000"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: Closed",
+                "Tuesday: 7:00 AM – 3:00 PM",
+                "Wednesday: 7:00 AM – 3:00 PM",
+                "Thursday: 7:00 AM – 3:00 PM",
+                "Friday: 7:00 AM – 3:00 PM",
+                "Saturday: 10:00 AM – 6:00 PM",
+                "Sunday: 10:00 AM – 6:00 PM"
+            ]
+        },
+        "address": "6800 Owensmonth Ave #130, Canoga Park, CA 91303, USA",
+        "phone": "(323) 963-3881",
+        "coords": {
+            "lat": 34.1941167,
+            "lng": -118.6012779
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 4000,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/112734262381136437884/photos\">Mitsu Kagei</a>"
+            ],
+            "photo_reference": "CmRZAAAA3ln4oBEaIhHTDKHV-Zht5Mlh55K82j67q2uTYaw2cvvqY0jF5kMh4Z4VlbgBJ1_XTle3YZVBfFFkD_MD1IlECgM3qGKAXPn3YqCDNPn0OmGZUO6J51HsOBhyMRY05xfDEhA75eL8oWRXuF-Lb4CXTLjmGhQpUb9Gqj0C8KpSXRseKedTsdKaww",
+            "width": 6016
+        },
+        "types": [
+            "bakery",
+            "cafe",
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://ringdonuts.com/"
+    },
+    "Golden Pouch": {
+        "name": "Golden Pouch",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: Open 24 hours",
+                "Tuesday: Open 24 hours",
+                "Wednesday: Open 24 hours",
+                "Thursday: Open 24 hours",
+                "Friday: 11:00 AM – 2:00 AM",
+                "Saturday: 11:00 AM – 12:00 AM",
+                "Sunday: Open 24 hours"
+            ]
+        },
+        "address": "3324 W 6th St E-1, Los Angeles, CA 90020, USA",
+        "phone": "(213) 263-2700",
+        "coords": {
+            "lat": 34.0632103,
+            "lng": -118.2949821
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 2448,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/107259451420564938946/photos\">Andrew Gardiner</a>"
+            ],
+            "photo_reference": "CmRaAAAAg6go3T7CxXgR14iJjHuHJ_Z4bZ9hwCJtX0EHSsO4SwonVlfP7hUuudBZE7-dj2zeAKG8V5Wuq1KK23rqp_G30pz0R3pyYnVXv7US4xTFB-XijaF-lmWYPjwprkcuRkBrEhCYAyjuAdY6GWM4g-mQiABWGhSAHG3gCQMBQEikHo2HmjUCofxnMA",
+            "width": 3264
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    "Red Castle Korean BBQ": {
+        "name": "Red Castle Korean BBQ",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 11:00 PM",
+                "Tuesday: 11:00 AM – 11:00 PM",
+                "Wednesday: 11:00 AM – 11:00 PM",
+                "Thursday: 11:00 AM – 11:00 PM",
+                "Friday: 11:00 AM – 11:00 PM",
+                "Saturday: 11:00 AM – 11:00 PM",
+                "Sunday: 11:00 AM – 11:00 PM"
+            ]
+        },
+        "address": "18311 Colima Rd, Rowland Heights, CA 91748, USA",
+        "phone": "(626) 964-9595",
+        "coords": {
+            "lat": 33.9895543,
+            "lng": -117.9049569
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 1920,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/100288188787727204527/photos\">Tan Sudono</a>"
+            ],
+            "photo_reference": "CmRaAAAAklHaBt50ioHNgAyBQ7Cm_NKgt9ju9NfU3qr2O3jzpd09SSJdNewVgzY9WSwBoP-Q2JTkUTmBjGEJQ9TzqhhodGnElJJM51haPUJ2XaHsKlUXSDIVZmsLaTmYB5UbA0ouEhBjzov6voCvBgAjICrCOtnuGhSKPykcnY9xxxR22xIMRzuCBL2I4A",
+            "width": 2560
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.bulgogihousekoreanbbq.com/"
+    },
+    "Shake Shack - Glendale": {
+        "name": "Shake Shack - Glendale",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 11:00 PM",
+                "Tuesday: 11:00 AM – 11:00 PM",
+                "Wednesday: 11:00 AM – 11:00 PM",
+                "Thursday: 11:00 AM – 11:00 PM",
+                "Friday: 11:00 AM – 11:00 PM",
+                "Saturday: 11:00 AM – 11:00 PM",
+                "Sunday: 11:00 AM – 11:00 PM"
+            ]
+        },
+        "address": "252 S Brand Blvd, Glendale, CA 91204, USA",
+        "phone": "(818) 858-1612",
+        "coords": {
+            "lat": 34.14276270000001,
+            "lng": -118.2547597
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 4032,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/108299070201781899607/photos\">Yohan Yeo</a>"
+            ],
+            "photo_reference": "CmRaAAAAihLHy3ER9T6mJoFE8qKeFBKVQBNS1f671Tdng23bUhOZoCUJdlAuzRXrgGNIls0vRg2snX_8ICby-M3T-5k97vbEEsxHP8WvtpGUgEbiQzkbiHLlORBTGWQYv0mJmmBtEhBa5abTbjaUjCeZFt7yNJNWGhR9hDuL3Z8tU6zgVgEV-eixqtrxyw",
+            "width": 3024
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://shakeshack.com/"
+    },
+    "Sugarfish By Sushi Nozawa": {
+        "name": "Sugarfish By Sushi Nozawa",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1130"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:30 AM – 10:00 PM",
+                "Tuesday: 11:30 AM – 10:00 PM",
+                "Wednesday: 11:30 AM – 10:00 PM",
+                "Thursday: 11:30 AM – 10:00 PM",
+                "Friday: 11:30 AM – 10:00 PM",
+                "Saturday: 11:30 AM – 10:00 PM",
+                "Sunday: 12:00 – 9:00 PM"
+            ]
+        },
+        "address": "600 W 7th St #150, Los Angeles, CA 90017, USA",
+        "phone": "(213) 627-3000",
+        "coords": {
+            "lat": 34.047409,
+            "lng": -118.257171
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 2848,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/113719639442868633401/photos\">Ashley Hughes</a>"
+            ],
+            "photo_reference": "CmRaAAAAYYqOK4uYw-5TIKUyIfeo0GyEd0OP9Fb31rx6ULar63dLeSM70Y8OavpDEW-Hc2ltYCCtQaIZp5ExfVjBsmj3VcK4e99VhilNjgM4vIQ591i-Be4Te0DfgAz9uGiYTv4LEhAk5ChFzx_93khbHrld9v_BGhSVusyLsu3hga_yo55QfrqYcifH-w",
+            "width": 4288
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://sugarfishsushi.com/"
+    },
+    "Pasta Sisters": {
+        "name": "Pasta Sisters",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "1930"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "1930"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "1930"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "1930"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "1930"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "1530"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1130"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:30 AM – 7:30 PM",
+                "Tuesday: 11:30 AM – 7:30 PM",
+                "Wednesday: 11:30 AM – 7:30 PM",
+                "Thursday: 11:30 AM – 7:30 PM",
+                "Friday: 11:30 AM – 7:30 PM",
+                "Saturday: 11:30 AM – 3:30 PM",
+                "Sunday: Closed"
+            ]
+        },
+        "address": "3343 W Pico Blvd, Los Angeles, CA 90019, USA",
+        "phone": "(323) 870-5271",
+        "coords": {
+            "lat": 34.047547,
+            "lng": -118.317255
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 398,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/114451676038200929536/photos\">Pasta Sisters</a>"
+            ],
+            "photo_reference": "CmRaAAAAlqwSN97GPgE8VYxQNhFTE8DO9iksUqplz32HwyWRKK_apoUJWe4Td6cISPPD8K2agDOP-n2UHATQF1mIE__mW0Rd4b0zbBrF2F0GGast9EyRPvkADz86rfvI7LegPltUEhBZWvC-x96QcY9Uj4N_fVrhGhRVXUMqQrh7VF802agCnAFeEdcESQ",
+            "width": 594
+        },
+        "types": [
+            "meal_takeaway",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://pastasisters.com/"
+    },
+    "Sushi Stop Hollywood": {
+        "name": "Sushi Stop Hollywood",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1200"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 12:00 PM – 12:00 AM",
+                "Tuesday: 12:00 PM – 12:00 AM",
+                "Wednesday: 12:00 PM – 12:00 AM",
+                "Thursday: 12:00 PM – 12:00 AM",
+                "Friday: 12:00 PM – 12:00 AM",
+                "Saturday: 12:00 PM – 12:00 AM",
+                "Sunday: 12:00 PM – 12:00 AM"
+            ]
+        },
+        "address": "5917 Franklin Ave, Los Angeles, CA 90068, USA",
+        "phone": "(323) 468-2496",
+        "coords": {
+            "lat": 34.1053873,
+            "lng": -118.3186367
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 1836,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/113729120537983670015/photos\">Warren Chin</a>"
+            ],
+            "photo_reference": "CmRaAAAAI7sdcGIdrliZLxL13wtg1Zt8uD_dpU7tdX8OJdktTO8gdYkckVOiJbJNmMmU1Xpmt4gPF2IMgCEfK3GEzIAGrD7jeU9_ZMUz9kop-DlvjTmk26vKSjbMjhGF4XMNd95NEhBM5A2D-wzB4rhlj41KYY3NGhRsDekSmTx5M5bSp3oli70EjLPmQA",
+            "width": 3264
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.sushistop.com/"
+    },
+    "Jazz Cat Restaurant": {
+        "name": "Jazz Cat Restaurant",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "0030"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "0030"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1130"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:30 AM – 12:00 AM",
+                "Tuesday: 11:30 AM – 12:00 AM",
+                "Wednesday: 11:30 AM – 12:00 AM",
+                "Thursday: 11:30 AM – 12:00 AM",
+                "Friday: 11:30 AM – 12:30 AM",
+                "Saturday: 11:30 AM – 12:30 AM",
+                "Sunday: 11:30 AM – 12:00 AM"
+            ]
+        },
+        "address": "121 Valley Blvd, San Gabriel, CA 91776, USA",
+        "phone": "(626) 288-5200",
+        "coords": {
+            "lat": 34.0801015,
+            "lng": -118.0988887
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 720,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/112824307976888809674/photos\">kim jii</a>"
+            ],
+            "photo_reference": "CmRaAAAAbwmNFnu0vge1rRI66wZJDhWTxFWAyYBXRyuURDobO5ST4q0AwdAR1jFh7uj_fxKDSWkFfjmoy89Q4x-obna8N9L_Ix7n94518hMW5I0zWKKRNJ9AakyseSBxDs_THF2bEhBxblRtF7oQZnsJXZ9GbFQgGhTUVXIMIGkkkyhvEVJ2acyn14nT6g",
+            "width": 960
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    "SOMI SOMI": {
+        "name": "SOMI SOMI",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1230"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1230"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1230"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 12:00 – 11:00 PM",
+                "Tuesday: 12:00 – 11:00 PM",
+                "Wednesday: 12:00 – 11:00 PM",
+                "Thursday: 12:00 – 11:00 PM",
+                "Friday: 12:30 – 11:00 PM",
+                "Saturday: 12:30 – 11:00 PM",
+                "Sunday: 12:30 – 11:00 PM"
+            ]
+        },
+        "address": "621 S Manhattan Pl #208-A, Los Angeles, CA 90005, USA",
+        "phone": "(213) 568-3284",
+        "coords": {
+            "lat": 34.0629109,
+            "lng": -118.3099781
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+        "photos": {
+            "height": 3024,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/111423227016360483793/photos\">David Cho</a>"
+            ],
+            "photo_reference": "CmRaAAAApWgq8RJqPGFYcUu7B3c343H3tpLdD7cWdpigt5uVQbPRGv9Ipo0-FZJNoTRp_aAkd6ob0vQwMJZ8rJ3wgwoBem80VSg1EX0rhX94KAHUvmouWRvZKQZ31KMbSRLE2wUnEhAjDw29MlCe6V9n7a2P1YsqGhRwNo4htTaoeslG3O5JFqGdawY_9A",
+            "width": 4032
+        },
+        "types": [
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "https://m.facebook.com/somisomiicecream/#!/somisomiicecream/"
+    },
+    "Slapfish": {
+        "name": "Slapfish",
+        "address": "550 World Way, Los Angeles, CA 90045, USA",
+        "coords": {
+            "lat": 33.9460701,
+            "lng": -118.4041841
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 4608,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/116217170591219262468/photos\">Prashanth K</a>"
+            ],
+            "photo_reference": "CmRaAAAAcE51vRo48yjfe37wVbHOWKr6xXGfWPbYJ5nraiawEN7fATTc_4fChLQ5i51jWY7Y-WQFQlx91r3KgCAxrbNIAXx1sCn8jigy4uHV5dNDdH64MLvHd5vkj1uOUm39RGBpEhDyF22yHqXP_cz3Dog3QR92GhTjJEfA6tCeiYSR6WFy2Cpyte72_w",
+            "width": 3456
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.slapfishrestaurant.com/"
+    },
+    "Bia Coffee": {
+        "name": "Bia Coffee",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "1900"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: Closed",
+                "Tuesday: 10:00 AM – 8:00 PM",
+                "Wednesday: 10:00 AM – 8:00 PM",
+                "Thursday: 10:00 AM – 8:00 PM",
+                "Friday: 10:00 AM – 8:00 PM",
+                "Saturday: 11:00 AM – 8:00 PM",
+                "Sunday: 11:00 AM – 7:00 PM"
+            ]
+        },
+        "address": "3907 W 6th St, Los Angeles, CA 90020, USA",
+        "phone": "(213) 568-3007",
+        "coords": {
+            "lat": 34.0637024,
+            "lng": -118.3082836
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+        "photos": {
+            "height": 4032,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/105184268266720806108/photos\">Beth C</a>"
+            ],
+            "photo_reference": "CmRaAAAAccHEeK-i6TSpZDwAEpvqz48zeM4MXGwZ1o8liezaavfXQhVIgWP8dUFxMuYnZNIXV7zey9h8TOqZlpKn4Gyfi8DGMllOvfGSDgVS5tfmMwHy6EK7XVEXpXy6xdRxmlKAEhB8yy3iZCmom29UhXa4aNVGGhQ8ISZNJFqCjJXHz6UWwYK23vNULA",
+            "width": 3024
+        },
+        "types": [
+            "cafe",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    "Smorgasburg": {
+        "name": "Smorgasburg",
+        "hours": {
+            "open_now": false,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "1800"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1000"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: Closed",
+                "Tuesday: Closed",
+                "Wednesday: Closed",
+                "Thursday: Closed",
+                "Friday: Closed",
+                "Saturday: Closed",
+                "Sunday: 10:00 AM – 6:00 PM"
+            ]
+        },
+        "address": "785 Bay St, Los Angeles, CA 90021, USA",
+        "phone": "(718) 928-6603",
+        "coords": {
+            "lat": 34.0346143,
+            "lng": -118.2417116
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+        "photos": {
+            "height": 1365,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/102902343590369366013/photos\">Smorgasburg</a>"
+            ],
+            "photo_reference": "CmRaAAAA6_9xkHtcvePHkSauZZGUv0DfUykOcuVBmblIMJmC-LSBeei_m41OYRvgSA5SBnkNLugzx9AQL0-DkfpqT8TYlQfz0ej8K3cRXFvCVUNy8qbc12nWT7_-Ra_2HB_LEuRUEhDWM-h40hAXO1kxMUmutU0nGhRgCgsUNjrlmVQieqXO68ORJQWCYA",
+            "width": 1368
+        },
+        "types": [
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://la.smorgasburg.com/"
+    },
+    "Guisados": {
+        "name": "Guisados",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "1700"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "0900"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1030"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1030"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1030"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1030"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1030"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1030"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 10:30 AM – 8:00 PM",
+                "Tuesday: 10:30 AM – 8:00 PM",
+                "Wednesday: 10:30 AM – 8:00 PM",
+                "Thursday: 10:30 AM – 8:00 PM",
+                "Friday: 10:30 AM – 8:00 PM",
+                "Saturday: 10:30 AM – 8:00 PM",
+                "Sunday: 9:00 AM – 5:00 PM"
+            ]
+        },
+        "address": "2100 East Cesar E Chavez Avenue, Los Angeles, CA 90033, USA",
+        "phone": "(323) 264-7201",
+        "coords": {
+            "lat": 34.0482592,
+            "lng": -118.2114677
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 2962,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/117505826512614168416/photos\">Owen Renn</a>"
+            ],
+            "photo_reference": "CmRaAAAAdvqqU_a7axyaxyVbfvQmCmRiFrN9v_s1DtlwMyFwsSZHB-UoYcqZnBeImDN8v0K9ZuyxRfLmUFGJkduS-bzr8jNNRZ_TQJs5jHI2iz3IR1mouJpGyOggZnNJ7g63VsKeEhAvuJ4q7dv88n-6SZBhn0mnGhTvG14jNa5uJj7sQhnD6djjPWo1QQ",
+            "width": 3949
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.guisados.co/"
+    },
+    "Oo Kook Korean BBQ": {
+        "name": "Oo Kook Korean BBQ",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 12:00 AM",
+                "Tuesday: 11:00 AM – 12:00 AM",
+                "Wednesday: 11:00 AM – 12:00 AM",
+                "Thursday: 11:00 AM – 12:00 AM",
+                "Friday: 11:00 AM – 12:00 AM",
+                "Saturday: 11:00 AM – 12:00 AM",
+                "Sunday: 11:00 AM – 12:00 AM"
+            ]
+        },
+        "address": "3385 W 8th St, Los Angeles, CA 90005, USA",
+        "phone": "(213) 385-5665",
+        "coords": {
+            "lat": 34.0580039,
+            "lng": -118.3028343
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 1836,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/107633171517465228443/photos\">Andy Sidik</a>"
+            ],
+            "photo_reference": "CmRaAAAAtVKS8WhYCmUt2o1IfEuz3ZfPoe8NVqq0baNvtR4Blx-VD1PhnltT6baaaqmizwhnfdwiSxqu0g5K800-TOvTW1l-Nk3kWJXLzBwYj2BdNLCX0_fiSDwndDyQmoQOe4YpEhADtv4wnkSbjshDuCvLWkDbGhQz6GNRZsq6FGykA595XBCCCtnemg",
+            "width": 3264
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    "Zzamong": {
+        "name": "Zzamong",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2130"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "0300"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "0300"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "0300"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "0300"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "0300"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "0300"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 3:00 AM",
+                "Tuesday: 11:00 AM – 3:00 AM",
+                "Wednesday: 11:00 AM – 3:00 AM",
+                "Thursday: 11:00 AM – 3:00 AM",
+                "Friday: 11:00 AM – 3:00 AM",
+                "Saturday: 11:00 AM – 3:00 AM",
+                "Sunday: 11:00 AM – 9:30 PM"
+            ]
+        },
+        "address": "4255 W 3rd St, Los Angeles, CA 90020, USA",
+        "phone": "(213) 739-2747",
+        "coords": {
+            "lat": 34.0693095,
+            "lng": -118.3071786
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 5312,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/112346817567754740425/photos\">Kevin Yi</a>"
+            ],
+            "photo_reference": "CmRaAAAAptT7xCCqWx9vt8qXaCZ-PfL2wy289DW33WnkIamD1285umMsYjn70xsI5mCzYgPFjd3ARIdbFJ2eN9tRD6HqSEqaPC5RXRJcJe15bmb9sQBfGQOB8CllrCRt_oh3BG18EhD6pRRm3dRST-Emo5GNpft_GhTkqE_JJdsJivT5xgnAUdcvTQoUWA",
+            "width": 2988
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.zzamongrestaurant.com/"
+    },
+    "Museum of Neon Art": {
+        "name": "Museum of Neon Art",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "1700"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "1900"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "1900"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "1900"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1200"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: Closed",
+                "Tuesday: Closed",
+                "Wednesday: Closed",
+                "Thursday: 12:00 – 7:00 PM",
+                "Friday: 12:00 – 7:00 PM",
+                "Saturday: 12:00 – 7:00 PM",
+                "Sunday: 12:00 – 5:00 PM"
+            ]
+        },
+        "address": "216 S Brand Blvd, Glendale, CA 91204, USA",
+        "phone": "(818) 696-2149",
+        "coords": {
+            "lat": 34.1437608,
+            "lng": -118.2545011
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png",
+        "photos": {
+            "height": 2000,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/118034175575301029315/photos\">Museum of Neon Art</a>"
+            ],
+            "photo_reference": "CmRaAAAAMWp9-GMeNnuzvw7jtpn6j4TL5rHpkLcDN0ZFEgqmuEW5kddZxJb5Bl7ScxO0QPZzI0Zg-43hPlBu-4Le5knDGuDjcIrDp3yLwIT_Nw6BWBr_8Ysd8nzNdGJrEt0cgGhyEhDZKDgshAQSpbUkJmLjTZTfGhTkzHEtlUX7MBrMDfUuCymlF3igNg",
+            "width": 1471
+        },
+        "types": [
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.neonmona.org/"
+    },
+    "YUP DDUK LA": {
+        "name": "YUP DDUK LA",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 10:00 PM",
+                "Tuesday: 11:00 AM – 10:00 PM",
+                "Wednesday: 11:00 AM – 10:00 PM",
+                "Thursday: 11:00 AM – 10:00 PM",
+                "Friday: 11:00 AM – 10:00 PM",
+                "Saturday: 11:00 AM – 10:00 PM",
+                "Sunday: 11:00 AM – 10:00 PM"
+            ]
+        },
+        "address": "3603 W 6th St, Los Angeles, CA 90020, USA",
+        "phone": "(213) 263-2355",
+        "coords": {
+            "lat": 34.0640051,
+            "lng": -118.3007013
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 3024,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/100549999313683312924/photos\">Alan Gray</a>"
+            ],
+            "photo_reference": "CmRaAAAApgJDESc14GGo_D1dzenQeCL1N6-72GVp0sH0FFqq_fIJs--j52E_D9tQ-ubXGLD5cLhgxTDgdEBUJvV0iS61AQTYUJ8wxzzWRwL-LVVWFSIJAO8FhN451cZ-qGXkrhuPEhAGRqGQRGTLqBCHBqCE3oYiGhQw8AokpFkNgMrnXf3ugIbSPQGsww",
+            "width": 4032
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://yupddukla.com/"
+    },
+    "Button Mash": {
+        "name": "Button Mash",
+        "hours": {
+            "open_now": false,
+            "periods": [
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1600"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1600"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: Closed",
+                "Tuesday: 5:00 PM – 12:00 AM",
+                "Wednesday: 5:00 PM – 12:00 AM",
+                "Thursday: 5:00 PM – 12:00 AM",
+                "Friday: 5:00 PM – 2:00 AM",
+                "Saturday: 4:00 PM – 2:00 AM",
+                "Sunday: 4:00 PM – 12:00 AM"
+            ]
+        },
+        "address": "1391 Sunset Blvd, Los Angeles, CA 90026, USA",
+        "phone": "(213) 250-9903",
+        "coords": {
+            "lat": 34.0739963,
+            "lng": -118.2515224
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 3036,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/108032645260513646547/photos\">luel tajanlangit</a>"
+            ],
+            "photo_reference": "CmRaAAAAw_2V-Ij2WGv1-DI-egSLlK_Nz28pgoNBnCWME5ZFnIWVLB8DJfJ6FlPFUqd77nsj6lAyhNh5aJc6T0MMQxwGr2C86bACEsPtRnP6BgXwYIdnXzy5G2W6bZKuqO52ohQiEhAxpjWQrf9VYcysE-Iqwk34GhS3t2VLbFtLra4OUQI3575blmeKmA",
+            "width": 4048
+        },
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://buttonmashla.com/"
+    },
+    "Gresescent Ice Cream": {
+        "name": "Gresescent Ice Cream",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1200"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: Closed",
+                "Tuesday: 12:00 – 9:00 PM",
+                "Wednesday: 12:00 – 9:00 PM",
+                "Thursday: 12:00 – 10:00 PM",
+                "Friday: 12:00 – 10:00 PM",
+                "Saturday: 12:00 – 10:00 PM",
+                "Sunday: 12:00 – 9:00 PM"
+            ]
+        },
+        "address": "850 S Olive St, Los Angeles, CA 90014, USA",
+        "phone": "(213) 278-0111",
+        "coords": {
+            "lat": 34.0439333,
+            "lng": -118.2578095
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+        "photos": {
+            "height": 2952,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/111949362620415989443/photos\">William Fox</a>"
+            ],
+            "photo_reference": "CmRaAAAAdNJ5-sCHsBtyltblAXmeoNzwUv9elwSJtcpJA5_L3pCCuF7R3aG8CIFKhSTZ4Ft3R3hItmw3YRmdICS40x44muKfnkR3EI6GgA2G2dzg3OYZze5zRhuUUrdhPJ08KSdOEhCdMunD_BdaGdlVotBLJ-RiGhTY31EBE7XdAwcvVwZmKfeRs8PoLQ",
+            "width": 5248
+        },
+        "types": [
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.gresescent.com/"
+    },
+    "Yuko Kitchen": {
+        "name": "Yuko Kitchen",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2130"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2130"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2130"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2130"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2130"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2130"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 9:30 PM",
+                "Tuesday: 11:00 AM – 9:30 PM",
+                "Wednesday: 11:00 AM – 9:30 PM",
+                "Thursday: 11:00 AM – 9:30 PM",
+                "Friday: 11:00 AM – 9:30 PM",
+                "Saturday: 11:00 AM – 9:30 PM",
+                "Sunday: Closed"
+            ]
+        },
+        "address": "5484 Wilshire Blvd, Los Angeles, CA 90036, USA",
+        "phone": "(323) 933-4020",
+        "coords": {
+            "lat": 34.0621327,
+            "lng": -118.3482179
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 2988,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/111021686130490741335/photos\">William Curtis</a>"
+            ],
+            "photo_reference": "CmRaAAAAwQuRQLT1_2EOZANv0y1vcWdcc9BR4I1R1f1JUbk32yCUYmUG71jSdH-McYSTRdpGudDQr55tI2X__nvSwQgi8lc6LQCjvCW4NxYHBx23vy5wi7BVevLs8moKhknHyK_LEhC_M6abDFj_dRvjEa7D_vMuGhRGlL-KP8HdnJpJCO3URAMGyvNhFg",
+            "width": 5312
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://yukokitchen.com/"
+    },
+    "Sushi4u": {
+        "name": "Sushi4u",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1200"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:30 AM – 10:00 PM",
+                "Tuesday: 11:30 AM – 10:00 PM",
+                "Wednesday: 11:30 AM – 10:00 PM",
+                "Thursday: 11:30 AM – 10:00 PM",
+                "Friday: 11:30 AM – 11:00 PM",
+                "Saturday: 12:00 – 11:00 PM",
+                "Sunday: 12:00 – 10:00 PM"
+            ]
+        },
+        "address": "4090 N Harbor Blvd, Fullerton, CA 92835, USA",
+        "phone": "(714) 449-1950",
+        "coords": {
+            "lat": 33.91852830000001,
+            "lng": -117.9316771
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 1836,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/114689807278334913617/photos\">Andrew Fok</a>"
+            ],
+            "photo_reference": "CmRaAAAAEubAhw1SJPHaK86zPHzj7Kum-cCGCOOzr07hKkR-tPJdVHXFIt_vPedR61X5f-MX0Kaaq-KA0p_znJCFuwRSpqbGQYUOddDmkfsZ1HYtzTgAYe6wi6pKBF9HuhpBfpLeEhCpDFH8Nq6h8C0p5zFtJ85JGhQSoskmwDRewQz8VqUsc7amFNSFjA",
+            "width": 3264
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    "M Pizza": {
+        "name": "M Pizza",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 10:00 PM",
+                "Tuesday: 11:00 AM – 10:00 PM",
+                "Wednesday: 11:00 AM – 10:00 PM",
+                "Thursday: 11:00 AM – 12:00 AM",
+                "Friday: 11:00 AM – 12:00 AM",
+                "Saturday: 11:00 AM – 12:00 AM",
+                "Sunday: 11:00 AM – 10:00 PM"
+            ]
+        },
+        "address": "3881 Wilshire Blvd, Los Angeles, CA 90010, USA",
+        "phone": "(213) 738-0077",
+        "coords": {
+            "lat": 34.0618891,
+            "lng": -118.3114708
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 608,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/100699501631522843825/photos\">M Pizza</a>"
+            ],
+            "photo_reference": "CmRaAAAArNe89akufmRr0yBvUwuSnyzbf2HMnCpA-AUfuHJICd0YpqtuK_DVNyagkgAAEDMil1RdFWyPNPxaJftlIcFi2-BnAwXdbpu6KcvHt__1OZQf6WjGDG_JdnjxaOAjdHAfEhCq-fNBkAY8YPa6y1gMwoAMGhRPKy8wetMpgODeK-fpGcLlelTd4A",
+            "width": 1080
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://mrpizzawilshireca.com/10588"
+    },
+    "Eggslut": {
+        "name": "Eggslut",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "1600"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "1600"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "1600"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "1600"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "1600"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "1600"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "1600"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "0800"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 8:00 AM – 4:00 PM",
+                "Tuesday: 8:00 AM – 4:00 PM",
+                "Wednesday: 8:00 AM – 4:00 PM",
+                "Thursday: 8:00 AM – 4:00 PM",
+                "Friday: 8:00 AM – 4:00 PM",
+                "Saturday: 8:00 AM – 4:00 PM",
+                "Sunday: 8:00 AM – 4:00 PM"
+            ]
+        },
+        "address": "317 S Broadway, Los Angeles, CA 90013, USA",
+        "phone": "(213) 625-0292",
+        "coords": {
+            "lat": 34.0506752,
+            "lng": -118.2485767
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 3024,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/106786039169160215915/photos\">Ken Sullenger</a>"
+            ],
+            "photo_reference": "CmRaAAAAMHAlfZrWhhhbE9THavRNwlqkbcgdYGqCIjdzITUkcRQHKGB6k9zHR82gsiAoQHO1oNUyQYCah5XL3urn44AOnCnENDIt7eF82UBTgeulmHWR7NG_xS1m-81-LrQXpEvQEhCfsrzf9jvbcaSjDnRD3VVbGhRU9Svkhp0t26ZX5OKC0lliquQETw",
+            "width": 4032
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://eggslut.com/"
+    },
+    "Native Foods Cafe": {
+        "name": "Native Foods Cafe",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 10:00 PM",
+                "Tuesday: 11:00 AM – 10:00 PM",
+                "Wednesday: 11:00 AM – 10:00 PM",
+                "Thursday: 11:00 AM – 10:00 PM",
+                "Friday: 11:00 AM – 10:00 PM",
+                "Saturday: 11:00 AM – 10:00 PM",
+                "Sunday: 11:00 AM – 10:00 PM"
+            ]
+        },
+        "address": "1114 Gayley Ave, Los Angeles, CA 90024, USA",
+        "phone": "(310) 209-1055",
+        "coords": {
+            "lat": 34.0598901,
+            "lng": -118.4459704
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 3024,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/111965482529745116005/photos\">Jason San</a>"
+            ],
+            "photo_reference": "CmRaAAAA_fEt108QDv2cc1lUdQmJvnLnZFwXBf6-joVd7IYQw8zIRq4Jb3OlNxG6FMQsk8zItB1yTNPCGsezmtkaxguL7R-ZNkrxpa-y7g1IlP1TaV1PK3zQwduD-SBo6eahpaytEhDn5ZvVSX4L9X0vO4EN-dzRGhQ93xPApYUVMtR2nHKdI7M7PuRdeQ",
+            "width": 4032
+        },
+        "types": [
+            "meal_takeaway",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "https://www.nativefoods.com/"
+    },
+    "Fatburger": {
+        "name": "Fatburger",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1000"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 10:00 AM – 12:00 AM",
+                "Tuesday: 10:00 AM – 12:00 AM",
+                "Wednesday: 10:00 AM – 12:00 AM",
+                "Thursday: 10:00 AM – 2:00 AM",
+                "Friday: 10:00 AM – 2:00 AM",
+                "Saturday: 10:00 AM – 2:00 AM",
+                "Sunday: 10:00 AM – 12:00 AM"
+            ]
+        },
+        "address": "888 S Figueroa St, Los Angeles, CA 90017, USA",
+        "phone": "(213) 891-0899",
+        "coords": {
+            "lat": 34.04658809999999,
+            "lng": -118.261957
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 496,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/108030048981557609600/photos\">Fatburger</a>"
+            ],
+            "photo_reference": "CmRaAAAAI4DR0l8rJK3Nt6AIl2Li4Mg-knGQse2X3BucFJAQJiKScgnpk0X90mCOQlg8eUs-Y0gYZlvbBBLbdAc-nNOKFOET_kg6SB3mzKgyK5VfKm7-Ok7xZe6bacBHX880IlzfEhAQxWEt8V_JZscuK3e_FFWpGhQL6vAlC9B_7PNgZdAZ7YmrKBpetw",
+            "width": 497
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.fatburger.com/"
+    },
+    "Wi Spa": {
+        "name": "Wi Spa",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "open": {
+                        "day": 0,
+                        "time": "0000"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: Open 24 hours",
+                "Tuesday: Open 24 hours",
+                "Wednesday: Open 24 hours",
+                "Thursday: Open 24 hours",
+                "Friday: Open 24 hours",
+                "Saturday: Open 24 hours",
+                "Sunday: Open 24 hours"
+            ]
+        },
+        "address": "2700 Wilshire Blvd, Los Angeles, CA 90057, USA",
+        "phone": "(213) 487-2700",
+        "coords": {
+            "lat": 34.060692,
+            "lng": -118.282764
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+        "photos": {
+            "height": 1365,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/104908431756212890221/photos\">Jay E. Jenkins</a>"
+            ],
+            "photo_reference": "CmRaAAAAK4fIEr23L2s4AzdjGEbxXgWkbpc5uU0jl3cPz4wPfAIE98LhEWioHmYNCtRVkmOLRMRmovpmG8j6Xan21JOq1JZvuXGJYxgkLL2kA7BjOK1CnS9yIzebB5IHlupO8c4iEhDzedQ_WZImSu3kHMQeJqcNGhQv6IXZuV_yd44QK2yDe3wqti-p-g",
+            "width": 2048
+        },
+        "types": [
+            "spa",
+            "health",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.wispausa.com/"
+    },
+    "Midori Matcha Cafe": {
+        "name": "Midori Matcha Cafe",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1000"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 10:00 AM – 9:00 PM",
+                "Tuesday: 10:00 AM – 9:00 PM",
+                "Wednesday: 10:00 AM – 9:00 PM",
+                "Thursday: 10:00 AM – 9:00 PM",
+                "Friday: 10:00 AM – 10:00 PM",
+                "Saturday: 10:00 AM – 11:00 PM",
+                "Sunday: 10:00 AM – 10:00 PM"
+            ]
+        },
+        "address": "123 Astronaut E S Onizuka St #101-C, Los Angeles, CA 90012, USA",
+        "coords": {
+            "lat": 34.0499565,
+            "lng": -118.2420697
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+        "photos": {
+            "height": 649,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/109803851192644925009/photos\">Midori Matcha Cafe</a>"
+            ],
+            "photo_reference": "CmRaAAAAxaITY75D-XdvUXFE-IyUbxwNClYvRlhlwd4F7CKpEUBfO4luwJaSudD59Lku-gY_PA0KOQKwY2u2zyvWqRiQq5x8_KX57wCs0soFoT-cFYvXnRbkuu1INGc0pgmlBWqOEhCrMc3OhRp20f1F1K3NBqkyGhQZ0wRqBJo1ENPPrBZrrEiB4nPTXA",
+            "width": 922
+        },
+        "types": [
+            "cafe",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://midorimatchatea.com/"
+    },
+    "Senor Baja": {
+        "name": "Senor Baja",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "0900"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "0900"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "0900"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "0900"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "0900"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "0900"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "0900"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 9:00 AM – 9:00 PM",
+                "Tuesday: 9:00 AM – 9:00 PM",
+                "Wednesday: 9:00 AM – 9:00 PM",
+                "Thursday: 9:00 AM – 9:00 PM",
+                "Friday: 9:00 AM – 9:00 PM",
+                "Saturday: 9:00 AM – 9:00 PM",
+                "Sunday: 9:00 AM – 9:00 PM"
+            ]
+        },
+        "address": "11833 Alondra Blvd, Norwalk, CA 90650, USA",
+        "phone": "(562) 929-6861",
+        "coords": {
+            "lat": 33.88788369999999,
+            "lng": -118.0813455
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 4032,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/105949358178279807892/photos\">Justin Hong</a>"
+            ],
+            "photo_reference": "CmRaAAAA760ZpOJ_DF6klcD6naploaSvb3dOZXDlt8YjmGHZwBOww8KZ-lNj6Qmm9-2UEJir9OyoYCfer1DpUDlkx7m-fEsuOf7sirzxt1qf3bcxRfqTu37oxl6Wp72YtqwIulzmEhCQoIGXrI2XEP0TPxgVmBvCGhQT5p8phFNnFATEngozxOM_Nm_tyQ",
+            "width": 3024
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    "Bottega Louie": {
+        "name": "Bottega Louie",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "0900"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "0900"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 8:00 AM – 10:00 PM",
+                "Tuesday: 8:00 AM – 10:00 PM",
+                "Wednesday: 8:00 AM – 10:00 PM",
+                "Thursday: 8:00 AM – 10:00 PM",
+                "Friday: 8:00 AM – 11:00 PM",
+                "Saturday: 9:00 AM – 11:00 PM",
+                "Sunday: 9:00 AM – 10:00 PM"
+            ]
+        },
+        "address": "700 S Grand Ave, Los Angeles, CA 90017, USA",
+        "phone": "(213) 802-1470",
+        "coords": {
+            "lat": 34.04702470000001,
+            "lng": -118.2565689
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 1022,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/111847129364038020241/photos\">Bottega Louie</a>"
+            ],
+            "photo_reference": "CmRaAAAAoSFgoQP-jjQCognfmBtBNUnawnEeyesbH70VdZMWXpzBqyziUu8eUSGGQKjP0gie2P2lU7sdyVjzsFwQ0QPebWKmgEfSBnQItVizezzpxeUMPsVDezN4_b2krQ0khP-NEhDahVHKOwqIRwapGHxM5lmWGhQjk7Yu3a87OyfnQyyoRsQUdmutjA",
+            "width": 1022
+        },
+        "types": [
+            "bakery",
+            "cafe",
+            "restaurant",
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.bottegalouie.com/"
+    },
+    "The Springs": {
+        "name": "The Springs",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "1800"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "0900"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "1800"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "0900"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 7:00 AM – 8:00 PM",
+                "Tuesday: 7:00 AM – 8:00 PM",
+                "Wednesday: 7:00 AM – 8:00 PM",
+                "Thursday: 7:00 AM – 8:00 PM",
+                "Friday: 7:00 AM – 8:00 PM",
+                "Saturday: 9:00 AM – 6:00 PM",
+                "Sunday: 9:00 AM – 6:00 PM"
+            ]
+        },
+        "address": "608 Mateo St, Los Angeles, CA 90021, USA",
+        "phone": "(213) 223-6226",
+        "coords": {
+            "lat": 34.0377204,
+            "lng": -118.2322358
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 2268,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/110032790597973739473/photos\">Mashed Potato Cat</a>"
+            ],
+            "photo_reference": "CmRaAAAA4K8wCDj28d1sYBKPih8rdnM3fHu2b_kAGIrU8OvEuaDY7iWZY1dk8Zr9Z5fE3TlzKybEYTpSxi0LqvrVOJ1MmQ_0PFmjdVUgcGeTVI_ceGA6GGNARA4pIqyzHPmHyZdgEhCPAvxB31RhtHUE1WXnUp3QGhSKruaJiusUFnoAvDskOqi7oS8_Dg",
+            "width": 4032
+        },
+        "types": [
+            "restaurant",
+            "gym",
+            "bar",
+            "health",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.thespringsla.com/"
+    },
+    "Avenue 26 Tacos": {
+        "name": "Avenue 26 Tacos",
+        "hours": {
+            "open_now": false,
+            "periods": [
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "0030"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1730"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "0030"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1730"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "0030"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1730"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "0030"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1730"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "0030"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1730"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1730"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1730"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 5:30 PM – 12:30 AM",
+                "Tuesday: 5:30 PM – 12:30 AM",
+                "Wednesday: 5:30 PM – 12:30 AM",
+                "Thursday: 5:30 PM – 12:30 AM",
+                "Friday: 5:30 PM – 2:00 AM",
+                "Saturday: 5:30 PM – 2:00 AM",
+                "Sunday: 5:30 PM – 12:30 AM"
+            ]
+        },
+        "address": "2601-2629 Humboldt St, Los Angeles, CA 90031, USA",
+        "coords": {
+            "lat": 34.0801217,
+            "lng": -118.2179328
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 2268,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/100997398598935276153/photos\">Jason Ng</a>"
+            ],
+            "photo_reference": "CmRaAAAA91sjppE9gD_IQueNEkvoh4ckt1yzDCq9HXjVacFg8Zc-pY9Sl2JkqDoWlvZb89JlgMgmAtRKpIwqBHwwb02pA-cXROz33gArmIaaOUgek_P5KVhNku50C_LFl-6hSZLhEhDNeFnuB-ulVp6m37scidCmGhTBDiSWNsRLfKDj6jYJ6Gt0zju2eg",
+            "width": 4032
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    "Mister Bossam": {
+        "name": "Mister Bossam",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1130"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:30 AM – 11:00 PM",
+                "Tuesday: 11:30 AM – 11:00 PM",
+                "Wednesday: 11:30 AM – 11:00 PM",
+                "Thursday: 11:30 AM – 11:00 PM",
+                "Friday: 11:30 AM – 11:00 PM",
+                "Saturday: 11:30 AM – 11:00 PM",
+                "Sunday: 11:30 AM – 11:00 PM"
+            ]
+        },
+        "address": "338 S Western Ave, Los Angeles, CA 90020, USA",
+        "phone": "(213) 388-5379",
+        "coords": {
+            "lat": 34.0678224,
+            "lng": -118.3089464
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 3001,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/105645555299735468424/photos\">Huy Nguyen</a>"
+            ],
+            "photo_reference": "CmRaAAAAdbeeqjuqf9CoRTBeLlxnw7vf98v4JgWjdsTWRseo3xRKuGFtK6HUeLM5MuJAYl3z7CRyFagp05cUrltOpPqLoOC-E5XNyQHb-NKoFml2fyiqbuTbBHnDoUi4CydC1FP1EhCTkJKqEYhxgyv0xXrkYKC1GhQe-VZ9LSKAOY0nweoBbpAGSaCWEA",
+            "width": 5331
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.mrbossamusa.com/"
+    },
+    "626 Night Market": {
+        "name": "626 Night Market",
+        "address": "285 Huntington Dr, Arcadia, CA 91007, USA",
+        "phone": "(626) 765-5166",
+        "coords": {
+            "lat": 34.137337,
+            "lng": -118.045173
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+        "photos": {
+            "height": 2988,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/109909425905143047517/photos\">Vehans Vartani</a>"
+            ],
+            "photo_reference": "CmRaAAAAgev63VlwnlfzHT43gcBVE74QLu1x8VObeUe-RE-1gbP4t1Dq6oD8-20CjeW5bW3fRpHTd5tmMV5-N7BRk7R94kMJu9WlsM8JDanP2W15Mp6QbznTOJ7x82kFxjUO30NsEhB9TzSNabCVPvzZ9lIpBq0zGhS4FGe2EUK559ti2ZXG5BjgMIXkEw",
+            "width": 5312
+        },
+        "types": [
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.626nightmarket.com/"
+    },
+    "Kang Ho-Dong Baekjeong": {
+        "name": "Kang Ho-Dong Baekjeong",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1130"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:30 AM – 2:00 AM",
+                "Tuesday: 11:30 AM – 2:00 AM",
+                "Wednesday: 11:30 AM – 2:00 AM",
+                "Thursday: 11:30 AM – 2:00 AM",
+                "Friday: 11:30 AM – 2:00 AM",
+                "Saturday: 11:30 AM – 2:00 AM",
+                "Sunday: 11:30 AM – 2:00 AM"
+            ]
+        },
+        "address": "3465 W 6th St, Los Angeles, CA 90020, USA",
+        "phone": "(213) 384-9678",
+        "coords": {
+            "lat": 34.0637327,
+            "lng": -118.2972823
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 1153,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/103770800223142180595/photos\">Richard L</a>"
+            ],
+            "photo_reference": "CmRaAAAAbGg2a_D0OKG6hpLQczDo7Etran0Mg-leUwYjwal3l1P1ky0fdH-MRU5yOnl8_TqUg7FOWuGUtSn0rJdCnonAFC4VNYcOYb4g3iq2_mEmRA7wgkfbkPeqkP4ZlPponaNjEhC6exj7yb1ridoTQ1dnLQRGGhRZtYrkciWY2pmoIiDGyZTf6IilZw",
+            "width": 2048
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.678us.com/"
+    },
+    "Grand Central Market": {
+        "name": "Grand Central Market",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "0800"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 8:00 AM – 10:00 PM",
+                "Tuesday: 8:00 AM – 10:00 PM",
+                "Wednesday: 8:00 AM – 10:00 PM",
+                "Thursday: 8:00 AM – 10:00 PM",
+                "Friday: 8:00 AM – 10:00 PM",
+                "Saturday: 8:00 AM – 10:00 PM",
+                "Sunday: 8:00 AM – 10:00 PM"
+            ]
+        },
+        "address": "317 S Broadway, Los Angeles, CA 90013, USA",
+        "phone": "(213) 624-2378",
+        "coords": {
+            "lat": 34.0508806,
+            "lng": -118.2490251
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+        "photos": {
+            "height": 3024,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/103893649516863510093/photos\">Timothy Harmon</a>"
+            ],
+            "photo_reference": "CmRaAAAAHsSkIaSTmVB9XFSpCA67i8yg03wIHH3-4yyMw56uepfbjT_wN565RCqTzId-YZ-BiZmuabEvaLEhq6oKfocp3Z5iM26HCU3wDiFvE71DxmwDMP3ly6DBN6id7ASF3K8ZEhDyaBX_ogTackQbTR3LBuCMGhRD3ymFp29INVjkp59OQU27kkBuqQ",
+            "width": 4032
+        },
+        "types": [
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.grandcentralmarket.com/"
+    },
+    "The Hat": {
+        "name": "The Hat",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "0100"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "0100"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "0900"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "0100"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "0900"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "0100"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "0900"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "0100"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "0900"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "0100"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "0900"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "0100"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "0900"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 9:00 AM – 1:00 AM",
+                "Tuesday: 9:00 AM – 1:00 AM",
+                "Wednesday: 9:00 AM – 1:00 AM",
+                "Thursday: 9:00 AM – 1:00 AM",
+                "Friday: 9:00 AM – 1:00 AM",
+                "Saturday: 9:00 AM – 1:00 AM",
+                "Sunday: 10:00 AM – 1:00 AM"
+            ]
+        },
+        "address": "2300 S Atlantic Blvd, Monterey Park, CA 91754, USA",
+        "phone": "(323) 721-3656",
+        "coords": {
+            "lat": 34.03721199999999,
+            "lng": -118.1464389
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 2048,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/116751674793151999134/photos\">saksit247</a>"
+            ],
+            "photo_reference": "CmRaAAAAigFF25V15DmKVEDosfbPq4VB99lVdstpzC_boNHHHG0SPTBeSN2Ebxonuyv-FjCfzDLfz_lsUrUWnJ8ceIHTLzD8Vph1HBnB1hbGRv3M20HInXVuz6oOl9skC5nU4i0XEhBPtCiHoc8zCBDTcgkTW7kMGhT722k-84s10yluBODwzpRKew1Ybw",
+            "width": 1152
+        },
+        "types": [
+            "restaurant",
+            "meal_takeaway",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.thehat.com/locamon.htm"
+    },
+    "Seoul Sausage Co.": {
+        "name": "Seoul Sausage Co.",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "0030"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "0030"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1130"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "0030"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1130"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:30 AM – 11:00 PM",
+                "Tuesday: 11:30 AM – 11:00 PM",
+                "Wednesday: 11:30 AM – 11:00 PM",
+                "Thursday: 11:30 AM – 12:30 AM",
+                "Friday: 11:30 AM – 12:30 AM",
+                "Saturday: 11:30 AM – 12:30 AM",
+                "Sunday: 11:30 AM – 11:00 PM"
+            ]
+        },
+        "address": "236 S Los Angeles St, Los Angeles, CA 90012, USA",
+        "phone": "(213) 935-8677",
+        "coords": {
+            "lat": 34.0490392,
+            "lng": -118.243729
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 3024,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/109172398327003691838/photos\">Angie Harness</a>"
+            ],
+            "photo_reference": "CmRaAAAAFVPb0ZeHF_JGefYZtWR_g4SNQDaXZP75AmnwuSO4blP4rPjdhVbCsXId2WWuPwv0lM7QIL-RkeHNFg5dLIKkTgXnGdZvP49T6rBmo8vFp14d_kWJ4hpdiL0CpuBUxhlZEhAE9mmCk71vkShFKN5kHrDrGhQ5N_bLHnLZFUdTjpTDCN2kBw5rNg",
+            "width": 4032
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.seoulsausage.com/"
+    },
+    "Vicious Dogs": {
+        "name": "Vicious Dogs",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "1800"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 8:00 PM",
+                "Tuesday: 11:00 AM – 8:00 PM",
+                "Wednesday: 11:00 AM – 8:00 PM",
+                "Thursday: 11:00 AM – 8:00 PM",
+                "Friday: 11:00 AM – 8:00 PM",
+                "Saturday: 11:00 AM – 8:00 PM",
+                "Sunday: 12:00 – 6:00 PM"
+            ]
+        },
+        "address": "5231 Lankershim Blvd, North Hollywood, CA 91601, USA",
+        "phone": "(818) 985-3647",
+        "coords": {
+            "lat": 34.1657556,
+            "lng": -118.3754405
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 3024,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/106603156502859737139/photos\">Adan Hernandez</a>"
+            ],
+            "photo_reference": "CmRaAAAAUPt50aXm2t_lZbCb2ZomvH0MCe_y38n7eOAU1sEhLjHdOCh60z44KdgmtnzkscnPkcDzH6I2mbPAjqh2mjakW_FiflZzBCw0F0jev__YVSj8hvvxShdCKEZzPlv_DlzTEhB1TX-HajCDThGOdwY3P6trGhSvlnTA2xCEpPs-r29HKC6JO8YCQQ",
+            "width": 4032
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.viciousdogs.com/"
+    },
+    "Cauldron Ice Cream": {
+        "name": "Cauldron Ice Cream",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1200"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 12:00 – 10:00 PM",
+                "Tuesday: Closed",
+                "Wednesday: 12:00 – 10:00 PM",
+                "Thursday: 12:00 – 10:00 PM",
+                "Friday: 12:00 – 11:00 PM",
+                "Saturday: 12:00 – 11:00 PM",
+                "Sunday: 12:00 – 10:00 PM"
+            ]
+        },
+        "address": "1421 W MacArthur Blvd F, Santa Ana, CA 92704, USA",
+        "phone": "(657) 245-3442",
+        "coords": {
+            "lat": 33.7005444,
+            "lng": -117.8876486
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+        "photos": {
+            "height": 2448,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/115141074583486494293/photos\">Shirley Doo</a>"
+            ],
+            "photo_reference": "CmRaAAAAwXzir7wH_GCmlvAa4FL-7j56yvoQC3FSxgp1uYzNW7FzpwT4JOQ143vW2gl9S7-yLjvA0tuL2ZbGghf2TNIXKPJ4H8NLTeCTBLuMdx7BggDirc5zAXDHBVBtkanUgWbHEhC0CEsjJU_z3QPSmmSJ2KofGhQt0YXpotXwnM1ku3cH3VcJQCw-Yg",
+            "width": 3264
+        },
+        "types": [
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.cauldronicecream.com/"
+    },
+    "Scoops": {
+        "name": "Scoops",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "1800"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1300"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1200"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 12:00 – 10:00 PM",
+                "Tuesday: 12:00 – 10:00 PM",
+                "Wednesday: 12:00 – 10:00 PM",
+                "Thursday: 12:00 – 10:00 PM",
+                "Friday: 12:00 – 10:00 PM",
+                "Saturday: 12:00 – 10:00 PM",
+                "Sunday: 1:00 – 6:00 PM"
+            ]
+        },
+        "address": "712 N Heliotrope Dr, Los Angeles, CA 90029, USA",
+        "phone": "(323) 906-2649",
+        "coords": {
+            "lat": 34.0840399,
+            "lng": -118.294817
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+        "photos": {
+            "height": 2168,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/116789692419265580726/photos\">Paul Roth</a>"
+            ],
+            "photo_reference": "CmReAAAASL0-x60Emyz4fg0vXpEAAu4scW4sPJwbSgOygExrz-qJKTLKEgPAuKpvgOr9X15R-y6itZfwSb4kURzX6NzAnNTSUaeYVpxYoymmt_yWBqfusytcLbXSAjKlnso4vprHEhD47olcri5vrKmvf4EaIIzqGhTJfgZARyW79JGrc-OvPhcLxB0ikg",
+            "width": 3824
+        },
+        "types": [
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    "Class 302": {
+        "name": "Class 302",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2300"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 11:00 PM",
+                "Tuesday: 11:00 AM – 11:00 PM",
+                "Wednesday: 11:00 AM – 11:00 PM",
+                "Thursday: 11:00 AM – 11:00 PM",
+                "Friday: 11:00 AM – 11:00 PM",
+                "Saturday: 11:00 AM – 11:00 PM",
+                "Sunday: 11:00 AM – 11:00 PM"
+            ]
+        },
+        "address": "8855 Apollo Way unit 224 92042, Downey, CA 90242, USA",
+        "phone": "(562) 401-0180",
+        "coords": {
+            "lat": 33.92328879999999,
+            "lng": -118.1318527
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+        "photos": {
+            "height": 3264,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/103074751739110627770/photos\">Calvin Hoang</a>"
+            ],
+            "photo_reference": "CmRaAAAAJCQeC5wj3mzcW3FU8av4010phPMsZJusaq7WN7xpc9nGIcwYUFgaLmBj5Fn23rqntpXboxy1deFxnEmgtdRDHgDHOTTSUqykejQ967JPCrrEZ6hqAdW1dXF8OUo_dke8EhAVcWiT3plyDNLIOR9uPe7VGhSmhlP2xTwunbx94EljxsPOnDO9uw",
+            "width": 2448
+        },
+        "types": [
+            "cafe",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    "Blue Star Donuts": {
+        "name": "Blue Star Donuts",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "0700"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 7:00 AM – 8:00 PM",
+                "Tuesday: 7:00 AM – 8:00 PM",
+                "Wednesday: 7:00 AM – 8:00 PM",
+                "Thursday: 7:00 AM – 8:00 PM",
+                "Friday: 7:00 AM – 8:00 PM",
+                "Saturday: 7:00 AM – 8:00 PM",
+                "Sunday: 7:00 AM – 8:00 PM"
+            ]
+        },
+        "address": "1142 Abbot Kinney Blvd, Venice, CA 90291, USA",
+        "phone": "(310) 450-5630",
+        "coords": {
+            "lat": 33.9913488,
+            "lng": -118.4693296
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 2583,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/105072855211422973105/photos\">Tony Yeung</a>"
+            ],
+            "photo_reference": "CmRaAAAAt01tr313XQsjdRo995bok_Kk5GnqKZcDtsm1s0XzHcZChHOcxPkkXAqRM63FHZuYz5j8A7Dmd49q5IwcXqa1n9UY3FW5Y02ceN1QoNiy5Al-pTaAmVmluNTfQoPxw2MCEhC8HBBhKXUrk5dh1RmOTUZBGhQRul5jOqe3y9uN9rqGBMgRjqu-Ew",
+            "width": 3454
+        },
+        "types": [
+            "bakery",
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.bluestardonuts.com/"
+    },
+    "Cafe Maji": {
+        "name": "Cafe Maji",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "1700"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 10:00 PM",
+                "Tuesday: 11:00 AM – 10:00 PM",
+                "Wednesday: 11:00 AM – 10:00 PM",
+                "Thursday: 11:00 AM – 10:00 PM",
+                "Friday: 11:00 AM – 10:00 PM",
+                "Saturday: 11:00 AM – 10:00 PM",
+                "Sunday: 12:00 – 5:00 PM"
+            ]
+        },
+        "address": "E, 12232 Artesia Blvd, Artesia, CA 90701, USA",
+        "phone": "(562) 281-9511",
+        "coords": {
+            "lat": 33.872686,
+            "lng": -118.071322
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+        "photos": {
+            "height": 741,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/111238191554033782636/photos\">Cafe Maji</a>"
+            ],
+            "photo_reference": "CmRZAAAAHbLB6jZHjNXlmekAlv7f9zaNxq7eiRzffUkSp5x1LlgEc4GDueey6HBzjX4LyXKpsqr-UY46f6C333v0ZJyr1gMHpkPWckdXU1sYWDMpT7282n2e_RFN48oqoUGXIDzCEhDz4r1hJMvFkqaNDs6_uziBGhQSXMYXZc29pXZn5hnrFlXbQIgtbw",
+            "width": 740
+        },
+        "types": [
+            "cafe",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    "Choice Music": {
+        "name": "Choice Music",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1000"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2000"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1000"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 10:00 AM – 8:00 PM",
+                "Tuesday: 10:00 AM – 8:00 PM",
+                "Wednesday: 10:00 AM – 8:00 PM",
+                "Thursday: 10:00 AM – 8:00 PM",
+                "Friday: 10:00 AM – 8:00 PM",
+                "Saturday: 10:00 AM – 8:00 PM",
+                "Sunday: 11:00 AM – 8:00 PM"
+            ]
+        },
+        "address": "3250 W Olympic Blvd, Los Angeles, CA 90006, USA",
+        "phone": "(323) 373-0008",
+        "coords": {
+            "lat": 34.0522327,
+            "lng": -118.3085165
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+        "photos": {
+            "height": 1136,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/117986454369770157175/photos\">ll DARK SUGAR ll</a>"
+            ],
+            "photo_reference": "CmRaAAAAi8wPdnw1llvEvlfe_53v6h_G_qjuQW7EtkFq3NcFF_XNKfJcA5b_CBnQeHIhlszEQcQ-efN6pOXJqRQ6iQJ6HTFMAmw8Jezng-pXIgLY-E2sJjSFg6psEICPhjjhLaVVEhBjA9libCpNnXvvrKYs2cToGhQ5pNQCdg4DQuHR-SkKzKvU2hV59g",
+            "width": 640
+        },
+        "types": [
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.choicemusicla.com/"
+    },
+    "Mr. Holmes Bakehouse": {
+        "name": "Mr. Holmes Bakehouse",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "1500"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "1430"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "1430"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "1430"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "1430"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "1430"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "1500"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "0800"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 7:00 AM – 2:30 PM",
+                "Tuesday: 7:00 AM – 2:30 PM",
+                "Wednesday: 7:00 AM – 2:30 PM",
+                "Thursday: 7:00 AM – 2:30 PM",
+                "Friday: 7:00 AM – 2:30 PM",
+                "Saturday: 8:00 AM – 3:00 PM",
+                "Sunday: 8:00 AM – 3:00 PM"
+            ]
+        },
+        "address": "111 S Ave 59, Los Angeles, CA 90042, USA",
+        "phone": "(323) 739-0473",
+        "coords": {
+            "lat": 34.1101662,
+            "lng": -118.1905076
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 1152,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/116418254005302142023/photos\">Winnie S</a>"
+            ],
+            "photo_reference": "CmRaAAAARuH8y6f85-tLHea2B13JyE08J6SKSE3HIXy5iefg88hRTBHEIx6snlNqt-bnClgCP9fXNFYfIWQy5IxhheKTMeiEeMEfoXWqphvlbVk7mWlaw_yG_y2rqjg0Wc7pgN8XEhD-tPyo3GgYr_FkMccV8xkBGhSJQHkzRXS2Sq2-lHJvIzoeieI2Aw",
+            "width": 2048
+        },
+        "types": [
+            "bakery",
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.mrholmesbakehouse.com/LA"
+    },
+    "Quarters Korean BBQ": {
+        "name": "Quarters Korean BBQ",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "0200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 2:00 AM",
+                "Tuesday: 11:00 AM – 2:00 AM",
+                "Wednesday: 11:00 AM – 2:00 AM",
+                "Thursday: 11:00 AM – 2:00 AM",
+                "Friday: 11:00 AM – 2:00 AM",
+                "Saturday: 11:00 AM – 2:00 AM",
+                "Sunday: 11:00 AM – 2:00 AM"
+            ]
+        },
+        "address": "3465 W 6th St, Los Angeles, CA 90020, USA",
+        "phone": "(213) 365-8111",
+        "coords": {
+            "lat": 34.064016,
+            "lng": -118.297709
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 4160,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/116152467092866226223/photos\">Larry Hong</a>"
+            ],
+            "photo_reference": "CmRaAAAAy4mOsVgv1503kH9qaYgEOD74Vgo8_8wB4-OpRSuWap93gX6oJ55sSK0UeXxFUuklynAKqVl3hh_iDZ98D0EjhQnCnhMCwDAQ9llkSiwopRHJVeY2qUeNdlCHYkLjX7NpEhCaONRGhzTLPAVyOWjr48u9GhRo6moFfrdZMMNAVBI8Ph6M04MyKA",
+            "width": 3120
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://quarterskbbq.com/"
+    },
+    "Copenhagen Pastry": {
+        "name": "Copenhagen Pastry",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "1600"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "1700"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "1700"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "1700"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "1700"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "0700"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "1600"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "0800"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: Closed",
+                "Tuesday: 7:00 AM – 5:00 PM",
+                "Wednesday: 7:00 AM – 5:00 PM",
+                "Thursday: 7:00 AM – 5:00 PM",
+                "Friday: 7:00 AM – 5:00 PM",
+                "Saturday: 8:00 AM – 4:00 PM",
+                "Sunday: 8:00 AM – 4:00 PM"
+            ]
+        },
+        "address": "11113 Washington Blvd, Culver City, CA 90232, USA",
+        "phone": "(310) 839-8900",
+        "coords": {
+            "lat": 34.009361,
+            "lng": -118.4119778
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 2368,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/115993360590881558586/photos\">Shachar Aylon</a>"
+            ],
+            "photo_reference": "CmRaAAAAOYojdUDLDPqV5-Ve_nXl5FaOVeVI-wsBqSzWa3Gxzn404uWVeV5NXazUs68aS4tEc2O_h3zgyttP-Fm68kGVyioPQrtZApekC9Pzx0Yos7sn8DLRB_3dFvIUA58b7uWaEhBCRFQFYLOfP5gtrdJ-JOCOGhRRIkExzYsAfTVYOImzOlYHTip--Q",
+            "width": 3200
+        },
+        "types": [
+            "bakery",
+            "cafe",
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.copenhagenpastry.com/"
+    },
+    "Honeymee Los Angeles": {
+        "name": "Honeymee Los Angeles",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1200"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "0000"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1200"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 12:00 PM – 12:00 AM",
+                "Tuesday: 12:00 PM – 12:00 AM",
+                "Wednesday: 12:00 PM – 12:00 AM",
+                "Thursday: 12:00 PM – 12:00 AM",
+                "Friday: 12:00 PM – 12:00 AM",
+                "Saturday: 12:00 PM – 12:00 AM",
+                "Sunday: 12:00 PM – 12:00 AM"
+            ]
+        },
+        "address": "3377 Wilshire Blvd Suite 116, Los Angeles, CA 90010, USA",
+        "phone": "(213) 267-0020",
+        "coords": {
+            "lat": 34.0621489,
+            "lng": -118.2975983
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+        "photos": {
+            "height": 500,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/101537030438016613231/photos\">Honeymee Los Angeles</a>"
+            ],
+            "photo_reference": "CmRaAAAAzgVces6hIf1DgDpQ_zgrEI9E7q0kBcuKRVtAUNFD6TDnxhndjO8rVueH_jvE5WVCSCgGYcyL0aDEVKaQlURdjjdAmOrDeWdXVGggw9kcEPXTYoe7hEunypfK_7PxqMtkEhAqbv7qUsogSwrh5vw9pBRuGhSrubO-96YY7zTLlXbkm-8IAD6RPQ",
+            "width": 750
+        },
+        "types": [
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://www.honeymee.com/"
+    },
+    "Gus’s World Famous Fried Chicken": {
+        "name": "Gus’s World Famous Fried Chicken",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2100"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 9:00 PM",
+                "Tuesday: 11:00 AM – 9:00 PM",
+                "Wednesday: 11:00 AM – 9:00 PM",
+                "Thursday: 11:00 AM – 9:00 PM",
+                "Friday: 11:00 AM – 10:00 PM",
+                "Saturday: 11:00 AM – 10:00 PM",
+                "Sunday: 11:00 AM – 9:00 PM"
+            ]
+        },
+        "address": "1262 Crenshaw Blvd, Los Angeles, CA 90019, USA",
+        "phone": "(323) 402-0232",
+        "coords": {
+            "lat": 34.0480944,
+            "lng": -118.326348
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 3464,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/113399451921129177252/photos\">Keith Del Mar</a>"
+            ],
+            "photo_reference": "CmRaAAAAmBWihOP6Vy3Uc8o7N24MK6gSORy5MNqP85LEk8Khhz42ZVgOngj0_AnsmYJXq0rAr1JaCDu8kZe59riADsF4cOkGEr5j0k3GWLNwnNLtxG6ixWTa0UIjVdOa-_46VH-0EhAFl4OaNHtpJg7cJcKa6PavGhT0dSwgyMiJhrbVqKbjXYADkcBYIQ",
+            "width": 4618
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://gusfriedchicken.com/la-los-angeles-location/"
+    },
+    "CAVA": {
+        "name": "CAVA",
+        "hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "day": 0,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 0,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "1100"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "2200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "1100"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: 11:00 AM – 10:00 PM",
+                "Tuesday: 11:00 AM – 10:00 PM",
+                "Wednesday: 11:00 AM – 10:00 PM",
+                "Thursday: 11:00 AM – 10:00 PM",
+                "Friday: 11:00 AM – 10:00 PM",
+                "Saturday: 11:00 AM – 10:00 PM",
+                "Sunday: 11:00 AM – 10:00 PM"
+            ]
+        },
+        "address": "1073 Broxton Ave, Los Angeles, CA 90024, USA",
+        "phone": "(310) 860-6288",
+        "coords": {
+            "lat": 34.06117589999999,
+            "lng": -118.4461851
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "photos": {
+            "height": 638,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/111195245188747890510/photos\">CAVA</a>"
+            ],
+            "photo_reference": "CmRaAAAASyIWEetW1s8ZjWRNPHiiWSFu09RDklujKpTO7KQvToH9YPLy-FE6qPl3b5_rnVZQxWG3KEf22P1XFuHSC9Wr1xQ-m1bERtJ_EkaIjyr5dal5gtiV3AkzJJcU6hFnLVt6EhDRgcGtyoAbkRdHGCHsxIakGhTDWA6i_YFRSBNEvcJ4cPgFWOWduA",
+            "width": 1129
+        },
+        "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "site": "http://cava.com/"
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Foodfuckers 2017</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <!-- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> -->
+    </script>
+    <script type="text/javascript" src="./index.js">
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMcepvtIKebBiDYIk0c41oIUHFTze_9dY&libraries=places"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="headerContent">
+        <h1> Welcome to FoodFuckers 2017! </h1>
+        <h1> Day <span id="days">-45</span></h1>
+        <h2> Current Intended Location </h2>
+        <h3 id="location">Home</h3>
+          <h4> Address <span id="locationAddress"></span></h4>
+          <h4> Store hours </h4>
+        <h2> Duration of Stay: <span id="duration"></span> </h2>
+        <h3> Next location: <span id="nextLocation"></span> </h3>
+      </div>
+      <div class="schedule-list">
+        <h1>Today's Schedule:</h1>
+        <ul id="schedule">
+        </ul>
+      </div>
+    </div>
+
+
+
+      <div id="container">
+        <div style="text-align:center;">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1ApYMY1h5S5O3NZiO6Eu1Uy3TUaU" width="640" height="900"></iframe>
+        </div>
+      </div>
+
+      <div id="restaurantList">
+      </div>
+
+  </body>
+</html>
