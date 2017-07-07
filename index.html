@@ -10,20 +10,19 @@
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
     <script type="text/javascript">
+    </script>
+    <script type="text/babel">
+    console.log(React)
+    </script>
 
-    </script>
-    <script type="text/javascript" src="./index.js">
-    </script>
-    <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function() {
-      jQuery.get('restaurants.json', function(res) {
-        console.log(res)
-      })
-     })
-    </script>
   </head>
   <body>
+
+
     <div class="container">
       <div class="headerContent">
         <h1> Welcome to FoodFuckers 2017! </h1>
@@ -42,7 +41,8 @@
       </div>
     </div>
 
-
+    <div id="app">
+    </div>
 
       <div id="container">
         <div style="text-align:center;">
@@ -53,5 +53,20 @@
       <div id="restaurantList">
       </div>
 
+      <script type="text/babel">
+        var Title = React.createClass({
+          render: function() {
+            return (
+            <div className="container">
+              <h1> It is React Time. </h1>
+            </div>
+          )
+          }
+        })
+        var app = document.getElementById('app')
+        console.log(app);
+        ReactDOM.render(<Title />, app)
+
+      </script>
   </body>
 </html>
