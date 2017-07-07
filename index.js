@@ -1,39 +1,8 @@
 
-var dumplingStand = {
-  name: "Golden Pouch",
-  type: "Dumpling Stand",
-  foodType: "Snack",
-  cid: ""
-}
-
-var quarters = {
-  name: 'Quarters',
-  type: "Korean BBQ",
-  foodType: "Sit Down",
-  cid: ""
-}
-
-var flower = {
-  name: "Flower Coffee",
-  type: "Coffee",
-  foodType: "Coffee",
-  cid: ""
-}
-
-var yupTheDuck = {
-  name: 'Yup Dduk LA',
-  type: "Korean",
-  foodType: "Coffee",
-  cid: ""
-}
-
 var events ={
   day1:{
     places:[
-      dumplingStand,
-      flower,
-      quarters,
-      yupTheDuck
+
     ]
   },
   day2:{
@@ -44,10 +13,10 @@ var events ={
   }
 }
 
-
-fetch('restaurants.json').then(function(res) {
+$.get('restaurants.json', function(res) {
   console.log(res)
 })
+
 // console.log(restaurants)
 
 document.addEventListener("DOMContentLoaded", function() {
