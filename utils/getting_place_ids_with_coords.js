@@ -317,16 +317,18 @@ var names = [
     googlePlaces.placeSearch(parameters, function (error, response) {
 
       if (response.results[0]){
+        // console.log(response)
       object[response.results[0].name] = {
-        name: response.results[0].name,
-        hours: response.results[0].opening_hours,
-        address: response.results[0].formatted_address,
-        phone: response.results[0].formatted_phone_number,
-        coords: response.results[0].geometry.location,
-        icon: response.results[0].icon,
-        photos: response.results[0].photos,
-        types: response.results[0].types,
-        site: response.results[0].website
+        // name: response.results[0].name,
+        // hours: response.results[0].opening_hours,
+        // address: response.results[0].formatted_address,
+        // phone: response.results[0].formatted_phone_number,
+        // coords: response.results[0].geometry.location,
+        // icon: response.results[0].icon,
+        // photos: response.results[0].photos,
+        // types: response.results[0].types,
+        // site: response.results[0].website,
+        placeid: response.results[0].place_id
       }
       }else {
         console.log(parameters)
@@ -356,15 +358,16 @@ googlePlaces.placeSearch(parameters2, function (error, response) {
 
   if (response.results[0]){
   object[response.results[0].name] = {
-    name: response.results[0].name,
-    hours: response.results[0].opening_hours,
-    address: response.results[0].formatted_address,
-    phone: response.results[0].formatted_phone_number,
-    coords: response.results[0].geometry.location,
-    icon: response.results[0].icon,
-    photos: response.results[0].photos,
-    types: response.results[0].types,
-    site: response.results[0].website
+    // name: response.results[0].name,
+    // hours: response.results[0].opening_hours,
+    // address: response.results[0].formatted_address,
+    // phone: response.results[0].formatted_phone_number,
+    // coords: response.results[0].geometry.location,
+    // icon: response.results[0].icon,
+    // photos: response.results[0].photos,
+    // types: response.results[0].types,
+    // site: response.results[0].website,
+    place_id: response.results[0].place_id
   }
   }else {
     console.log(parameters)
@@ -379,11 +382,18 @@ googlePlaces.placeSearch(parameters2, function (error, response) {
   setTimeout(function(){
 
   var text = JSON.stringify(object, null, 4)
-
-  fs.appendFile("./restaurants.json", text , function(err) {
+  fs.writeFile('./place_id.js', "", function(err) {
+    if(err) {
+        return console.log(err);
+    }
+    console.log("The file was replaced!");
+  })
+  fs.appendFile("./place_id.js", text , function(err) {
       if(err) {
           return console.log(err);
       }
       console.log("The file was saved!");
     })
   }, 2000);
+
+console.log(googlePlaces)
