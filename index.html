@@ -73,7 +73,7 @@
         },
         componentWillMount: function() {
           var that = this
-          $.get("/restaurants.json", function(res) {
+          $.get("/FoodStuff2017/restaurants.json", function(res) {
             that.setState({restaurants: res})
           })
         },
