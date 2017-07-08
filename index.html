@@ -11,61 +11,210 @@
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.31.0/react-bootstrap.min.js"></script>
     <script type="text/javascript">
+
     </script>
-    <script type="text/babel">
-    console.log(React)
+    <script type="text/jsx" src='/index.jsx'>
     </script>
 
   </head>
   <body>
 
-
     <div class="container">
+      <div class="responsive-img centered">
+        <img class="img-responsive" style="min-height: 120px; width: 100%;" src="./foodfuckers_logo.png"></img>
+      </div>
       <div class="headerContent">
-        <h1> Welcome to FoodFuckers 2017! </h1>
-        <h1> Day <span id="days">-45</span></h1>
+        <!--
         <h2> Current Intended Location </h2>
         <h3 id="location">Home</h3>
           <h4> Address <span id="locationAddress"></span></h4>
           <h4> Store hours </h4>
         <h2> Duration of Stay: <span id="duration"></span> </h2>
-        <h3> Next location: <span id="nextLocation"></span> </h3>
+        <h3> Next location: <span id="nextLocation"></span> </h3> -->
       </div>
-      <div class="schedule-list">
+      <!-- <div class="schedule-list">
         <h1>Today's Schedule:</h1>
         <ul id="schedule">
         </ul>
-      </div>
+      </div> -->
     </div>
 
     <div id="app">
     </div>
 
-      <div id="container">
-        <div style="text-align:center;">
-          <iframe src="https://www.google.com/maps/d/embed?mid=1ApYMY1h5S5O3NZiO6Eu1Uy3TUaU" width="640" height="900"></iframe>
-        </div>
-      </div>
+
 
       <div id="restaurantList">
       </div>
+      <script type="text/javascript">
 
+      </script>
       <script type="text/babel">
-        var Title = React.createClass({
-          render: function() {
-            return (
-            <div className="container">
-              <h1> It is React Time. </h1>
+      //TODO:
+        // Build overview that shows all restaurants
+        // Build invidiual info pages
+        // Connect these two somehow
+        // Split up overview pages into carousel slides
+        // Add Time Control
+        // Figure out how to show other days
+
+      //Whole Page
+
+      var {Accordion,
+        Panel} = ReactBootstrap
+
+      var App = React.createClass({
+        getInitialState: function() {
+          return {}
+        },
+        componentWillMount: function() {
+          var that = this
+          $.get("/restaurants.json", function(res) {
+            that.setState({restaurants: res})
+          })
+        },
+        render: function() {
+          return (
+            <div>
+            <DayCounter/>
+            <Overview restaurants={this.state.restaurants}/>
+            <br/>
+            <br/>
+            <div id="container">
+              <div className="map">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1ApYMY1h5S5O3NZiO6Eu1Uy3TUaU" width="640" height="900"></iframe>
+              </div>
+            </div>
             </div>
           )
+        }
+      })
+
+      var Overview = React.createClass({
+        createOverview: function() {
+          console.log(this.props.restaurants)
+
+          if (typeof this.props.restaurants != 'undefined'){
+          var content = []
+          var restaurants = this.props.restaurants
+          var keys = Object.keys(restaurants)
+
+          for (var i = 0; i < keys.length; i++) {
+            var current = restaurants[keys[i]]
+            if (current.hours) {
+              if (current.hours.weekday_text) {
+                var weekday_texts = [
+                  <h5 key={"weekday_text"+[i]+"1"}>{current.hours.weekday_text[0]}</h5>,
+                  <h5 key={"weekday_text"+[i]+"2"}>{current.hours.weekday_text[1]}</h5>,
+                  <h5 key={"weekday_text"+[i]+"3"}>{current.hours.weekday_text[2]}</h5>,
+                  <h5 key={"weekday_text"+[i]+"4"}>{current.hours.weekday_text[3]}</h5>,
+                  <h5 key={"weekday_text"+[i]+"5"}>{current.hours.weekday_text[4]}</h5>,
+                  <h5 key={"weekday_text"+[i]+"6"}>{current.hours.weekday_text[5]}</h5>,
+                  <h5 key={"weekday_text"+[i]+"7"}>{current.hours.weekday_text[6]}</h5>,
+                ]
+              } else {
+                var weekday_texts = [
+                  <h5 key="nope"> No hours! </h5>
+                ]
+              }
+            }
+            var directionsLink = "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(current.address)
+
+            content = content.concat([
+              <Panel header={current.name} key={i} eventKey={i} bsStyle={{"border":'none', "background-color":'none', 'box-shadow':'none' }}>
+              <div>
+                <a href={directionsLink}><h5>{current.address}</h5></a>
+                {weekday_texts}
+                <br/>
+              </div>
+              </Panel>])
           }
-        })
+
+          return (
+            <Accordion>
+              {content}
+            </Accordion>
+          )
+        } else {
+          return(
+            <div style={{'textAlign':'center'}}>
+              <br/>
+              Loading...
+            </div>
+          )
+        }
+
+        },
+        render: function() {
+          var contentList = this.createOverview();
+            console.log(contentList);
+          return(
+            <div className="container overview">
+              <h3>List of Places</h3>
+              {contentList}
+            </div>
+          )
+        }
+      })
+
+      var DayCounter = React.createClass({
+        getInitialState: function() {
+          return {currentTime: new Date()}
+        },
+        componentDidMount: function() {
+          var that = this
+          setInterval(function() {
+            var time = new Date()
+            that.setState({currentTime: time})
+          }, 1000)
+        }
+        ,
+        getDays: function() {
+          var deadline = new Date(2016, 6, 21, 0, 0, 0)
+          var lastDay = new Date(2016, 6, 24, 0, 0, 0)
+          var currentDay = new Date()
+          var message = []
+          if (currentDay.getDate() < deadline.getDate()) {
+              var daysLeft = deadline.getDate() - currentDay.getDate()
+              return(
+                  <h3> Only <b>{daysLeft}</b> days left!</h3>
+                )
+          } else if (currentDay.getDate() > lastDay.getDate()) {
+              return(
+                  <h3> Done! Go <b>Home</b>! </h3>
+                  )
+          } else {
+              var day =  currentDay.getDate() - deadline.getDate() + 1
+              return(
+                  <h3> Day <b>{day}</b></h3>
+                  )
+          }
+        },
+        render: function() {
+          var timeContent = this.getDays()
+          var currentTime = this.state.currentTime
+          var hour = currentTime.getHours()
+          var minutes = currentTime.getMinutes()
+          var seconds = currentTime.getSeconds()
+          var displayHour = hour%12
+          var displayMinutes = ("0" + minutes).slice(-2)
+          var displaySeconds = ("0" + seconds).slice(-2)
+          var ampm = (hour >= 12) ? "PM" : "AM"
+          // <h3>{displayHour} : {displayMinutes} : {displaySeconds} {ampm}</h3>
+          return (
+            <div>
+              {timeContent}
+
+            </div>
+          )
+        }
+      })
         var app = document.getElementById('app')
-        console.log(app);
-        ReactDOM.render(<Title />, app)
+        ReactDOM.render(<App />, app)
 
       </script>
   </body>

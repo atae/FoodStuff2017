@@ -5,3 +5,25 @@ h1, h2, h3, h4, h5, p {
 .container .headerContent h1, h2, h3, h4, h5, p{
   text-align:center;
 }
+
+.map {
+  text-align:center;
+}
+
+.overview-list {
+  margin-top:20px;
+  padding: 0;
+  list-style:none;
+
+}
+
+
+.panel {
+  box-shadow:none;
+  -webkit-box-shadow:none;
+  border:none;
+}
+
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+  border-top: none;
+}
