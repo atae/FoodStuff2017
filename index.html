@@ -84,12 +84,13 @@
             <Overview restaurants={this.state.restaurants}/>
             <br/>
             <br/>
-            // <div id="container">
-            //   <div className="map-responsive">
-            //     <iframe src="https://www.google.com/maps/d/embed?mid=1ApYMY1h5S5O3NZiO6Eu1Uy3TUaU" width="600" height="450" frameBorder="0" style={{"border": "0"}} allowFullScreen></iframe>
-            //   </div>
-            // </div>
+            <div id="container">
+              <div className="map-responsive">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1ApYMY1h5S5O3NZiO6Eu1Uy3TUaU" width="600" height="450" frameBorder="0" style={{"border": "0"}} allowFullScreen></iframe>
+              </div>
             </div>
+            </div>
+            <Footer/>
           )
         }
       })
@@ -156,6 +157,17 @@
             <div className="container overview">
               <h3>List of Places</h3>
               {contentList}
+            </div>
+          )
+        }
+      })
+
+      var Footer = React.createClass({
+        render: function() {
+          return (
+            <div className="container">
+              <h5>Created by Andrew Tae</h5>
+              <h5> <a href="http://www.github.com/atae">Github</a> | <a href="https://www.linkedin.com/in/andrew-tae/">LinkedIn</a> | <a href="mailto:andrewtae368@gmail.com">Email</a> </h5>
             </div>
           )
         }
