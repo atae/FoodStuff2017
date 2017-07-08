@@ -13,8 +13,6 @@ var events ={
   }
 }
 
-$.get('restaurants.json', function(res) {
-})
 
 // console.log(restaurants)
 
