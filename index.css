@@ -1,7 +1,14 @@
 h1, h2, h3, h4, h5, p {
-  font-family: "polaris-book";
+  font-family: "europa";
 }
 
+body {
+  background-image:url("/background.png")
+}
+
+.panel-group .panel{
+  background-color: transparent;
+}
 .container .headerContent h1, h2, h3, h4, h5, p{
   text-align:center;
 }
