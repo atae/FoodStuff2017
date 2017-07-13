@@ -17,7 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.31.0/react-bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-slick/0.14.11/react-slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-slick/0.14.10/react-slick.min.js"></script>
     <script src="https://use.typekit.net/kme7pgt.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script type="text/javascript">
@@ -82,13 +82,17 @@
           $.get("/FoodStuff2017/restaurants.json", function(res) {
             that.setState({restaurants: res})
           })
+          $.get("/FoodStuff2017/schedule.json", function(res) {
+            that.setState({schedule: res})
+          })
+
         },
+        // <Overview restaurants={this.state.restaurants}/>
         render: function() {
           return (
             <div>
             <DayCounter/>
-            <CurrentItinerary />
-            <Overview restaurants={this.state.restaurants}/>
+            <CurrentItinerary restaurants={this.state.restaurants} schedule={this.state.schedule}/>
             <br/>
             <br/>
             <div id="container">
@@ -104,7 +108,6 @@
 
       var Overview = React.createClass({
         createOverview: function() {
-          console.log(this.props.restaurants)
 
           if (typeof this.props.restaurants != 'undefined'){
           var content = []
@@ -234,21 +237,58 @@
       })
 
       var CurrentItinerary = React.createClass({
+        createHours: function() {
+          var content = []
+          if(this.props.schedule) {
+          var keys = Object.keys(this.props.schedule)
+          for (var i = 0; i < keys.length; i++) {
+            var currentDay = this.props.schedule[keys[i]]
+            var dates = Object.keys(currentDay)
+
+            for (var j = 0; j < dates.length; j++) {
+              if (dates[j] != "Time") {
+              content = content.concat([<div key={dates[j] + i }>
+                <ItineraryContent  hour = {dates[j]} hourContent={currentDay[dates[j]]} day={currentDay[dates[0]]}/>
+              </div>])
+            }
+            }
+          }
+        }
+          return content
+        },
         render: function() {
           var settings = {
-            dots: true,
             infinite: true,
-            speed: 500,
-            slidesToShow: 1,
+            speed: 100,
+            slidesToShow: 3,
             slidesToScroll: 1
           };
-
+          var content = this.createHours()
+          //Add some dots to jump to dates
+          //Also add whole day somewhere
           return(
             <div className="container">
-              <Slider>
-                <div><h2> Test1 </h2></div>
-                <div><h2> Test2 </h2></div>
-              </Slider>
+            {content.length > 0 ? <Slider {...settings}>{content}</Slider>: <div></div>}
+            </div>
+          )
+        }
+      })
+
+      var ItineraryContent = React.createClass({
+        getInitialState: function() {
+          return {}
+        },
+        render: function() {
+          return(
+            <div>
+              <h2> {this.props.day} </h2>
+              <h3> {this.props.hour} </h3>
+              <h4> {this.props.hourContent[0]}</h4>
+
+              <h4> {this.props.hourContent[1]}</h4>
+
+              <h4> {this.props.hourContent[2]}</h4>
+
             </div>
           )
         }
