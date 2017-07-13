@@ -48,3 +48,13 @@ body {
     width:100%;
     position:absolute;
 }
+
+ .slick-prev:before, .slick-next:before {
+  color:black;
+}
+
+div .carousel-box {
+  background-color: rgba(255, 255, 255, .5);
+  border: 2px #3498db solid;
+  margin: 0px 5px;
+}
