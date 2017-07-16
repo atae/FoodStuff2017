@@ -107,6 +107,50 @@
       //   <iframe src="https://www.google.com/maps/d/embed?mid=1ApYMY1h5S5O3NZiO6Eu1Uy3TUaU" width="600" height="450" frameBorder="0" style={{"border": "0"}} allowFullScreen></iframe>
       // </div>
 
+      var OverviewItem = React.createClass({
+        createOverviewItem: function(current) {
+          console.log(current);
+        if (current.hours) {
+          if (current.hours.weekday_text) {
+            var i = this.props.index
+            var weekday_texts = [
+              <h5 key={"weekday_text"+[i]+"1"}>{current.hours.weekday_text[0]}</h5>,
+              <h5 key={"weekday_text"+[i]+"2"}>{current.hours.weekday_text[1]}</h5>,
+              <h5 key={"weekday_text"+[i]+"3"}>{current.hours.weekday_text[2]}</h5>,
+              <h5 key={"weekday_text"+[i]+"4"}>{current.hours.weekday_text[3]}</h5>,
+              <h5 key={"weekday_text"+[i]+"5"}>{current.hours.weekday_text[4]}</h5>,
+              <h5 key={"weekday_text"+[i]+"6"}>{current.hours.weekday_text[5]}</h5>,
+              <h5 key={"weekday_text"+[i]+"7"}>{current.hours.weekday_text[6]}</h5>,
+            ]
+          } else {
+            var weekday_texts = [
+              <h5 key="nope"> No hours! </h5>
+            ]
+          }
+        }
+        var directionsLink = "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(current.address)
+
+        return {weekday_texts:weekday_texts, directionsLink:directionsLink}
+      },
+        render: function() {
+          var current = this.props.current
+          var content = this.createOverviewItem(current)
+          var i = this.props.index
+
+          return(
+            <Accordion>
+              <Panel header={current.name} key={i} eventKey={i} bsStyle={{"border":'none', "background-color":'none', 'box-shadow':'none' }}>
+              <div>
+                <a href={content.directionsLink}><h5>{current.address}</h5></a>
+                {content.weekday_texts}
+                <br/>
+              </div>
+              </Panel>
+          </Accordion>
+          )
+        }
+
+      })
       var Overview = React.createClass({
         createOverview: function() {
 
@@ -115,36 +159,6 @@
           var restaurants = this.props.restaurants
           var keys = Object.keys(restaurants)
 
-          for (var i = 0; i < keys.length; i++) {
-            var current = restaurants[keys[i]]
-            if (current.hours) {
-              if (current.hours.weekday_text) {
-                var weekday_texts = [
-                  <h5 key={"weekday_text"+[i]+"1"}>{current.hours.weekday_text[0]}</h5>,
-                  <h5 key={"weekday_text"+[i]+"2"}>{current.hours.weekday_text[1]}</h5>,
-                  <h5 key={"weekday_text"+[i]+"3"}>{current.hours.weekday_text[2]}</h5>,
-                  <h5 key={"weekday_text"+[i]+"4"}>{current.hours.weekday_text[3]}</h5>,
-                  <h5 key={"weekday_text"+[i]+"5"}>{current.hours.weekday_text[4]}</h5>,
-                  <h5 key={"weekday_text"+[i]+"6"}>{current.hours.weekday_text[5]}</h5>,
-                  <h5 key={"weekday_text"+[i]+"7"}>{current.hours.weekday_text[6]}</h5>,
-                ]
-              } else {
-                var weekday_texts = [
-                  <h5 key="nope"> No hours! </h5>
-                ]
-              }
-            }
-            var directionsLink = "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(current.address)
-
-            content = content.concat([
-              <Panel header={current.name} key={i} eventKey={i} bsStyle={{"border":'none', "background-color":'none', 'box-shadow':'none' }}>
-              <div>
-                <a href={directionsLink}><h5>{current.address}</h5></a>
-                {weekday_texts}
-                <br/>
-              </div>
-              </Panel>])
-          }
 
           return (
             <Accordion>
@@ -163,10 +177,8 @@
         },
         render: function() {
           var contentList = this.createOverview();
-            console.log(contentList);
           return(
             <div className="container overview">
-              <h3>List of Places</h3>
               {contentList}
             </div>
           )
@@ -224,6 +236,7 @@
           var minutes = currentTime.getMinutes()
           var seconds = currentTime.getSeconds()
           var displayHour = hour%12
+          displayHour = (displayHour == 0) ? 12 : displayHour
           var displayMinutes = ("0" + minutes).slice(-2)
           var displaySeconds = ("0" + seconds).slice(-2)
           var ampm = (hour >= 12) ? "PM" : "AM"
@@ -243,14 +256,14 @@
           var content = []
           if(this.props.schedule) {
           var keys = Object.keys(this.props.schedule)
-          for (var i = 0; i < keys.length; i++) {
+          for (var i = 0; i < keys.length - 1; i++) {
             var currentDay = this.props.schedule[keys[i]]
             var dates = Object.keys(currentDay)
 
             for (var j = 0; j < dates.length; j++) {
               if (dates[j] != "Time") {
               content = content.concat([<div key={dates[j] + i }>
-                <ItineraryContent  hour = {dates[j]} hourContent={currentDay[dates[j]]} day={currentDay[dates[0]]}/>
+                <ItineraryContent restaurants = {this.props.restaurants} required={this.props.schedule['Required Places']} hour = {dates[j]} hourContent={currentDay[dates[j]]} day={currentDay[dates[0]]}/>
               </div>])
             }
             }
@@ -290,16 +303,42 @@
         getInitialState: function() {
           return {}
         },
+        createItineraryContent: function() {
+          var restaurantsObject = {}
+          var content = []
+          if (typeof this.props.restaurants != "undefined") {
+            var keys = Object.keys(this.props.restaurants)
+            for (var i = 0; i < this.props.hourContent.length; i++) {
+              console.log(this.props.hourContent[i]);
+              console.log(keys.includes(this.props.hourContent[i]));
+              if (keys.includes(this.props.hourContent[i])){
+                restaurantsObject = this.props.restaurants[this.props.hourContent[i]]
+                console.log(restaurantsObject);
+                content = content.concat(<OverviewItem index={i} current={restaurantsObject} />)
+              } else {
+                content = content.concat(<h4> {this.props.hourContent[i]} </h4>)
+              }
+            }
+          }
+
+            for (var i = 0; i < this.props.hourContent.length; i++) {
+              //
+              // if (this.props.required.includes(this.props.hourContent[i])) {
+              //   // content = content.concat(<h4>{"*" + this.props.hourContent[i]}</h4>)
+              // } else {
+              //   content = content.concat(<h4>{this.props.hourContent[i]}</h4>)
+              // }
+            }
+            console.log(content);
+          return content
+        },
         render: function() {
+          var hourContents = this.createItineraryContent()
           return(
             <div className="carousel-box">
               <h2> {this.props.day} </h2>
               <h3> {this.props.hour} </h3>
-              <h4> {this.props.hourContent[0]}</h4>
-
-              <h4> {this.props.hourContent[1]}</h4>
-
-              <h4> {this.props.hourContent[2]}</h4>
+              {hourContents}
 
             </div>
           )

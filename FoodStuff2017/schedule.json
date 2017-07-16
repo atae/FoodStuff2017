@@ -35,13 +35,13 @@
         ],
         "12:00 PM": [
             "ROAD TRIP CREW ARRIVAL",
-            "*Shake Shack",
-            "Porto's Bakery"
+            "Shake Shack",
+            "Porto's Bakery & Cafe"
         ],
         "1:00 PM": [
-            "*Bia Coffee",
+            "Bia Coffee",
             "Golden Pouch",
-            "*Honeymee"
+            "Honeymee Los Angeles"
         ],
         "2:00 PM": [
             "Drips and Swirls",
@@ -55,12 +55,12 @@
         ],
         "4:00 PM": [
             "Sumo Dog",
-            "School Food",
+            "스쿨푸드 School Food Enterprises",
             "-"
         ],
         "5:00 PM": [
-            "Quarters KBBQ",
-            "Yup Dduk LA",
+            "Quarters Korean BBQ",
+            "YUP DDUK LA",
             "Mr. Pizza"
         ],
         "6:00 PM": [
@@ -69,7 +69,7 @@
             "-"
         ],
         "7:00 PM": [
-            "Choice Music LA",
+            "Choice Music",
             "-",
             "-"
         ],
@@ -79,7 +79,7 @@
             "-"
         ],
         "9:00 PM": [
-            "*SOMI SOMI",
+            "SOMI SOMI",
             "Sul & Beans",
             "-"
         ],
@@ -94,17 +94,7 @@
             "-"
         ],
         "12:00 AM": [
-            "Quarters KBBQ (if necessary)",
-            "-",
-            "-"
-        ],
-        "1:00 AM": [
-            "-",
-            "-",
-            "-"
-        ],
-        "2:00 AM": [
-            "-",
+            "Quarters Korean BBQ (if necessary)",
             "-",
             "-"
         ]
@@ -139,7 +129,7 @@
             "-"
         ],
         "11:00 AM": [
-            "*Baker's Drive-Thru",
+            "Baker's Drive-Thru",
             "The Hat",
             "Senor Baja"
         ],
@@ -150,7 +140,7 @@
         ],
         "1:00 PM": [
             "PHM Round 1",
-            "Tancca",
+            "TANCCA",
             "Class 302"
         ],
         "2:00 PM": [
@@ -164,7 +154,7 @@
             "-"
         ],
         "4:00 PM": [
-            "*626 Night Market",
+            "626 Night Market",
             "-",
             "-"
         ],
@@ -207,16 +197,6 @@
             "-",
             "-",
             "-"
-        ],
-        "1:00 AM": [
-            "-",
-            "-",
-            "-"
-        ],
-        "2:00 AM": [
-            "-",
-            "-",
-            "-"
         ]
     },
     "Sun 7/23": {
@@ -244,17 +224,17 @@
             "-"
         ],
         "10:00 AM": [
-            "*Egg Slut",
+            "Egg Slut",
             "Grand Central Market",
             "-"
         ],
         "11:00 AM": [
-            "*Bottega Louie",
+            "Bottega Louie",
             "-",
             "-"
         ],
         "12:00 PM": [
-            "Sugarfish",
+            "Sugarfish By Sushi Nozawa",
             "Uncle John's Cafe",
             "Fatburger"
         ],
@@ -294,7 +274,7 @@
             "-"
         ],
         "8:00 PM": [
-            "Ave 26 Tacos",
+            "Avenue 26 Tacos",
             "-",
             "-"
         ],
@@ -317,17 +297,17 @@
             "-",
             "-",
             "-"
-        ],
-        "1:00 AM": [
-            "-",
-            "-",
-            "-"
-        ],
-        "2:00 AM": [
-            "-",
-            "-",
-            "-"
         ]
     },
-    "Mon 7/24": {}
+    "Mon 7/24": {},
+    "Required Places": [
+        "Shake Shack",
+        "Bia Coffee",
+        "Honeymee Los Angeles",
+        "SOMI SOMI",
+        "Baker's Drive-Thru",
+        "626 Night Market",
+        "Egg Slut",
+        "Bottega Louie"
+    ]
 }
