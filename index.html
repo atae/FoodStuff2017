@@ -99,21 +99,37 @@
         render: function() {
           return (
             <div>
+            <NavBar />
             <DayCounter/>
             <CurrentItinerary restaurants={this.state.restaurants} schedule={this.state.schedule}/>
             <br/>
             <br/>
-            <div id="container " style={{"textAlign":"center"}}>
-              <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/#foodfuckers2017" style={{"border":"0", "width":"90%", "height":"500px", "margin":" 0 auto"}}></iframe>
+            <div className="container" id="chat" style={{"textAlign":"center", "marginBottom":"30px"}}>
+              <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/#foodfuckers2017" style={{"border":"0", "width":"80%", "height":"500px"}}></iframe>
+            </div>
+            <div className="container" id="map" style={{"textAlign":"center", "marginBottom":"30px"}}>
+              <div className="map-responsive to-da-floor">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1ApYMY1h5S5O3NZiO6Eu1Uy3TUaU" width="80%" height="700" frameBorder="0" style={{"border": "0"}} allowFullScreen></iframe>
+              </div>
+              < br/>
+              < br/>
             </div>
             <Footer/>
             </div>
           )
         }
       })
-      // <div className="map-responsive to-da-floor">
-      //   <iframe src="https://www.google.com/maps/d/embed?mid=1ApYMY1h5S5O3NZiO6Eu1Uy3TUaU" width="600" height="450" frameBorder="0" style={{"border": "0"}} allowFullScreen></iframe>
-      // </div>
+
+      var NavBar = React.createClass({
+        render: function() {
+          return(
+            <div>
+              <a href="#chat">Chat</a>
+              <a href="#map">Map</a>
+            </div>
+          )
+        }
+      })
 
       var OverviewItem = React.createClass({
         createOverviewItem: function(current) {
