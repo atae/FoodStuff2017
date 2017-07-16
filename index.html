@@ -325,9 +325,9 @@
           if(this.props.schedule) {
           for (var i = 0; i < days.length; i++) {
             if (i==0){
-              content = content.concat(<h4><span id={daysToSlide[days[i]]} onClick={this.handleClick}>Fri </span></h4>)
+              content = content.concat(<h4><span className="schedule-nav-button" id={daysToSlide[days[i]]} onClick={this.handleClick}>Fri </span></h4>)
             } else {
-              content = content.concat(<h4> <span> · </span> <span id={daysToSlide[days[i]]} onClick={this.handleClick}>{days[i]}</span></h4>)
+              content = content.concat(<h4> <span> · </span> <span id={daysToSlide[days[i]]} className="schedule-nav-button" onClick={this.handleClick}>{days[i]}</span></h4>)
             }
           }
           }

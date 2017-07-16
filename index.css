@@ -87,6 +87,11 @@ div .carousel-box {
   justify-content: center;
 }
 
+.schedule-nav-button{
+  color: #337ab7;
+  cursor: pointer;
+}
+
 .schedule-nav span {
   margin: 0px 15px;
 }
