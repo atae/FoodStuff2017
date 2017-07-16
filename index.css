@@ -106,7 +106,7 @@ div .carousel-box {
   justify-content: space-around;
 }
 
-.NavBar > a {
+.NavBar > h4 > a {
   font-family:"rift-soft"
 
 }
