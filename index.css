@@ -35,6 +35,9 @@ body {
   border-top: none;
 }
 
+.panel-heading {
+  padding: 0px;
+}
 .map-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -63,4 +66,12 @@ div .carousel-box {
     /*position: fixed;*/
     bottom: 0;
     z-index: 9999
+}
+
+.slick-prev:before{
+  margin-left: -20px
+}
+
+.slick-next:before{
+  margin:20px;
 }

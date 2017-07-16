@@ -25,6 +25,7 @@
     </script>
     <script type="text/jsx" src='/index.jsx'>
     </script>
+    <meta name = "viewport" id = "viewport_device">
 
   </head>
   <body>
@@ -57,7 +58,13 @@
       <div id="restaurantList">
       </div>
       <script type="text/javascript">
-
+      if(navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/IEMobile/i)){
+            $("#viewport_device").attr("content", "initial-scale = 0.50");
+        }
+        else if(navigator.userAgent.match(/iPad/i)){
+            $("#viewport_device").attr("content", "initial-scale = 1.00");
+        }
       </script>
       <script type="text/babel">
       //TODO:
@@ -96,11 +103,12 @@
             <CurrentItinerary restaurants={this.state.restaurants} schedule={this.state.schedule}/>
             <br/>
             <br/>
-            <div id="container ">
+            <div id="container " style={{"textAlign":"center"}}>
+              <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/#foodfuckers2017" style={{"border":"0", "width":"90%", "height":"500px", "margin":" 0 auto"}}></iframe>
             </div>
+            <Footer/>
             </div>
           )
-          // <Footer/>
         }
       })
       // <div className="map-responsive to-da-floor">
@@ -251,46 +259,93 @@
         }
       })
 
+      var cache = []
+
       var CurrentItinerary = React.createClass({
+        getInitialState: function() {
+          return {
+            intialSlide: this.getSlide(),
+          }
+        },
+        getSlide: function() {
+          return 0;
+        },
         createHours: function() {
           var content = []
-          if(this.props.schedule) {
-          var keys = Object.keys(this.props.schedule)
-          for (var i = 0; i < keys.length - 1; i++) {
-            var currentDay = this.props.schedule[keys[i]]
-            var dates = Object.keys(currentDay)
+          if (this.props.schedule) {
+            // if (content.length == 0) {
+              console.log("Cache length is " + cache.length);
+              console.log(content)
+              console.log(this.props.schedule);
+            var keys = Object.keys(this.props.schedule)
+            for (var i = 0; i < keys.length - 1; i++) {
+              var currentDay = this.props.schedule[keys[i]]
+              var dates = Object.keys(currentDay)
 
-            for (var j = 0; j < dates.length; j++) {
-              if (dates[j] != "Time") {
-              content = content.concat([<div key={dates[j] + i }>
-                <ItineraryContent restaurants = {this.props.restaurants} required={this.props.schedule['Required Places']} hour = {dates[j]} hourContent={currentDay[dates[j]]} day={currentDay[dates[0]]}/>
-              </div>])
+              for (var j = 0; j < dates.length; j++) {
+                if (dates[j] != "Time") {
+                content = content.concat([<div key={dates[j] + i }>
+                  <ItineraryContent restaurants = {this.props.restaurants} required={this.props.schedule['Required Places']} hour = {dates[j]} hourContent={currentDay[dates[j]]} day={currentDay[dates[0]]}/>
+                </div>])
+              // }
+              }
             }
-            }
+            // cache = content
           }
         }
+          return content
+        },
+        handleClick: function(e) {
+          this.setState({initialSlide: e.target.id})
+        },
+        createNavButtons: function() {
+          var daysToSlide = {
+            "Fri" : 0,
+            "Sat" : 19,
+            "Sun" : 38,
+            "Mon" : 57
+          }
+
+          var content = []
+          var days = ["Fri", "Sat", "Sun", "Mon"]
+
+          if(this.props.schedule) {
+          for (var i = 0; i < days.length; i++) {
+            if (i==0){
+              content = content.concat(<span id={daysToSlide[days[i]]} onClick={this.handleClick}>Fri </span>)
+            } else {
+              content = content.concat(<span id={daysToSlide[days[i]]} onClick={this.handleClick}>{"·" + days[i]}</span>)
+            }
+          }
+          }
           return content
         },
         render: function() {
           var settings = {
             infinite: true,
             speed: 100,
-            slidesToShow: 3,
+            slidesToShow: 1,
             slidesToScroll: 1,
             accessibility: true,
             centerMode: true,
             swipeToSlide: true,
+            slickGoTo: this.state.initialSlide
           };
 
           var content = this.createHours()
+          var navButtons = this.createNavButtons()
           //Add some dots to jump to dates (intialSlide = 21 for saturday) (slickGoTo(21),
           // see example https://github.com/akiran/react-slick/blob/master/examples/SlickGoTo.js)
           //Also add whole day schedule somewhere
-          // Need Exact keys
+          // Need Exact keys : DONE
           return(
-            <div className="container">
-            {content.length > 0 ? <Slider {...settings}>{content}</Slider>: <div></div>}
+            <div className="container" style={{"width":"80%"}}>
+                {content.length > 0 ? <Slider ref="slider" {...settings}>{content}</Slider>: <div></div>}
             <br/>
+            <div className="schedule-nav">
+              {navButtons}
+              </div>
+            <p> Tap on the Place Name for details </p>
             <p> The * means we goin fo sho </p>
             </div>
           )
