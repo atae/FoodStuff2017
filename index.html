@@ -297,7 +297,45 @@
         }
       })
 
-
+// {"ROAD TRIP CREW ARRIVAL": {
+//   "name":"",
+//   "hours": {
+//     "weekday_text": []
+//   },
+//   "address": "",
+//   "phone": "",
+//   "site": ""
+// },
+// "ROAD TRIP CREW TO LA" : {
+//
+// },
+// "FLIGHT CREW ARRIVAL" : {
+//
+// },
+// "Hotel Check-in" : {
+//
+// },
+// "Meet up at Hotel" : {
+//
+// },
+// "DRIVE TO ONTARIO (50min)": {
+//
+// },
+// "DRIVE TO PHM (25-30min)": {
+//
+// },
+// "PHM Round 1": {
+//
+// },
+// "LEAVE TO 626 NM (25-30min)": {
+//
+// },
+// "purikura" : {
+//
+// },
+// "Venice Beach" : {
+//
+// }
 
       var ItineraryContent = React.createClass({
         getInitialState: function() {
@@ -309,13 +347,11 @@
           if (typeof this.props.restaurants != "undefined") {
             var keys = Object.keys(this.props.restaurants)
             for (var i = 0; i < this.props.hourContent.length; i++) {
-              console.log(this.props.hourContent[i]);
-              console.log(keys.includes(this.props.hourContent[i]));
               if (keys.includes(this.props.hourContent[i])){
                 restaurantsObject = this.props.restaurants[this.props.hourContent[i]]
-                console.log(restaurantsObject);
                 content = content.concat(<OverviewItem index={i} current={restaurantsObject} />)
               } else {
+                console.log(this.props.hourContent[i]);
                 content = content.concat(<h4> {this.props.hourContent[i]} </h4>)
               }
             }
@@ -329,7 +365,6 @@
               //   content = content.concat(<h4>{this.props.hourContent[i]}</h4>)
               // }
             }
-            console.log(content);
           return content
         },
         render: function() {

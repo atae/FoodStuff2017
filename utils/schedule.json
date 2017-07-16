@@ -94,7 +94,7 @@
             "-"
         ],
         "12:00 AM": [
-            "Quarters Korean BBQ (if necessary)",
+            "Quarters Korean BBQ",
             "-",
             "-"
         ]
@@ -299,7 +299,26 @@
             "-"
         ]
     },
-    "Mon 7/24": {},
+    "Mon 7/24": {
+      "Time": [
+          "Mon 7/24"
+      ],
+      "9:00 AM": [
+        "breakfast somewhere",
+        "-",
+        "-"
+      ],
+      "12:00 PM": [
+        "Hotel Check-out",
+        "-",
+        "-"
+      ],
+      "1:00 PM": [
+        "GO HOME",
+        "GO HOME",
+        "GO HOME"
+      ]
+    },
     "Required Places": [
         "Shake Shack",
         "Bia Coffee",
