@@ -94,12 +94,19 @@ div .carousel-box {
 .schedule-nav-button{
   color: #337ab7;
   cursor: pointer;
+  font-family:"rift-soft"
 }
 
 .schedule-nav span {
   margin: 0px 15px;
+
 }
 .NavBar{
   display:flex;
   justify-content: space-around;
+}
+
+.NavBar > a {
+  font-family:"rift-soft"
+
 }
