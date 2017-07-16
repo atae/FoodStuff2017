@@ -219,9 +219,11 @@
         }
       })
 
+      var currentTime = new Date()
+
       var DayCounter = React.createClass({
         getInitialState: function() {
-          return {currentTime: new Date()}
+          return {currentTime: currentTime}
         },
         componentDidMount: function() {
           var that = this
@@ -279,11 +281,27 @@
       var CurrentItinerary = React.createClass({
         getInitialState: function() {
           return {
-            intialSlide: this.getSlide(),
+            initialSlide: this.getSlide(),
           }
         },
         getSlide: function() {
-          return 0;
+          //Day will be the starting value (0)
+          //Will add value depending on time of day (+whatever)
+          var daysToSlide = {
+            21 : 0,
+            22 : 19,
+            23 : 38,
+            24 : 57
+          }
+
+
+          var day = currentTime.getDate()
+          var hour = currentTime.getHours()
+
+          var slide = (Object.keys(daysToSlide).includes(day))? daysToSlide[day] + (hour - 6) : 0
+
+
+          return slide + ""
         },
         createHours: function() {
           var content = []
@@ -341,10 +359,10 @@
             accessibility: true,
             centerMode: true,
             swipeToSlide: true,
+            initialSlide: this.state.initialSlide,
             slickGoTo: this.state.initialSlide,
             responsive: [{breakpoint: 1024, settings: {slidesToShow: 1}}]
           };
-
           var content = this.createHours()
           var navButtons = this.createNavButtons()
           //Add some dots to jump to dates (intialSlide = 21 for saturday) (slickGoTo(21),
@@ -421,7 +439,7 @@
               } else {
                 content = content.concat(
                   <Accordion>
-                    <Panel header={this.props.hourContent[i]} key={"blank" + this.props.hourContent[i] + i + i} eventKey={"blank" + this.props.hourContent[i] + i} bsStyle={{"border":'none', "background-color":'none', 'box-shadow':'none' }}>
+                    <Panel header={this.props.hourContent[i]} key={"blank" + this.props.hourContent[i] + i} eventKey={"blank" + this.props.hourContent[i] + i} bsStyle={{"border":'none', "background-color":'none', 'box-shadow':'none' }}>
                       <div style={{"textAlign":"center"}}>
                         Nothing here!
                       </div>
