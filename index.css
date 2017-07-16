@@ -94,7 +94,9 @@ div .carousel-box {
 .schedule-nav-button{
   color: #337ab7;
   cursor: pointer;
-  font-family:"rift-soft"
+  font-family:"rift-soft";
+  font-style: italic;
+  font-size: 20px;
 }
 
 .schedule-nav span {
@@ -107,6 +109,7 @@ div .carousel-box {
 }
 
 .NavBar > h4 > a {
-  font-family:"rift-soft"
-
+  font-family:"rift-soft";
+  font-style: italic;
+  font-size: 20px;
 }
