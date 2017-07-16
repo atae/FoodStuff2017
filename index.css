@@ -24,6 +24,10 @@ body {
 
 }
 
+.panel-title>a:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .panel {
   box-shadow:none;

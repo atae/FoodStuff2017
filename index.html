@@ -69,11 +69,11 @@
       <script type="text/babel">
       //TODO:
         // Build overview that shows all restaurants
-        // Build invidiual info pages
+        // Build invidiual info pages : DONE
         // Connect these two somehow
-        // Split up overview pages into carousel slides
+        // Split up overview pages into carousel slides : DONE
         // Add Time Control
-        // Figure out how to show other days
+        // Figure out how to show other days : DONE
 
       //Whole Page
       var Slider = window.Slider.default
@@ -133,7 +133,6 @@
 
       var OverviewItem = React.createClass({
         createOverviewItem: function(current) {
-          console.log(current);
         if (current.hours) {
           if (current.hours.weekday_text) {
             var i = this.props.index
@@ -163,14 +162,14 @@
 
           return(
             <Accordion>
-              <Panel header={current.name} key={i} eventKey={i} bsStyle={{"border":'none', "background-color":'none', 'box-shadow':'none' }}>
-              <div>
-                <a href={content.directionsLink}><h5>{current.address}</h5></a>
-                {content.weekday_texts}
-                <br/>
-              </div>
+              <Panel header={current.name} eventKey={current.name + i} bsStyle={{"border":'none', "background-color":'none', 'box-shadow':'none' }}>
+                <div>
+                  <a href={content.directionsLink}><h5>{current.address}</h5></a>
+                  {content.weekday_texts}
+                  <br/>
+                </div>
               </Panel>
-          </Accordion>
+            </Accordion>
           )
         }
 
@@ -325,9 +324,9 @@
           if(this.props.schedule) {
           for (var i = 0; i < days.length; i++) {
             if (i==0){
-              content = content.concat(<h4><span className="schedule-nav-button" id={daysToSlide[days[i]]} onClick={this.handleClick}>Fri </span></h4>)
+              content = content.concat(<h4 key={daysToSlide[days[i]]}><span  className="schedule-nav-button" id={daysToSlide[days[i]]} onClick={this.handleClick}>Fri </span></h4>)
             } else {
-              content = content.concat(<h4> <span> · </span> <span id={daysToSlide[days[i]]} className="schedule-nav-button" onClick={this.handleClick}>{days[i]}</span></h4>)
+              content = content.concat(<h4 key={daysToSlide[days[i]]}> <span> · </span> <span id={daysToSlide[days[i]]} className="schedule-nav-button" onClick={this.handleClick}>{days[i]}</span></h4>)
             }
           }
           }
@@ -355,6 +354,7 @@
           return(
             <div className="container" style={{"width":"80%"}}>
                 {content.length > 0 ? <Slider ref="slider" {...settings}>{content}</Slider>: <div></div>}
+            <br/>
             <div className="schedule-nav">
             {navButtons}
             </div>
@@ -417,10 +417,17 @@
             for (var i = 0; i < this.props.hourContent.length; i++) {
               if (keys.includes(this.props.hourContent[i])){
                 restaurantsObject = this.props.restaurants[this.props.hourContent[i]]
-                content = content.concat(<OverviewItem index={i} current={restaurantsObject} />)
+                content = content.concat(<OverviewItem key={"notBlank" + this.props.hourContent[i] + i} index={i} current={restaurantsObject} />)
               } else {
-                console.log(this.props.hourContent[i]);
-                content = content.concat(<h4> {this.props.hourContent[i]} </h4>)
+                content = content.concat(
+                  <Accordion>
+                    <Panel header={this.props.hourContent[i]} key={"blank" + this.props.hourContent[i] + i + i} eventKey={"blank" + this.props.hourContent[i] + i} bsStyle={{"border":'none', "background-color":'none', 'box-shadow':'none' }}>
+                      <div style={{"textAlign":"center"}}>
+                        Nothing here!
+                      </div>
+                    </Panel>
+                  </Accordion>
+                )
               }
             }
           }
@@ -441,7 +448,7 @@
             <div className="carousel-box">
               <h2> {this.props.day} </h2>
               <h3> {this.props.hour} </h3>
-              {hourContents}
+                {hourContents}
 
             </div>
           )
