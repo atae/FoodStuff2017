@@ -282,6 +282,7 @@
         getInitialState: function() {
           return {
             initialSlide: this.getSlide(),
+            startingSlide: this.getSlide()
           }
         },
         getSlide: function() {
@@ -295,13 +296,11 @@
           }
 
 
-          var day = currentTime.getDate()
+          var day = currentTime.getDate() + ""
           var hour = currentTime.getHours()
 
           var slide = (Object.keys(daysToSlide).includes(day))? daysToSlide[day] + (hour - 6) : 0
-
-
-          return slide + ""
+          return slide
         },
         createHours: function() {
           var content = []
@@ -350,6 +349,9 @@
           }
           return content
         },
+        debug:function() {
+          console.log(arguments)
+        },
         render: function() {
           var settings = {
             infinite: true,
@@ -359,9 +361,10 @@
             accessibility: true,
             centerMode: true,
             swipeToSlide: true,
-            initialSlide: this.state.initialSlide,
+            initialSlide: this.state.startingSlide,
             slickGoTo: this.state.initialSlide,
-            responsive: [{breakpoint: 1024, settings: {slidesToShow: 1}}]
+            responsive: [{breakpoint: 1024, settings: {slidesToShow: 1}}],
+            afterChange: this.debug
           };
           var content = this.createHours()
           var navButtons = this.createNavButtons()
@@ -435,7 +438,7 @@
             for (var i = 0; i < this.props.hourContent.length; i++) {
               if (keys.includes(this.props.hourContent[i])){
                 restaurantsObject = this.props.restaurants[this.props.hourContent[i]]
-                content = content.concat(<OverviewItem key={"notBlank" + this.props.hourContent[i] + i} index={i} current={restaurantsObject} />)
+                content = content.concat(<OverviewItem index={i} current={restaurantsObject} />)
               } else {
                 content = content.concat(
                   <Accordion>
@@ -460,11 +463,18 @@
             }
           return content
         },
+        componentDidMount: function() {
+          $( ".carousel-box" ).has( ".Fri" ).css( "background-color", "rgba(0,255,255,.5)" );
+          $( ".carousel-box" ).has( ".Sat" ).css( "background-color", "rgba(255,0,255,.5)" );
+          $( ".carousel-box" ).has( ".Sun" ).css( "background-color", "rgba(255,255,255,.5)" );
+          $( ".carousel-box" ).has( ".Mon" ).css( "background-color", "rgba(255,255,0,.5)" );
+
+        },
         render: function() {
           var hourContents = this.createItineraryContent()
           return(
             <div className="carousel-box">
-              <h2> {this.props.day} </h2>
+              <h2 className={this.props.day.slice(0,3)}> {this.props.day} </h2>
               <h3> {this.props.hour} </h3>
                 {hourContents}
 
