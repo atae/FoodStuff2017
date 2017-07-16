@@ -123,9 +123,9 @@
       var NavBar = React.createClass({
         render: function() {
           return(
-            <div>
-              <a href="#chat">Chat</a>
-              <a href="#map">Map</a>
+            <div className="container NavBar">
+              <h4><a href="#chat">Chat</a></h4>
+              <h4><a href="#map">Map</a></h4>
             </div>
           )
         }
@@ -290,9 +290,6 @@
           var content = []
           if (this.props.schedule) {
             // if (content.length == 0) {
-              console.log("Cache length is " + cache.length);
-              console.log(content)
-              console.log(this.props.schedule);
             var keys = Object.keys(this.props.schedule)
             for (var i = 0; i < keys.length - 1; i++) {
               var currentDay = this.props.schedule[keys[i]]
@@ -328,9 +325,9 @@
           if(this.props.schedule) {
           for (var i = 0; i < days.length; i++) {
             if (i==0){
-              content = content.concat(<span id={daysToSlide[days[i]]} onClick={this.handleClick}>Fri </span>)
+              content = content.concat(<h4><span id={daysToSlide[days[i]]} onClick={this.handleClick}>Fri </span></h4>)
             } else {
-              content = content.concat(<span id={daysToSlide[days[i]]} onClick={this.handleClick}>{"·" + days[i]}</span>)
+              content = content.concat(<h4> <span> · </span> <span id={daysToSlide[days[i]]} onClick={this.handleClick}>{days[i]}</span></h4>)
             }
           }
           }
@@ -340,12 +337,13 @@
           var settings = {
             infinite: true,
             speed: 100,
-            slidesToShow: 1,
+            slidesToShow: 3,
             slidesToScroll: 1,
             accessibility: true,
             centerMode: true,
             swipeToSlide: true,
-            slickGoTo: this.state.initialSlide
+            slickGoTo: this.state.initialSlide,
+            responsive: [{breakpoint: 1024, settings: {slidesToShow: 1}}]
           };
 
           var content = this.createHours()
@@ -357,10 +355,9 @@
           return(
             <div className="container" style={{"width":"80%"}}>
                 {content.length > 0 ? <Slider ref="slider" {...settings}>{content}</Slider>: <div></div>}
-            <br/>
             <div className="schedule-nav">
-              {navButtons}
-              </div>
+            {navButtons}
+            </div>
             <p> Tap on the Place Name for details </p>
             <p> The * means we goin fo sho </p>
             </div>
