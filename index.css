@@ -24,6 +24,19 @@ body {
 
 }
 
+div {
+  image-rendering: -moz-crisp-edges;         /* Firefox */
+image-rendering:   -o-crisp-edges;         /* Opera */
+image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+image-rendering: crisp-edges;
+-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
+.chat-box{
+  border: 50px solid white;
+  border-image: url("FoodStuff2017/chat_border_objects.png") 25 30 10 20 repeat;
+}
+
 .panel-title>a:hover{
   text-decoration: none;
   cursor: pointer;

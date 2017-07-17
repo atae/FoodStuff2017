@@ -10,15 +10,10 @@
 
     <!-- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> -->
     <script
-    async
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.31.0/react-bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-slick/0.14.10/react-slick.min.js"></script>
+
     <script async src="https://use.typekit.net/kme7pgt.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
@@ -32,9 +27,11 @@
   </head>
   <body>
 
+    <img class="img-responsive" style="display:inline;" src="./FoodStuff2017/donut.png"></img>
     <div class="container">
+      <div class="reponsive-img left">
       <div class="responsive-img centered">
-        <img class="img-responsive" style="min-height: 120px; width: 100%;" src="./foodfuckers_logo.png"></img>
+        <img class="img-responsive" style="max-height: 147px; width: 100%; max-width: 445px; margin: 0 auto;" src="./foodfuckers_logo.png"></img>
       </div>
       <div class="headerContent">
         <!--
@@ -68,6 +65,11 @@
             $("#viewport_device").attr("content", "initial-scale = 1.00");
         }
       </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.31.0/react-bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react-slick/0.14.10/react-slick.min.js"></script>
       <script type="text/babel">
       //TODO:
         // Build overview that shows all restaurants
@@ -107,7 +109,7 @@
             <CurrentItinerary restaurants={this.state.restaurants} schedule={this.state.schedule}/>
             <br/>
             <br/>
-            <div className="container" id="chat" style={{"textAlign":"center", "marginBottom":"30px"}}>
+            <div className="container chat-box" id="chat" style={{"textAlign":"center", "marginBottom":"30px"}}>
               <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/#foodfuckers2017" style={{"border":"0", "width":"80%", "height":"500px"}}></iframe>
             </div>
             <div className="container" id="map" style={{"textAlign":"center", "marginBottom":"30px"}}>
@@ -352,9 +354,6 @@
           }
           return content
         },
-        debug:function() {
-          console.log(arguments)
-        },
         render: function() {
           var settings = {
             infinite: true,
@@ -367,7 +366,6 @@
             initialSlide: this.state.startingSlide,
             slickGoTo: this.state.initialSlide,
             responsive: [{breakpoint: 1024, settings: {slidesToShow: 1}}],
-            afterChange: this.debug
           };
           var content = this.createHours()
           var navButtons = this.createNavButtons()
