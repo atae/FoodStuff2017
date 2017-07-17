@@ -162,10 +162,11 @@
           return(
             <Accordion>
               <Panel header={current.name} eventKey={current.name + i} bsStyle={{"border":'none', "background-color":'none', 'box-shadow':'none' }}>
-                <div>
-                  <a href={content.directionsLink}><h5>{current.address}</h5></a>
+                <div style={{"marginTop": "-10px"}}>
+                <a href={content.directionsLink}><h5>{current.address}</h5></a>
+                  <h5> Phone: {current.phone} </h5>
+                  {(current.site) ? <a href={current.site}><h5>Site</h5></a> : ""}
                   {content.weekday_texts}
-                  <br/>
                 </div>
               </Panel>
             </Accordion>
