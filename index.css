@@ -1,9 +1,9 @@
 h1, h2, h3, h4, h5, p{font-family:"europa";}
 @media (max-width:768px){h1{font-size:4.9vw;}
-h2{font-size:3.0vh;}
+h2{font-size:2.8vh;}
 h3{font-size:2.0vh;}
 h4{font-size:1.8vh;}
-h5{font-size:1vh;}
+h5{font-size:1.3vh;}
 p{font-size:2vmin;}
 .panel-title{font-size:1.7vh;}
 .panel-title>a:hover{font-size:1.8vh;}
