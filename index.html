@@ -80,7 +80,7 @@
         // Optimize: http://www.aaronpeters.nl/blog/iframe-loading-techniques-performance?%3E
 
       //Whole Page
-      var Slider = window.Slider.default
+        var Slider = window.Slider.default
       var {Accordion,
         Panel} = ReactBootstrap
 
@@ -324,8 +324,8 @@
               }
             }
             // cache = content
-          }
         }
+      }
           return content
         },
         handleClick: function(e) {
@@ -482,9 +482,11 @@
           )
         }
       })
-        var app = document.getElementById('app')
+      var app = document.getElementById('app')
+      $( document ).ready(function() {
         ReactDOM.render(<App />, app)
 
+      })
       </script>
   </body>
 </html>
