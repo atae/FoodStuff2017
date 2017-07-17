@@ -2,6 +2,36 @@ h1, h2, h3, h4, h5, p {
   font-family: "europa";
 }
 
+
+@media (max-width: 768px) {
+h1 {
+  font-size: 4.9vw;
+}
+h2 {
+  font-size: 3.0vh;
+}
+
+h3 {
+  font-size: 2.0vh;
+}
+
+h4 {
+  font-size: 1.8vh;
+}
+
+h5 {
+  font-size: 1vh;
+}
+p {
+  font-size: 2vmin;
+}
+
+.panel-title {
+  font-size: 1.7vh;
+}
+}
+
+
 body {
   background-image:url("FoodStuff2017/background.png")
 }
@@ -33,14 +63,16 @@ image-rendering: crisp-edges;
 }
 
 .chat-box{
-  border: 50px solid white;
-  border-image: url("FoodStuff2017/chat_border_objects.png") 25 30 10 20 repeat;
+  /*border: 50px solid white;*/
+  /*border-image: url("FoodStuff2017/chat_border_objects.png") 25 30 10 20 repeat;*/
 }
 
 .panel-title>a:hover{
   text-decoration: none;
   cursor: pointer;
+  font-size: 1.8vh;
 }
+
 
 .panel {
   box-shadow:none;
