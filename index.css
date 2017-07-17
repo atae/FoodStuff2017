@@ -6,6 +6,7 @@ h4{font-size:1.8vh;}
 h5{font-size:1vh;}
 p{font-size:2vmin;}
 .panel-title{font-size:1.7vh;}
+.panel-title>a:hover{font-size:1.8vh;}
 }
 body{background-image:url("FoodStuff2017/background.png")}
 .panel-group .panel{background-color:transparent;}
@@ -14,7 +15,7 @@ body{background-image:url("FoodStuff2017/background.png")}
 .overview-list{margin-top:20px;padding:0;list-style:none;}
 div{image-rendering:-moz-crisp-edges;image-rendering:-o-crisp-edges;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;-ms-interpolation-mode:nearest-neighbor;}
 .chat-box{}
-.panel-title>a:hover{text-decoration:none;cursor:pointer;font-size:1.8vh;}
+.panel-title>a:hover{text-decoration:none;cursor:pointer;}
 .panel{box-shadow:none;-webkit-box-shadow:none;border:none;}
 .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body{border-top:none;}
 .panel-heading{padding:0px;}
