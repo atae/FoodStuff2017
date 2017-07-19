@@ -95,7 +95,7 @@ div > .spinner .rect4 {
 .chat-box{
   box-sizing:border-box;
   border:60px solid;
-  border-image: url(FoodStuff2017/chat_border.png) 100;
+  border-image: url(FoodStuff2017/chat_border.png) 155 100 100 100;
 }
 
 .slider-box{
@@ -103,13 +103,13 @@ div > .spinner .rect4 {
   border: 79px solid;
   border-top: 56px solid;
   border-bottom: 26px solid;
-  border-image: url(FoodStuff2017/schedule_border.png) 67 148 24 131;
+  border-image: url(FoodStuff2017/schedule_border.png) 67 148 41 131;
 }
 
 .map-box{
   box-sizing: border-box;
   border: 55px solid;
-  border-image: url(FoodStuff2017/map_border.png) 100;
+  border-image: url(FoodStuff2017/map_border.png) 100 100 60 100;
 }
 
 .popsicle-boxicle{
