@@ -28,7 +28,7 @@
   </head>
   <body>
 
-    <img class="img-responsive" style="position:absolute;" src="./FoodStuff2017/donut.png"></img>
+    <img class="img-responsive" style="position:absolute;width:12%" src="./FoodStuff2017/donut.png"></img>
     <div class="container">
       <div class="container responsive-img centered">
         <img class="img-responsive" style="max-height: 147px; width: 100%; max-width: 445px; margin: 0 auto;" src="./foodfuckers_logo.png"></img>
@@ -95,29 +95,67 @@
 
         },
         // <Overview restaurants={this.state.restaurants}/>
+        // <NavBar />
+        createHeadings: function() {
+          var content = []
+          var title = ["SCHEDULE", "CHAT", "MAP"]
+          if (this.state.restaurants) {
+          for (var i = 0; i < 3; i++) {
+          content = content.concat(<div className="container">
+              <div className="row">
+                <h2 className={(i % 2 == 0 ? 'box-headings-left' : 'box-headings-right')}>{title[i]}</h2>
+              </div>
+            </div>
+          )
+        }
+            }
+          // } else {
+          //   content = ["","",""]
+          // }
+
+          return content
+
+        },
         render: function() {
+          var headings = this.createHeadings()
           return (
             <div>
-            <NavBar />
             <DayCounter/>
-            <div className="container">
-              <div className="row">
-                <h3 style={{"textAlign":"left", "paddingLeft":"42px"}}>SCHEDULE</h3>
-              </div>
+            {headings[0]}
+            <div className="topsicle-lollipopsicle">
+              <img src="./FoodStuff2017/lollipop.png" style={{"transform":"scale(1.3)"}}></img>
             </div>
             <CurrentItinerary restaurants={this.state.restaurants} schedule={this.state.schedule}/>
-            <br/>
-            <br/>
-            <div className="container chat-box" id="chat" style={{"textAlign":"center", "marginBottom":"30px"}}>
-              <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/#foodfuckers2017" style={{"border":"0", "width":"80%", "height":"500px"}}></iframe>
+            <div className="bottom-leaf">
+              <img src="./FoodStuff2017/palm leaf.png"></img>
             </div>
-            <div className="container" id="map" style={{"textAlign":"center", "marginBottom":"30px"}}>
+            <br/>
+            <br/>
+            {headings[1]}
+            <div className="chat-box" id="chat" style={{"textAlign":"center", "marginBottom":"30px", "marginTop":"-18px"}}>
+              <iframe src="https://kiwiirc.com/client/irc.kiwiirc.com/#foodfuckers2017" style={{"border":"0", "width":"100%", "height":"600px", "marginTop":"-30px"}}></iframe>
+            </div>
+            <div className="popsicle-boxicle">
+              <img src="./FoodStuff2017/popsicle_01.png"></img>
+              <img src="./FoodStuff2017/popsicle_02.png"></img>
+              <img src="./FoodStuff2017/popsicle_03.png"></img>
+            </div>
+            {headings[2]}
+            <div className="map-box" id="map" style={{"textAlign":"center", "marginBottom":"30px"}}>
               <div className="map-responsive to-da-floor">
-                <iframe src="https://www.google.com/maps/d/embed?mid=1ApYMY1h5S5O3NZiO6Eu1Uy3TUaU" width="80%" height="700" frameBorder="0" style={{"border": "0"}} allowFullScreen></iframe>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1ApYMY1h5S5O3NZiO6Eu1Uy3TUaU" width="100%" height="700" frameBorder="0" style={{"border": "0"}} allowFullScreen></iframe>
               </div>
               < br/>
               < br/>
             </div>
+            <div className="leafsicle-boxicle">
+              <img src="./FoodStuff2017/monstera leaf.png"></img>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
             <Footer/>
             </div>
           )
@@ -216,7 +254,7 @@
       var Footer = React.createClass({
         render: function() {
           return (
-            <div className="container">
+            <div className="container" style={{"marginTop":"100px"}}>
               <h5>Created by Andrew Tae</h5>
               <h5> <a href="http://www.github.com/atae">Github</a> | <a href="https://www.linkedin.com/in/andrew-tae/">LinkedIn</a> | <a href="mailto:andrewtae368@gmail.com">Email</a> </h5>
             </div>
@@ -246,16 +284,16 @@
           if (currentDay.getDate() < deadline.getDate()) {
               var daysLeft = deadline.getDate() - currentDay.getDate()
               return(
-                  <h3> Only <b>{daysLeft}</b> days left!</h3>
+                  <h4> Only <b>{daysLeft}</b> days left!</h4>
                 )
           } else if (currentDay.getDate() > lastDay.getDate()) {
               return(
-                  <h3> Done! Go <b>Home</b>! </h3>
+                  <h4> Done! Go <b>Home</b>! </h4>
                   )
           } else {
               var day =  currentDay.getDate() - deadline.getDate() + 1
               return(
-                  <h3> Day <b>{day}</b></h3>
+                  <h4> Day <b>{day}</b></h4>
                   )
           }
         },
@@ -271,10 +309,9 @@
           var displaySeconds = ("0" + seconds).slice(-2)
           var ampm = (hour >= 12) ? "PM" : "AM"
           return (
-            <div>
+            <div style={{"marginBottom":"-40px"}}>
               {timeContent}
-              <h3>{displayHour} : {displayMinutes} : {displaySeconds} {ampm}</h3>
-              <br/>
+              <h4>{displayHour} : {displayMinutes} : {displaySeconds} {ampm}</h4>
             </div>
 
           )
@@ -343,7 +380,7 @@
           var content = []
           var days = ["Fri", "Sat", "Sun", "Mon"]
 
-          if(this.props.schedule) {
+          if(this.props.schedule && this.props.restaurants) {
           for (var i = 0; i < days.length; i++) {
             if (i==0){
               content = content.concat(<h4 key={daysToSlide[days[i]]}><span  className="schedule-nav-button" id={daysToSlide[days[i]]} onClick={this.handleClick}>Fri </span></h4>)
@@ -384,7 +421,7 @@
           // Need Exact keys : DONE
           var spinner = this.spinner()
           return(
-            <div className="container slider-box" style={{"width":"100%", "height":"60%", "marginTop":"-50px"}}>
+            <div className="container slider-box" style={{"width":"100%", "height":"60%", "marginTop":"-35px", "marginBottom":"28px"}}>
                 {this.props.restaurants? <Slider ref="slider" {...settings}>{content}</Slider>: <div className="spinner">
   <div className="rect1"></div>
   <div className="rect2"></div>
@@ -396,12 +433,15 @@
             <div className="schedule-nav">
             {navButtons}
             </div>
-            {this.props.restaurants ? <Accordion >
+            {this.props.restaurants ?
+              <div>
+              <Accordion >
               <Panel header={"?"} className="help-title" eventKey={"help"}>
                 <p> Tap on the Place Name for details </p>
                 <p> The * means we goin fo sho </p>
               </Panel>
-            </Accordion> : ""}
+            </Accordion>
+              </div>: ""}
             </div>
           )
         }
@@ -509,7 +549,7 @@
 
         if(navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/Android/i)
           || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/IEMobile/i)){
-              $("#viewport_device").attr("content", "initial-scale = 0.50");
+              $("#viewport_device").attr("content", "initial-scale = 0.70");
           }
           else if(navigator.userAgent.match(/iPad/i)){
               $("#viewport_device").attr("content", "initial-scale = 1.00");
