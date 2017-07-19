@@ -1,0 +1,4008 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8"/>
+  <script src="/content/dam/Veritas/docs/vision/jquery.min.js"></script>
+  <script src="/content/dam/Veritas/docs/vision/browser.min.js"></script>
+  <script src="/content/dam/Veritas/docs/vision/react.js"></script>
+  <script src="/content/dam/Veritas/docs/vision/react-dom.js"></script>
+  <script src="/content/dam/Veritas/docs/vision/ReactRouter.min.js"></script>
+  <script src="/content/dam/Veritas/docs/vision/react-bootstrap.min.js"></script>
+  <script src="/content/dam/Veritas/docs/vision/react-modal.min.js"></script>
+  <link rel="stylesheet" href="/content/dam/Veritas/docs/vision/main.css">
+
+  <style>
+
+  .filter-link{
+    cursor: pointer;
+  }
+
+  .nav-icon {
+    z-index: 1;
+    position: relative;
+  }
+
+  .clear-box {
+    width: 10px;
+    height: 10px;
+  }
+
+  .nav-container {
+    display: block !important;
+  }
+
+  .inner-header-container {
+    padding-top: 120px;
+  }
+
+  .image a {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .metaTag {
+    /*background-color: #e8eaed;
+    color: rgb(51, 122, 183);
+    line-height: 1;
+    padding:5px;*/
+  }
+
+
+
+  /*.metaTag p {
+    margin: 2px 7px 5px;
+  }*/
+
+  .metaTag p:hover {
+  }
+  /*.metaTags{
+    display:flex;
+    justify-content: space-between;
+  }*/
+
+  .activeSchedulerLink {
+    font-family: polaris-bold;
+  }
+
+  .inactiveSchedulerLink {
+    font-family: polaris-book;
+  }
+
+  .trend {
+    background: #e5eaf0;
+   }
+   .band-img-container img {
+     margin: 0 auto;
+     padding-top: 50px;
+   }
+
+   .image {
+   display: flex;
+   }
+
+   .bio-text a {
+     cursor: pointer;
+   }
+
+   .largeMessage h2 {
+  		text-align: center;
+  		line-height:1.5;
+  	}
+  	.two-column{
+  		//max-width:80%;
+  	}
+  	.large-trend{
+  		display:flex;
+  	}
+    .trend h5 {
+      color: black;
+      font-size: 22px;
+    }
+    .trend {
+      position: relative;
+      z-index: 1;
+    }
+
+    .largeMessage {
+     max-width: 900px;
+     margin: 0 auto;
+     padding-bottom: 15px;
+    }
+
+
+    .text-mod {
+     font-size: 14px !important;
+     max-width: 210px;
+   }
+
+  	.large {
+  		display: flex;
+  		margin-top:auto;
+  	}
+
+  	.large .text {
+  		//margin-top:auto;
+     margin: 10px 40px 40px;
+     max-width: 160px;
+  	}
+
+   .large .text p {
+     font-size: 12px;
+
+   }
+
+   .large .text h2 {
+     font-size: 22px;
+
+   }
+
+  	.social-quotes {
+  		background-image: none;
+  	}
+
+  	.play-container p {
+  		width: 208px;
+  	}
+
+     .trend p {
+       margin: 0 auto;
+       //font-size: 12px;
+       font-family: 'polaris-book';
+     }
+
+     .trend-column-title {
+   		//width: 208px;
+       width: auto;
+       font-size: 22px;
+   	}
+
+    .event-list-header {
+      font-family: 'polaris-medium';
+    }
+    .session-sidebar ul {
+      list-style: none;
+      font-size: 17px;
+    }
+
+    .session-sidebar {
+      padding-top: 30px;
+      padding-right: 4vw;
+    }
+
+    .vert-rule {
+      border-left: 1px solid lightgray;
+      padding: 40px 0 40px 80px;
+    }
+    .vert-rule hr {
+      height: 1px;
+      background-color: #ccc;
+      margin: 28px 0;
+    }
+    .vert-rule h1 {
+      font-family: 'polaris-light';
+    }
+
+    .event-spacer {
+      padding: 80px 0;
+    }
+    .session-sidebar label {
+      display: flex;
+    }
+
+    .session-sidebar label span {
+      //display: initial;
+      color: #337ab7;
+      font-size: 16px;
+      /*padding-right: 5px;*/
+      margin-left: 10px;
+      /*display: inherit;*/
+      cursor: pointer;
+
+    }
+
+    input[type=checkbox], input[type=radio] {
+      margin: 7px 0 0;
+      line-height: normal;
+    }
+
+    .session-sidebar fieldset input{
+      padding-bottom: 30px;
+      float: left;
+    }
+
+    .session-sidebar fieldset div {
+      padding-bottom: 13px;
+      margin-left: -18px;
+      width: -18px;
+      margin: 0 auto;
+    }
+    .session-sidebar fieldset legend {
+      border-bottom: none;
+    }
+
+
+  @media only screen and (max-width: 992px) {
+
+    .large-trend {
+       flex-direction: column;
+     }
+     .large {
+       flex-direction: column;
+       margin: 0 auto;
+     }
+     .large .text {
+       margin: 0;
+       padding: 40px 0;
+       text-align: center;
+       max-width: 100%;
+     }
+     .largeMessage h2 {
+       font-size: 19px;
+     }
+     .largeMessage {
+       padding-bottom: 0;
+    }
+    .trend {
+      padding-bottom: 50px;
+    }
+  }
+
+  .text-rightundefined {
+    text-align: right;
+  }
+  .vision-header {
+    text-align: left;
+    min-height: 645px;
+  }
+  .vision-subheader {
+    padding: 0;
+    font-size: 18px;
+  }
+  .Homepage {
+    overflow: hidden;
+  }
+  .button-container {
+    margin-top: 37px;
+  }
+  .button-container {
+    position: relative;
+    left: -11px;
+  }
+  .red-cta{
+    border-radius: 8px;
+  }
+  .bold-sub {
+    font-size: 15px;
+    font-family: 'polaris-bold';
+  }
+  .line-background {
+    position: absolute;
+    left: 0;
+    //top: 4px;
+    width: 392%;
+    max-height: 3960px;
+    //max-width: 364%;
+    min-width: 1400px;
+    //margin-left: 400px;
+    top: 63px;
+  }
+  .vision-header{
+        background: url(/content/dam/Veritas/images/vision/vision-clouds.jpg);
+  }
+  .vision-header p {
+    padding: 40px 0 0px 0;
+  }
+  .main-logo {
+    padding: 0;
+    margin: 0;
+  }
+  .nav-container {
+      z-index: 2;
+    }
+    .guest-container {
+      font-family: 'polaris-book';
+      text-align: center;
+      padding-bottom: 90px;
+    }
+    .guest-title {
+      position: relative;
+      font-family: 'polaris-light';
+      font-size: 35px;
+      top: 35px;
+    }
+    .headshot {
+      position: relative;
+    }
+    .gray-container {
+      background-color: #f1f1f1;
+      height: 305px;
+      width: 100%;
+      padding: 0 30px;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: contain;
+    }
+    .bio-one,
+    .bio-two,
+    .bio-three,
+    .bio-four,
+    .bio-five  {
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: contain;
+    }
+    .bio-one {
+      background-image: url(/content/dam/Veritas/images/vision/bio-bg-1.png);
+    }
+    .bio-two {
+      background-image: url(/content/dam/Veritas/images/vision/bio-bg-2.png);
+    }
+    .bio-three {
+      background-image: url(/content/dam/Veritas/images/vision/bio-bg-3.png);
+    }
+    .bio-four {
+      background-image: url(/content/dam/Veritas/images/vision/bio-bg-4.png);
+    }
+    .bio-five {
+      background-image: url(/content/dam/Veritas/images/vision/bio-bg-5.png);
+    }
+
+    .guest-img {
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      top: 85px;
+    }
+    .band-title {
+      font-size: 28px;
+      padding-top: 105px;
+      line-height: 30px;
+    }
+    .band-subtitle {
+      font-size: 16px;
+      padding-top: 10px;
+    }
+    .guest-btn {
+      background-color: #88adba;
+      color: #fff;
+      font-family: 'polaris-medium';
+      font-size: 11px;
+      padding: 6px 28px 7px 28px;
+      border-radius: 30px;
+      border: 0;
+      transition: background-color 0.35s ease-in-out;
+      position: absolute;
+      bottom: 23px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 150px;
+    }
+    .guest-btn:hover {
+      color: #fff;
+      background-color: #57a0b9;
+      transition: background-color 0.35s ease-in;
+    }
+    .guest-banner-btn {
+      background-color: #88adba;
+      color: #fff;
+      font-family: 'polaris-medium';
+      font-size: 11px;
+      padding: 6px 28px 7px 28px;
+      border-radius: 30px;
+      border: 0;
+      transition: background-color 0.35s ease-in-out;
+      width: 150px;
+      position: relative;
+      top: 18px;
+      margin: 0 auto;
+      display: block;
+    }
+    .guest-banner-btn:hover {
+      color: #fff;
+      background-color: #57a0b9;
+      transition: background-color 0.35s ease-in;
+    }
+
+    .header-container {
+      width:100%;
+    }
+    .hidden-button{
+      visibility: hidden;
+    }
+    .progressive-form-background {
+        background-image: url('/content/dam/Veritas/images/vision/vision-banner-thread2.jpg');
+        font-family: 'polaris-light';
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: baseline;
+        text-align: right;
+        margin-top: 63px;
+        color: rgb(102, 102, 102);
+        background-repeat: no-repeat;
+        border-bottom: 5px solid #a3a4a9;
+        background-size: 1440px 400px;
+    }
+    .flex-heading {
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .progressive-form-title {
+        margin-top: -14px;
+        font-weight: 400;
+        margin-left: 100px;
+        font-size: 36px;
+        color: #000;
+        font-family: 'polaris-book';
+    }
+
+    .progressive-form-title2{
+      margin-top: 20px;
+      font-weight: 400;
+      margin-left: 100px;
+      font-size: 36px;
+      color: #000;
+      font-family: 'polaris-book';
+    }
+    .progressive-form-subtitle {
+        margin-bottom: 40px;
+        font-weight: 400;
+        font-family: 'polaris-book';
+        margin-left: 130px;
+        font-size: 23px;
+        color: #666;
+    }
+    .progressive-form-second-title {
+      font-family: 'polaris-book';
+      color: #000;
+    }
+    .progressive-form-logo {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        top: 20px;
+        left: 40px;
+    }
+
+    .agenda-container {
+      color: #666666;
+    }
+
+    .agenda-container p {
+      font-size: 17px;
+      line-height: 28px;
+    }
+    .agenda-container a {
+      color: #3892d7;
+    }
+    .agenda-container a:hover {
+      color: #2b70a6;
+    }
+    .agenda-title {
+      font-size: 26px;
+      color: #666666;
+    }
+    .agenda-subtitle {
+      padding-top: 9px;
+      padding-bottom: 12px;
+    }
+    .inner-agenda {
+      width: 84%;
+      margin: 0 auto;
+      padding-top: 50px;
+    }
+    .schedule {
+      padding: 60px 0;
+    }
+    .schedule .panel-body h4 {
+      max-width: 450px;
+      line-height: 22px;
+      padding-right: 40px;
+    }
+
+    .event-title {
+      margin-right: 40px;
+     }
+
+     .bio-spacer {
+      margin-top: 120px;
+      margin-bottom: 70px;
+    }
+    .img-bio {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      z-index: 1;
+    }
+    .bio-gray-container {
+      background-color: #f1f1f1;
+      height: 305px;
+      width: 100%;
+      padding: 0 30px;
+      position: relative;
+      bottom: 90px;
+      z-index: 0;
+      text-align: center;
+    }
+    .bio-text p {
+      font-size: 18px;
+      font-family: 'polaris-light';
+    }
+    .bio-text-spacer {
+      margin-top: 74px;
+    }
+    .back-button {
+      color: #778dbd;
+      padding-top: 30px;
+      display: block;
+    }
+    .back-button-text {
+      position: relative;
+      top: 2px;
+      right: -6px;
+      font-size: 17px;
+      font-family: 'polaris-light';
+    }
+    .banner {
+      background-position: top center;
+    }
+    .guest-btn {
+      //display: none;
+    }
+
+    .guest-show {
+      display: block !important;
+    }
+
+
+
+    @media only screen and (max-width: 992px) {
+        .progressive-form-title {
+          font-size: 26px;
+          margin-left: 160px;
+        }
+
+        .progressive-form-subtitle {
+          font-size: 22px
+        }
+        .hidden-mobile {
+          display: none;
+        }
+
+        .progressive-form-logo {
+          margin-top: 14px;
+        }
+
+       .progressive-form-background {
+          background-position: 40%;
+       }
+       .bio-gray-container {
+          height: 265px;
+      }
+      .vision-header {
+        text-align: center;
+      }
+      .main-logo {
+        margin: 0 auto;
+      }
+    }
+
+    @media only screen and (max-width:767px) {
+      .schedule .panel-body h4 {
+        margin-right: 0;
+        padding-right: 0;
+      }
+    }
+    @media only screen and (max-width:480px) {
+
+        .progressive-form-background {
+            text-align: left;
+            margin-right: 0px;
+            background-position: 95%;
+        }
+        .progressive-form-second-title{
+          margin-left: 50px;
+          margin-top: 15px;
+        }
+        .progressive-form-title {
+            margin-left: 50px;
+            font-size: 24px;
+        }
+        .progressive-form-subtitle {
+            margin-left: 50px;
+            font-size: 18px;
+            margin-bottom: 65px;
+        }
+        .progressive-form-logo {
+            width: 80%;
+            margin-bottom: 40px;
+        }
+        .progressive-form-cta-contact{
+           display:flex;
+           flex-direction: column;
+           align-items:center;
+            margin-left: 94px;
+             height: 40px;
+          }
+
+        .progressive-form-cta-contact a {
+            margin-bottom: 10px;
+         }
+    }
+
+    @media only screen and (min-width: 1405px) {
+      .progressive-form-background{
+        background-size: 106% 400px;
+      }
+
+     }
+
+     .carousel-indicators{
+       top: 525px;
+    }
+    @media only screen and (max-width: 1200px) {
+      .band-title {
+        font-size: 24px;
+      }
+      .band-subtitle {
+          font-size: 14px;
+        }
+      }
+    @media only screen and (max-width: 992px) {
+      .guest-btn {
+        position: relative;
+        bottom: 0;
+        margin-left: 0;
+        left: 0;
+        margin-top: 40px;
+      }
+      .band-subtitle {
+        font-size: 16px;
+      }
+      .bio-text-spacer {
+        margin-top: 0;
+      }
+      .mobile-spacer {
+        margin-top: 60px;
+      }
+      .gray-container {
+        background-image: none !important;
+      }
+      .bio-one,
+      .bio-two,
+      .bio-three,
+      .bio-four,
+      .bio-five {
+        background-image: none !important;
+      }
+    }
+  .social-quotes {
+    min-height: 631px;
+  }
+
+  .carousel-indicators{
+     top: 525px;
+  }
+
+  @media only screen and (max-width: 480px) {
+      .carousel-indicators{
+           top: 630px;
+      }
+
+      .social-quotes {
+      min-height: 812px;
+      }
+
+      .red-cta{
+        font-size:12px;
+      }
+
+  }
+
+    html.respond header {
+      position: relative !important;
+    }
+
+    @media only screen and (max-width:480px){
+      .red-cta {
+        font-size:12px;
+      }
+    }
+    .schedule .panel-body{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .agenda-header {
+      background-size: cover;
+      background-position: bottom;
+    }
+
+    .agenda-info-header{
+      background-position:30%;
+    }
+
+    .vision-header {
+      background-size:cover;
+      background-position: center 67%;
+      background-attachment: scroll;
+    }
+    .vision-subheader-p {
+      margin: 25px 0 -10px;
+    }
+
+    @media only screen and (max-width:768px){
+      .event-info-container h2 {
+        text-align:left;
+      }
+
+      .event-info-container p {
+        text-align:left;
+      }
+
+      .vert-rule {
+        border-left: none;
+        padding: 40px 20px;
+      }
+      .event-spacer {
+        padding: 20px;
+      }
+      .vert-rule h3 {
+        line-height: 21px;
+        font-size: 18px;
+      }
+      .vert-rule h1 {
+        font-size: 25px;
+      }
+    }
+
+    @media only screen and (max-width: 992px) {
+      .line-background {
+        display:none;
+      }
+    }
+
+    .sponsors .sponsor-header{
+      font-size:23px;
+    }
+
+    .schedule .panel-body h4{
+      font-size: 18px;
+    }
+
+    .event-info-container p{
+      font-size: 18px;
+    }
+
+    .event-info-container h2{
+      font-size: 30px;
+    }
+    .quote-row p {
+      font-size: 31px;
+    }
+    p{
+      font-size:14px;
+    }
+    h1{
+      font-size:32px;
+    }
+    h2{
+      font-size:25px;
+    }
+    h3{
+      font-size:19px;
+    }
+    h4{
+      font-size:16px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+
+  <script>
+
+  var response = ""
+  $(document).ready(function() {
+    // $.get('/content/dam/Veritas/docs/vision/LanyonJson.json', function (res){
+    //   response = res
+    //   console.log(response)
+
+      // newContent.find("script").each(function() {
+      //   var scriptContent = $(this).html(); //Grab the content of this tag
+      //   eval(scriptContent); //Execute the content
+      // });
+
+    // })
+
+  $.fn.headshots = function() {
+    $(this).find("a").hide();
+    $(this).hover(
+      function() {
+        $(this).find("a").stop(true).fadeIn(450);
+      },
+      function() {
+        $(this).find("a").stop(true).fadeOut(450);
+      }
+    );
+  }
+
+  });
+
+  $(document).ready(function(){
+
+
+    function speakerFadeButtons() {
+      if($(window).innerWidth() > 480) {
+        $('.headshot').off();
+        $(".headshot").headshots();
+      } else {
+        $('.headshot').off();
+        $('.headshot').find("a").stop(true).fadeIn(450);
+      }
+    }
+
+    speakerFadeButtons();
+
+    // And recheck when window gets resized.
+    $(window).bind('resize',function(){
+        speakerFadeButtons();
+    });
+
+
+    var hamburgerOn = false
+
+
+    // Fade in navigation on hamburger click
+    $(document).on('click', '#open-menu',function(e) {
+      hamburgerOn = true
+      $('.nav-container').fadeIn();
+    });
+
+    // Fade out navigation on X button click
+    $(document).on('click', '.close-menu',function(e) {
+      hamburgerOn = false
+      $('.nav-container').fadeOut();
+    });
+
+    // Nav logo fade out on click
+    $(document).on('click', '.vision-nav-link',function(e) {
+      $('.nav-container').fadeOut();
+    });
+
+    // Carousel functionality
+    $("#quote-carousel").on('slide.bs.carousel', function (e) {
+      $("#quote-carousel").carousel();
+    });
+
+  });
+
+  </script>
+
+
+<div id="container" class="Homepage"><div data-reactid=".0"><div class="nav-container" data-reactid=".0.0" style="display: none;"><div class="vision-main-nav" data-reactid=".0.0.0"><div class="container-fluid vision-spacer" data-reactid=".0.0.0.0"><div class="row" data-reactid=".0.0.0.0.0"><div class="col-lg-4 col-md-3 col-sm-6 col-xs-12 text-left" data-reactid=".0.0.0.0.0.0"><a class="vision-nav-link" href="#/" data-reactid=".0.0.0.0.0.0.0"><img src="/content/dam/Veritas/images/vision/vision-nav-logo.png" class="img-responsive vision-main-nav-logo nav-item" data-reactid=".0.0.0.0.0.0.0.0"></a><div class="vision-nav-items" data-reactid=".0.0.0.0.0.0.1"><a href="https://vision2017.smarteventscloud.com/portal/newreg.do" data-reactid=".0.0.0.0.0.0.1.0"><img src="/content/dam/Veritas/images/vision/nav-icon01.png" class="text-left hidden-sm hidden-md hidden-lg" data-reactid=".0.0.0.0.0.0.1.0.0"></a></div></div><div class="col-lg-4 col-md-5 hidden-sm hidden-xs text-center" data-reactid=".0.0.0.0.0.1"><p class="nav-text" data-reactid=".0.0.0.0.0.1.0">ARIA Resort &amp; Casino, Las Vegas | September 18-20, 2017</p></div><div class="col-lg-4 col-md-4 col-sm-6 hidden-xs text-rightundefined" data-reactid=".0.0.0.0.0.2"><a href="https://vision2017.smarteventscloud.com/portal/newreg.do" class="red-cta-nav hidden-xs" data-reactid=".0.0.0.0.0.2.0">REGISTER NOW</a><a href="https://vision2017.smarteventscloud.com/portal/newreg.do" data-reactid=".0.0.0.0.0.2.1"><img src="/content/dam/Veritas/images/vision/nav-icon01.png" data-reactid=".0.0.0.0.0.2.1.0"></a></div></div></div></div><header class="vision-sub-nav" data-reactid=".0.0.1"><div class="vision-menu text-center nav" data-reactid=".0.0.1.0"><a id="agendaLink" class="" href="#/agenda" data-reactid=".0.0.1.0.0">Agenda</a><a class="" href="#/registration" data-reactid=".0.0.1.0.1">Registration</a><a class="" href="#/event" data-reactid=".0.0.1.0.2">Event Info</a><a class="" href="#/sessions" data-reactid=".0.0.1.0.3">Sessions </a></div></header></div><div class="content" data-reactid=".0.1"><div data-reactid=".0.1.0"><div class="vision-header" data-reactid=".0.1.0.0"><div class="col-md-3" data-reactid=".0.1.0.0.0"><img src="/content/dam/Veritas/images/vision/Thread.png" alt="Vision Thread" class="line-background" data-reactid=".0.1.0.0.0.0"></div><div class="container-fluid" data-reactid=".0.1.0.0.1"><div class="nav-icon" data-reactid=".0.1.0.0.1.0"><img src="/content/dam/Veritas/images/vision/hammy.png" class="burger-spacer" id="open-menu" data-reactid=".0.1.0.0.1.0.0"><a class=" " href="https://vision2017.smarteventscloud.com/portal/newreg.do" data-reactid=".0.1.0.0.1.0.1"><img src="/content/dam/Veritas/images/vision/nav-icon01.png" data-reactid=".0.1.0.0.1.0.1.0"></a></div></div><div class="inner-header-container container" data-reactid=".0.1.0.0.2"><div class="row" data-reactid=".0.1.0.0.2.0"><div class="col-md-6" data-reactid=".0.1.0.0.2.0.0"></div><div class="col-md-6" data-reactid=".0.1.0.0.2.0.1"><img src="/content/dam/Veritas/images/vision/new-vision-logo.png" alt="Vision Logo" class="img-responsive main-logo" data-reactid=".0.1.0.0.2.0.1.0"><p class="bold-sub" data-reactid=".0.1.0.0.2.0.1.1">ARIA Resort &amp; Casino, Las Vegas | September 18-20, 2017</p></div></div><div class="row" data-reactid=".0.1.0.0.2.1"><div class="col-md-6" data-reactid=".0.1.0.0.2.1.0"></div><div class="col-md-6" data-reactid=".0.1.0.0.2.1.1"><h3 class="vision-subheader" data-reactid=".0.1.0.0.2.1.1.0">Vision is the only conference that helps you harness the power of your most valuable asset—information. As the center of a digital strategy spanning hybrid and multiple cloud environments, it’s the only way to transform your business.</h3></div></div><div class="row" data-reactid=".0.1.0.0.2.2"><div class="col-md-6" data-reactid=".0.1.0.0.2.2.0"></div><div class="col-md-6" data-reactid=".0.1.0.0.2.2.1"><div class="row" data-reactid=".0.1.0.0.2.2.1.0"><div class="col-md-12" data-reactid=".0.1.0.0.2.2.1.0.0"><div class="button-container" data-reactid=".0.1.0.0.2.2.1.0.0.0"><a href="https://vision2017.smarteventscloud.com/portal/newreg.do" class="red-cta " data-reactid=".0.1.0.0.2.2.1.0.0.0.0">REGISTER NOW</a></div></div></div></div></div></div></div><section class="guest-container" data-reactid=".0.1.0.1"><div class="container" data-reactid=".0.1.0.1.0"><div class="row" data-reactid=".0.1.0.1.0.0"><div class="col-md-12" data-reactid=".0.1.0.1.0.0.0"><p class="guest-title" data-reactid=".0.1.0.1.0.0.0.0">Featured Keynote Speakers</p></div></div><div class="row" data-reactid=".0.1.0.1.0.1"><div class="col-md-3" data-reactid=".0.1.0.1.0.1.$guest0"><div class="headshot" data-reactid=".0.1.0.1.0.1.$guest0.0"><img src="/content/dam/Veritas/images/vision/richard-headshot.png" class="img-circle guest-img" data-reactid=".0.1.0.1.0.1.$guest0.0.0"><div class="gray-container" style="background-image:url(/content/dam/Veritas/images/vision/box-bg-1.png);" data-reactid=".0.1.0.1.0.1.$guest0.0.1"><p class="band-title" data-reactid=".0.1.0.1.0.1.$guest0.0.1.0">Sir Richard Branson</p><p class="band-subtitle" data-reactid=".0.1.0.1.0.1.$guest0.0.1.1">Founder of the Virgin Group</p><a class="btn guest-btn" href="#/bios?anchor=%23first-row" data-reactid=".0.1.0.1.0.1.$guest0.0.1.2" style="display: none;">SPEAKER BIO</a></div></div></div><div class="col-md-3" data-reactid=".0.1.0.1.0.1.$guest1"><div class="headshot" data-reactid=".0.1.0.1.0.1.$guest1.0"><img src="/content/dam/Veritas/images/vision/bill-headshot.png" class="img-circle guest-img" data-reactid=".0.1.0.1.0.1.$guest1.0.0"><div class="gray-container" style="background-image:url(/content/dam/Veritas/images/vision/box-bg-2.png);" data-reactid=".0.1.0.1.0.1.$guest1.0.1"><p class="band-title" data-reactid=".0.1.0.1.0.1.$guest1.0.1.0">Bill Coleman</p><p class="band-subtitle" data-reactid=".0.1.0.1.0.1.$guest1.0.1.1">Chief Executive Officer, Veritas</p><a class="btn guest-btn" href="#/bios?anchor=%23second-row" data-reactid=".0.1.0.1.0.1.$guest1.0.1.2" style="display: none;">SPEAKER BIO</a></div></div></div><div class="col-md-3" data-reactid=".0.1.0.1.0.1.$guest2"><div class="headshot" data-reactid=".0.1.0.1.0.1.$guest2.0"><img src="/content/dam/Veritas/images/vision/mike-headshot.png" class="img-circle guest-img" data-reactid=".0.1.0.1.0.1.$guest2.0.0"><div class="gray-container" style="background-image:url(/content/dam/Veritas/images/vision/box-bg-3.png);" data-reactid=".0.1.0.1.0.1.$guest2.0.1"><p class="band-title" data-reactid=".0.1.0.1.0.1.$guest2.0.1.0">Mike Palmer</p><p class="band-subtitle" data-reactid=".0.1.0.1.0.1.$guest2.0.1.1">Executive Vice President, Chief Product Officer, Veritas</p><a class="btn guest-btn" href="#/bios?anchor=%23third-row" data-reactid=".0.1.0.1.0.1.$guest2.0.1.2" style="display: none;">SPEAKER BIO</a></div></div></div><div class="col-md-3" data-reactid=".0.1.0.1.0.1.$guest3"><div class="headshot" data-reactid=".0.1.0.1.0.1.$guest3.0"><img src="/content/dam/Veritas/images/vision/lynn-headshot.png" class="img-circle guest-img" data-reactid=".0.1.0.1.0.1.$guest3.0.0"><div class="gray-container" style="background-image:url(/content/dam/Veritas/images/vision/box-bg-4.png);" data-reactid=".0.1.0.1.0.1.$guest3.0.1"><p class="band-title" data-reactid=".0.1.0.1.0.1.$guest3.0.1.0">Lynn Lucas</p><p class="band-subtitle" data-reactid=".0.1.0.1.0.1.$guest3.0.1.1">Chief Marketing Officer, Veritas</p><a class="btn guest-btn" href="#/bios?anchor=%23fourth-row" data-reactid=".0.1.0.1.0.1.$guest3.0.1.2" style="display: none;">SPEAKER BIO</a></div></div></div></div></div></section><div class="trend" data-reactid=".0.1.0.2"><div class="container" data-reactid=".0.1.0.2.0"><div class="col-md-12 centered" data-reactid=".0.1.0.2.0.0"><div class="largeMessage" data-reactid=".0.1.0.2.0.0.0"><span data-reactid=".0.1.0.2.0.0.0.0"> </span><h2 data-reactid=".0.1.0.2.0.0.0.1:0"><a href="#" data-reactid=".0.1.0.2.0.0.0.1:0.0">Register for Vision 2017.</a><span data-reactid=".0.1.0.2.0.0.0.1:0.1"> And learn how to keep your information and workloads visible, protected, available, and portable in a multi-cloud world. </span></h2><span data-reactid=".0.1.0.2.0.0.0.2"> </span></div></div></div><br data-reactid=".0.1.0.2.1"><div class="container two-column large-trend" data-reactid=".0.1.0.2.2"><div class="large" data-reactid=".0.1.0.2.2.$largeTrend0"><noscript data-reactid=".0.1.0.2.2.$largeTrend0.0"></noscript><div class="text" data-reactid=".0.1.0.2.2.$largeTrend0.1"><a href="none" data-reactid=".0.1.0.2.2.$largeTrend0.1.0"><h5 class="trend-column-title text-mod" data-reactid=".0.1.0.2.2.$largeTrend0.1.0.0"></h5><h5 data-reactid=".0.1.0.2.2.$largeTrend0.1.0.0.0"><span data-reactid=".0.1.0.2.2.$largeTrend0.1.0.0.0.0">Welcome to </span><b data-reactid=".0.1.0.2.2.$largeTrend0.1.0.0.0.1">Vision 2017</b></h5></a><p data-reactid=".0.1.0.2.2.$largeTrend0.1.1"><span data-reactid=".0.1.0.2.2.$largeTrend0.1.1.0">Welcome to our new brand. The truth in information</span><span data-reactid=".0.1.0.2.2.$largeTrend0.1.1.1">&nbsp;</span><a href="none" data-reactid=".0.1.0.2.2.$largeTrend0.1.1.2"><img src="/content/dam/Veritas/images/vision/link.png" data-reactid=".0.1.0.2.2.$largeTrend0.1.1.2.0"></a></p></div><div class="image" data-reactid=".0.1.0.2.2.$largeTrend0.2"><br data-reactid=".0.1.0.2.2.$largeTrend0.2.0"><a href="none" data-reactid=".0.1.0.2.2.$largeTrend0.2.1"><img class="img-responsive trend-image" src="/content/dam/Veritas/images/vision/visionReel.png" data-reactid=".0.1.0.2.2.$largeTrend0.2.1.0"></a><br data-reactid=".0.1.0.2.2.$largeTrend0.2.2"></div></div><div class="large" data-reactid=".0.1.0.2.2.$largeTrend1"><div class="text" data-reactid=".0.1.0.2.2.$largeTrend1.0"><a href="none" data-reactid=".0.1.0.2.2.$largeTrend1.0.0"><h5 class="item-2 trend-column-title " data-reactid=".0.1.0.2.2.$largeTrend1.0.0.0"></h5><h5 data-reactid=".0.1.0.2.2.$largeTrend1.0.0.0.0"><span data-reactid=".0.1.0.2.2.$largeTrend1.0.0.0.0.0">Join our VOX </span><b data-reactid=".0.1.0.2.2.$largeTrend1.0.0.0.0.1">Community.</b></h5></a><p class="item-3" data-reactid=".0.1.0.2.2.$largeTrend1.0.1"><span data-reactid=".0.1.0.2.2.$largeTrend1.0.1.0">Find info, gain insights, and discover answers.</span><span data-reactid=".0.1.0.2.2.$largeTrend1.0.1.1">&nbsp;</span><a href="none" data-reactid=".0.1.0.2.2.$largeTrend1.0.1.2"><img src="/content/dam/Veritas/images/vision/link.png" class="grow" data-reactid=".0.1.0.2.2.$largeTrend1.0.1.2.0"></a></p></div><div class="image" data-reactid=".0.1.0.2.2.$largeTrend1.1"><a href="none" data-reactid=".0.1.0.2.2.$largeTrend1.1.0"><img class="item-1 img-responsive trend-image" src="/content/dam/Veritas/images/vision/vox.png" data-reactid=".0.1.0.2.2.$largeTrend1.1.0.0"></a></div></div></div></div><section class="banner" style="background-image:url(/content/dam/Veritas/images/vision/band-bg-f.jpg);" data-reactid=".0.1.0.3"><div class="container" data-reactid=".0.1.0.3.0"><div class="band-img-container" data-reactid=".0.1.0.3.0.0"><div class="col-md-12" data-reactid=".0.1.0.3.0.0.0"><img src="/content/dam/Veritas/images/vision/foreigner-logo.png" class="img-responsive" data-reactid=".0.1.0.3.0.0.0.0"></div></div><a class="" href="#/bios?anchor=%23fifth-row" data-reactid=".0.1.0.3.0.1"><button type="button" class="btn guest-banner-btn" data-reactid=".0.1.0.3.0.1.0">BAND BIO</button></a></div></section><div class="trend" data-reactid=".0.1.0.4"><div class="container" data-reactid=".0.1.0.4.0"><div class="col-md-12 centered" data-reactid=".0.1.0.4.0.0"><div data-reactid=".0.1.0.4.0.0.0"></div></div></div><br data-reactid=".0.1.0.4.1"><div class="container two-column " data-reactid=".0.1.0.4.2"><div class="col-md-6 centered play-container" data-reactid=".0.1.0.4.2.$trend0"><noscript data-reactid=".0.1.0.4.2.$trend0.0"></noscript><br data-reactid=".0.1.0.4.2.$trend0.1"><a href="none" data-reactid=".0.1.0.4.2.$trend0.2"><img class="img-responsive trend-image" src="/content/dam/Veritas/images/vision/trend2.jpg" data-reactid=".0.1.0.4.2.$trend0.2.0"></a><br data-reactid=".0.1.0.4.2.$trend0.3"><a href="none" data-reactid=".0.1.0.4.2.$trend0.4"><h5 class="trend-column-title text-mod" data-reactid=".0.1.0.4.2.$trend0.4.0">See Vision 2016 Highlights.</h5></a><p data-reactid=".0.1.0.4.2.$trend0.5"><span data-reactid=".0.1.0.4.2.$trend0.5.0">Catch the best of last year and prepare for 2017.</span><span data-reactid=".0.1.0.4.2.$trend0.5.1">&nbsp;</span><a href="none" data-reactid=".0.1.0.4.2.$trend0.5.2"><img src="/content/dam/Veritas/images/vision/link.png" data-reactid=".0.1.0.4.2.$trend0.5.2.0"></a></p></div><div class="col-md-6 centered play-container" data-reactid=".0.1.0.4.2.$trend1"><br data-reactid=".0.1.0.4.2.$trend1.0"><a href="https://vox.veritas.com/t5/Vision-2016-Blog/Veritas-Vision-2016-Keynote-Session-Recordings/ba-p/817103" data-reactid=".0.1.0.4.2.$trend1.1"><img class="item-1 img-responsive trend-image text-mod" src="/content/dam/Veritas/images/vision/trend3.jpg" data-reactid=".0.1.0.4.2.$trend1.1.0"></a><br data-reactid=".0.1.0.4.2.$trend1.2"><a href="https://vox.veritas.com/t5/Vision-2016-Blog/Veritas-Vision-2016-Keynote-Session-Recordings/ba-p/817103" data-reactid=".0.1.0.4.2.$trend1.3"><h5 class="item-2 trend-column-title text-mod" data-reactid=".0.1.0.4.2.$trend1.3.0">View 2016 Keynotes.</h5></a><p class="item-3" data-reactid=".0.1.0.4.2.$trend1.4"><span data-reactid=".0.1.0.4.2.$trend1.4.0">Watch on-demand replays in the VOX Community.</span><span data-reactid=".0.1.0.4.2.$trend1.4.1">&nbsp;</span><a href="https://vox.veritas.com/t5/Vision-2016-Blog/Veritas-Vision-2016-Keynote-Session-Recordings/ba-p/817103" data-reactid=".0.1.0.4.2.$trend1.4.2"><img src="/content/dam/Veritas/images/vision/link.png" class="grow" data-reactid=".0.1.0.4.2.$trend1.4.2.0"></a></p></div></div></div><section style="background-color:#fff;min-height:631px;" class="social-quotes" data-reactid=".0.1.0.5"><div class="container" data-reactid=".0.1.0.5.0"><div class="row" data-reactid=".0.1.0.5.0.0"></div><div class="row" data-reactid=".0.1.0.5.0.1"><div class="col-md-12 quote-row" data-reactid=".0.1.0.5.0.1.0"><div class="carousel slide" data-ride="carousel" id="quote-carousel" data-reactid=".0.1.0.5.0.1.0.0"><ol class="carousel-indicators" style="top:450px;" data-reactid=".0.1.0.5.0.1.0.0.0"><li data-target="#quote-carousel" data-slide-to="0" class="" data-reactid=".0.1.0.5.0.1.0.0.0.0"></li><li data-target="#quote-carousel" data-slide-to="1" data-reactid=".0.1.0.5.0.1.0.0.0.1" class=""></li><li data-target="#quote-carousel" data-slide-to="2" data-reactid=".0.1.0.5.0.1.0.0.0.2" class="active"></li></ol><div class="carousel-inner" data-reactid=".0.1.0.5.0.1.0.0.1"><div class="item" data-reactid=".0.1.0.5.0.1.0.0.1.0"><div class="row" data-reactid=".0.1.0.5.0.1.0.0.1.0.0"><div class="col-sm-12" data-reactid=".0.1.0.5.0.1.0.0.1.0.0.0"><div class="text-center" data-reactid=".0.1.0.5.0.1.0.0.1.0.0.0.0"><img src="/content/dam/Veritas/images/vision/twitter-logo.png" data-reactid=".0.1.0.5.0.1.0.0.1.0.0.0.0.0"></div><h3 data-reactid=".0.1.0.5.0.1.0.0.1.0.0.0.1">@LydieVirollet</h3><p data-reactid=".0.1.0.5.0.1.0.0.1.0.0.0.2"><span data-reactid=".0.1.0.5.0.1.0.0.1.0.0.0.2.0">Great...presentation from Mike Palmer on how to get value out of your </span><span class="hash-tag" data-reactid=".0.1.0.5.0.1.0.0.1.0.0.0.2.1">#data</span><span data-reactid=".0.1.0.5.0.1.0.0.1.0.0.0.2.2">! </span><span class="hash-tag" data-reactid=".0.1.0.5.0.1.0.0.1.0.0.0.2.3"><a class="hash-tag" href="https://twitter.com/search?q=%23vtasvision&amp;src=typd" data-reactid=".0.1.0.5.0.1.0.0.1.0.0.0.2.3.0">#VtasVision</a></span></p></div></div></div><div class="item" data-reactid=".0.1.0.5.0.1.0.0.1.1"><div class="row" data-reactid=".0.1.0.5.0.1.0.0.1.1.0"><div class="col-sm-12" data-reactid=".0.1.0.5.0.1.0.0.1.1.0.0"><div class="text-center" data-reactid=".0.1.0.5.0.1.0.0.1.1.0.0.0"><img src="/content/dam/Veritas/images/vision/twitter-logo.png" data-reactid=".0.1.0.5.0.1.0.0.1.1.0.0.0.0"></div><h3 data-reactid=".0.1.0.5.0.1.0.0.1.1.0.0.1">@Doug_Laney</h3><p data-reactid=".0.1.0.5.0.1.0.0.1.1.0.0.2"><span data-reactid=".0.1.0.5.0.1.0.0.1.1.0.0.2.0">Thrilled to be speaking at </span><span class="hash-tag" data-reactid=".0.1.0.5.0.1.0.0.1.1.0.0.2.1"><a class="hash-tag" href="https://twitter.com/search?q=%23vtasvision&amp;src=typd" data-reactid=".0.1.0.5.0.1.0.0.1.1.0.0.2.1.0">#vtasvision</a></span><span data-reactid=".0.1.0.5.0.1.0.0.1.1.0.0.2.2">... Veritas gets it.</span></p></div></div></div><div class="item active" data-reactid=".0.1.0.5.0.1.0.0.1.2"><div class="row" data-reactid=".0.1.0.5.0.1.0.0.1.2.0"><div class="col-sm-12" data-reactid=".0.1.0.5.0.1.0.0.1.2.0.0"><div class="text-center" data-reactid=".0.1.0.5.0.1.0.0.1.2.0.0.0"><img src="/content/dam/Veritas/images/vision/twitter-logo.png" data-reactid=".0.1.0.5.0.1.0.0.1.2.0.0.0.0"></div><h3 data-reactid=".0.1.0.5.0.1.0.0.1.2.0.0.1">@SwiftStack</h3><p data-reactid=".0.1.0.5.0.1.0.0.1.2.0.0.2"><span data-reactid=".0.1.0.5.0.1.0.0.1.2.0.0.2.0">We had a blast interacting with the </span><span class="hash-tag" data-reactid=".0.1.0.5.0.1.0.0.1.2.0.0.2.1"><a class="hash-tag" href="https://twitter.com/search?q=%23veritas&amp;src=typd" data-reactid=".0.1.0.5.0.1.0.0.1.2.0.0.2.1.0">#Veritas</a></span><span data-reactid=".0.1.0.5.0.1.0.0.1.2.0.0.2.2"> community at </span><span class="hash-tag" data-reactid=".0.1.0.5.0.1.0.0.1.2.0.0.2.3"><a class="hash-tag" href="https://twitter.com/search?q=%23vtasvision&amp;src=typd" data-reactid=".0.1.0.5.0.1.0.0.1.2.0.0.2.3.0">#vtasvision</a></span><span data-reactid=".0.1.0.5.0.1.0.0.1.2.0.0.2.4">!</span></p></div></div></div></div></div></div></div></div></section><section class="follow" data-reactid=".0.1.0.6"><div class="container" data-reactid=".0.1.0.6.0"><div class="row" data-reactid=".0.1.0.6.0.0"><div class="col-md-12 text-center" data-reactid=".0.1.0.6.0.0.0"><h1 style="font-family:polaris-light;" data-reactid=".0.1.0.6.0.0.0.0">Follow Us On:</h1></div></div><br data-reactid=".0.1.0.6.0.1"><br data-reactid=".0.1.0.6.0.2"><div class="row" data-reactid=".0.1.0.6.0.3"><div class="link-container col-md-8 col-md-offset-2" data-reactid=".0.1.0.6.0.3.0"><div data-reactid=".0.1.0.6.0.3.0.$follow0"><a href="https://twitter.com/veritastechllc" data-reactid=".0.1.0.6.0.3.0.$follow0.0"><img src="/content/dam/Veritas/images/vision/vision-twitter.png" class="grow" data-reactid=".0.1.0.6.0.3.0.$follow0.0.0"></a></div><div data-reactid=".0.1.0.6.0.3.0.$follow1"><a href="https://www.linkedin.com/company/veritas-technologies-llc" data-reactid=".0.1.0.6.0.3.0.$follow1.0"><img src="/content/dam/Veritas/images/vision/vision-linkedin.png" class="grow" data-reactid=".0.1.0.6.0.3.0.$follow1.0.0"></a></div><div data-reactid=".0.1.0.6.0.3.0.$follow2"><a href="https://www.youtube.com/channel/UCVb__XbSVgaxo1d6B1x2ZoQ" data-reactid=".0.1.0.6.0.3.0.$follow2.0"><img src="/content/dam/Veritas/images/vision/vision-youtube.png" class="grow" data-reactid=".0.1.0.6.0.3.0.$follow2.0.0"></a></div><div data-reactid=".0.1.0.6.0.3.0.$follow3"><a href="http://www.slideshare.net/VeritasTechLLC" data-reactid=".0.1.0.6.0.3.0.$follow3.0"><img src="/content/dam/Veritas/images/vision/vision-slideshare.png" class="grow" data-reactid=".0.1.0.6.0.3.0.$follow3.0.0"></a></div><div data-reactid=".0.1.0.6.0.3.0.$follow4"><a href="https://instagram.com/veritastechllc" data-reactid=".0.1.0.6.0.3.0.$follow4.0"><img src="/content/dam/Veritas/images/vision/vision-instagram.png" class="grow" data-reactid=".0.1.0.6.0.3.0.$follow4.0.0"></a></div></div></div></div></section><section class="sponsors" style="padding-bottom:10px;" data-reactid=".0.1.0.7"><div class="container" data-reactid=".0.1.0.7.0"><div class="row" data-reactid=".0.1.0.7.0.0"><div class="col-md-12" data-reactid=".0.1.0.7.0.0.0"><p class="sponsor-header" data-reactid=".0.1.0.7.0.0.0.0">Thank you to our 2017 Vision Sponsors.</p><p class="sponsor-subheader" data-reactid=".0.1.0.7.0.0.0.1"></p></div></div></div><br data-reactid=".0.1.0.7.1"><br data-reactid=".0.1.0.7.2"><br data-reactid=".0.1.0.7.3"><br data-reactid=".0.1.0.7.4"><div style="display:flex;justify-content:center;width:100%;background:white;padding-top:75px;padding-bottom:75px;" data-reactid=".0.1.0.7.5"><div class="link-container" style="width: 80%; flex-direction: column;" data-reactid=".0.1.0.7.5.0"><div data-reactid=".0.1.0.7.5.0.0"><img style="margin-bottom:40px;" src="/content/dam/Veritas/images/vision/aptare-logo.png" data-reactid=".0.1.0.7.5.0.0.0"></div><div data-reactid=".0.1.0.7.5.0.1"><img style="margin-bottom:40px;" src="/content/dam/Veritas/images/vision/bluesource-logo.png" data-reactid=".0.1.0.7.5.0.1.0"></div><div data-reactid=".0.1.0.7.5.0.2"><img style="margin-bottom:40px;" src="/content/dam/Veritas/images/vision/cdw-logo.png" data-reactid=".0.1.0.7.5.0.2.0"></div><div data-reactid=".0.1.0.7.5.0.3"><img style="margin-bottom:40px;" src="/content/dam/Veritas/images/vision/microsoft-logo.png" data-reactid=".0.1.0.7.5.0.3.0"></div><div data-reactid=".0.1.0.7.5.0.4"><img style="margin-bottom:40px;" src="/content/dam/Veritas/images/vision/vault-solutions-logo.png" data-reactid=".0.1.0.7.5.0.4.0"></div></div></div></section><footer class="vision-footer" data-reactid=".0.1.0.8"><div class="container" data-reactid=".0.1.0.8.0"><div class="row" data-reactid=".0.1.0.8.0.0"><div class="col-md-12" data-reactid=".0.1.0.8.0.0.0"><p class="footer-contact" data-reactid=".0.1.0.8.0.0.0.0"><span data-reactid=".0.1.0.8.0.0.0.0.0">CONTACT US: Telephone: +1 (415) 446-7732 (international)</span><br data-reactid=".0.1.0.8.0.0.0.0.1"><span data-reactid=".0.1.0.8.0.0.0.0.2">Telephone: +1 800-719-3391 (toll free) or </span><a href="mailto:vision2017@veritas.events?subject=Vision 2017" data-reactid=".0.1.0.8.0.0.0.0.3">Email</a></p><span data-reactid=".0.1.0.8.0.0.0.1">                    </span><img src="/content/dam/Veritas/images/vision/veritas-logo-small.png" alt="Veritas Logo" class="img-responsive veritas-small" data-reactid=".0.1.0.8.0.0.0.2"></div></div></div></footer></div></div></div></div>
+  <script type="text/babel">
+    var { Router,
+        Route,
+        IndexRoute,
+        IndexLink,
+        Link, NavLink } = ReactRouter;
+
+  var {Accordion,
+  Panel} = ReactBootstrap
+
+  var Modal = ReactModal
+
+    var destination = document.querySelector("#container");
+
+    var App = React.createClass({
+
+      componentDidUpdate: function() {
+       window.scrollTo(0,0)
+     },
+
+      render: function() {
+        paramURL(registrationURL)
+        return (
+          <div>
+            <MainNav/>
+            <div className="content">
+              {this.props.children}
+            </div>
+          </div>
+        )
+      }
+    });
+    var VideoModal = React.createClass({
+      render: function () {
+        return(
+          <div className="container" style={{
+              width: '100%',
+              height: '420px'
+            }}>
+            <br />
+            <div className="row col-md-12 centered" style={{
+                margin: '0 auto'
+              }}>
+            <iframe style={{
+                display:'block',
+                margin: '0 auto',
+                width: '100%',
+                maxWidth: '700px',
+                height: '396px'
+              }}
+              src='https://players.brightcove.net/4396107486001/default_default/index.html?videoId=5229943974001'
+              allowFullScreen frameBorder='0'>
+            </iframe>
+            </div>
+          </div>
+        )
+      }
+    })
+
+    var lastKeystrokes = []
+    var cookiePresent = false
+    var that = this
+    document.cookiePresent = cookiePresent
+    var MainNav = React.createClass({
+      getInitialState: function() {
+        return {}
+      },
+      componentDidMount: function() {
+        document.addEventListener("keydown", function(e) {
+        if (lastKeystrokes.length > 4) {
+          lastKeystrokes.shift()
+        }
+        lastKeystrokes = lastKeystrokes.concat(e.key)
+        if (lastKeystrokes.join('') == "debug") {
+          document.cookie = "agenda=regular"
+          currentAgendaTemp = "regular"
+          console.log("cookies reset!")
+        }
+        })
+      },
+      cookieCheck: function() {
+        var allcookies = document.cookie;
+        // Get all the cookies pairs in an array
+        var cookiearray  = allcookies.split(';');
+        // Now take key value pair out of this array
+        for(var i=0; i<cookiearray.length; i++){
+           if (cookiearray[i].split('=')[0] == ' agenda' || cookiearray[i].split('=')[0] == 'agenda'){
+             if (cookiearray[i].split('=')[1] == 'partner' || cookiearray[i].split('=')[1] == 'gis')
+             {
+               return true
+             }
+           }
+        }
+        return false
+      },
+      render: function () {
+        cookiePresent = this.cookieCheck()
+        // var buttonVisibility = ""
+        var hashFragment = window.location.hash.slice(2,5)
+
+        if (currentAgendaTemp == "gis" || currentAgendaTemp == "partner" || cookiePresent == true || hashFragment == "gis" || hashFragment == "par") {
+          var buttonVisibility = " hidden-button"
+          var linkVisibility = " hidden"
+        }
+
+          var buttonsClass = "col-lg-4 col-md-4 col-sm-6 hidden-xs text-right" + buttonVisibility
+        return (
+          <div className="nav-container">
+            <div className="vision-main-nav">
+              <div className="container-fluid vision-spacer">
+                <div className="row">
+                  <div className="col-lg-4 col-md-3 col-sm-6 col-xs-12 text-left">
+                    <Link to="/" className="vision-nav-link">
+                    <img src="/content/dam/Veritas/images/vision/vision-nav-logo.png" className="img-responsive vision-main-nav-logo nav-item"></img>
+                    </Link>
+                    <div className="vision-nav-items">
+                    <a href={registrationURL}>
+                      <img src="/content/dam/Veritas/images/vision/nav-icon01.png" className="text-left hidden-sm hidden-md hidden-lg"></img>
+                    </a>
+                    </div>
+                  </div>
+                  <div className="col-lg-4 col-md-5 hidden-sm hidden-xs text-center">
+                    <p className="nav-text">ARIA Resort & Casino, Las Vegas | September 18-20, 2017</p>
+                  </div>
+                  <div className={buttonsClass}>
+                    <RegistrationCTA link="https://vision2017.smarteventscloud.com/portal/newreg.do" rowMode ="false" buttonClassName="red-cta-nav hidden-xs" content="REGISTER NOW"/>
+                    <a className={buttonVisibility} href={registrationURL}>
+                    <img src="/content/dam/Veritas/images/vision/nav-icon01.png" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <header className="vision-sub-nav">
+              <div className="vision-menu text-center nav">
+                <Link id="agendaLink" to="/agenda" activeClassName="active">Agenda</Link>
+                <Link to="/registration" activeClassName="active" className={linkVisibility}>Registration</Link>
+                <Link to="/event" activeClassName="active" className={linkVisibility}>Event Info</Link>
+                <Link to="/sessions" activeClassName="active" className={linkVisibility}>Sessions </Link>
+                <Link to="/handson" activeClassName="active" className={linkVisibility}> Labs </Link>
+              </div>
+            </header>
+          </div>
+        )
+      }
+    });
+
+    var registrationURL = "https://vision2017.smarteventscloud.com/portal/newreg.do"
+
+
+    var paramURL = function (url) {
+
+      var params = window.location.search
+      var url = url + params
+      if (url[-1] == '?' || url[-1] == '&') {
+        url = url.slice(0, -1)
+      }
+      registrationURL = url
+      return url
+    }
+
+    var RegistrationCTA = React.createClass({
+      render: function () {
+        var ctaLink = paramURL(this.props.link)
+        var buttonVisibility = {}
+
+        if (currentAgendaTemp == "gis" || currentAgendaTemp == "partner" || cookiePresent == true) {
+          var buttonVisiblity = {'visibility':'hidden'}
+        }
+
+        if (this.props.rowMode == 'true') {
+        return(
+          <div className="row">
+            <div className="col-md-12">
+          <div className="button-container">
+            <a href={ctaLink} style={this.buttonVisibility} className={this.props.buttonClassName}>{this.props.content}</a>
+          </div>
+        </div>
+      </div>
+        )
+      } else {
+        return(
+        <a href={ctaLink} style={this.buttonVisibility} className={this.props.buttonClassName}>{this.props.content}</a>
+        )
+      }
+
+    }})
+
+    var Header = React.createClass({
+      render: function() {
+        var buttonVisibility = " "
+        var hashFragment = window.location.hash.slice(2,5)
+
+        if (currentAgendaTemp == "gis" || currentAgendaTemp == "partner" || cookiePresent == true || hashFragment == "gis" || hashFragment == "par") {
+          buttonVisibility = " hidden-button"
+        }
+
+        return(
+        <div className="vision-header">
+        <div className="col-md-3">
+        <img src="/content/dam/Veritas/images/vision/Thread.png" alt="Vision Thread" className="line-background"/>
+        </div>
+          <div className="container-fluid">
+            <div className="nav-icon">
+              <img src="/content/dam/Veritas/images/vision/hammy.png" className="burger-spacer" id="open-menu"/>
+              <a className={buttonVisibility} href={registrationURL}><img src="/content/dam/Veritas/images/vision/nav-icon01.png"/></a>
+            </div>
+          </div>
+          <div className="inner-header-container container">
+            <div className="row">
+              <div className="col-md-6">
+                <div className="clear-box"></div>
+              </div>
+              <div className="col-md-6">
+                <img src="/content/dam/Veritas/images/vision/new-vision-logo.png" alt="Vision Logo" className="img-responsive main-logo"/>
+                <p className="bold-sub">ARIA Resort & Casino, Las Vegas | September 18-20, 2017</p>
+
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-6">
+                <div className="clear-box"></div>
+              </div>
+              <div className="col-md-6">
+                <h3 className="vision-subheader">Vision is the only conference that helps you harness the power of your most valuable asset—information.
+                As the center of a digital strategy spanning hybrid and multiple cloud environments, it’s the only way to transform your business.</h3>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-6">
+                <div className="clear-box"></div>
+              </div>
+              <div className="col-md-6">
+              <RegistrationCTA link="https://vision2017.smarteventscloud.com/portal/newreg.do" rowMode='true' buttonClassName={"red-cta"+buttonVisibility} content="REGISTER NOW"/>
+              </div>
+            </div>
+            </div>
+        </div>
+    )
+      }
+    });
+
+    var TrendComponent = React.createClass({
+      createTrends: function () {
+        var trends = []
+        var content = this.props.content
+        if (this.props.mode == 'large') {
+          for(var i = 0; i<2; i++) {
+            trends = trends.concat(
+              <TrendColumn key={'largeTrend'+i} size="large" image={content.images[i]} title={content.title[i]}
+              desc={content.desc[i]} link={content.link[i]} videoModal={content.videoModal[i]} />
+            )
+          }
+        } else {
+          for(var i = 0; i < 2; i++){
+            trends = trends.concat(
+              <TrendColumn key={'trend'+i} image={content.images[i]} title={content.title[i]}
+              desc={content.desc[i]} link={content.link[i]} videoModal={content.videoModal[i]} />
+              )
+            }
+        }
+          return trends;
+        }
+      ,
+
+      render: function () {
+        var columns = this.createTrends()
+        var largeClass = (this.props.mode == 'large') ? 'large-trend': ''
+        var largeMessage = (this.props.mode == 'large') ? <div className="largeMessage"> {this.props.content.largeMessage} </div> : <div></div>
+        return(
+          <div className="trend">
+           <div className="container">
+             <div className="col-md-12 centered">
+              {largeMessage}
+             </div>
+            </div>
+            <br />
+            <div className={"container two-column " + largeClass}>
+              {columns}
+            </div>
+          </div>
+        );
+      }
+    })
+
+    var TrendColumn = React.createClass({
+      getInitialState: function () {
+        return {
+          modalIsOpen: false
+        }
+      },
+      openModal: function () {
+        this.setState({modalIsOpen:true});
+      },
+      closeModal: function () {
+        this.setState({modalIsOpen:false});
+      },
+      handleClick: function (e) {
+        if (this.props.link === 'none') {
+          e.preventDefault()
+          e.preventDefault
+          this.openModal();
+        }
+      },
+      render(){
+        this.customStyles = {
+          content : {
+            top                   : '50%',
+            left                  : '50%',
+            right                 : 'auto',
+            bottom                : 'auto',
+            marginRight           : '-50%',
+            transform             : 'translate(-50%, -50%)',
+            width                 : '90%',
+            maxWidth              : '800px',
+            height                : '500px',
+            zIndex                : '10000',
+            textAlign             : 'right'
+          }
+        };
+        var classes = 'col-md-6 centered play-container'
+        classes = (this.props.size == 'large') ? 'large': classes
+        // if (this.props.offset=== false){
+        //   classes = 'col-md-3 centered play-container'
+        // }
+
+        if (this.props.videoModal === false ) {
+          if (this.props.size == 'large') {
+            return(
+              <div className={classes}>
+                <div className="text">
+                  <a href={this.props.link}>
+                    <h5 className="item-2 trend-column-title ">{this.props.title}</h5>
+                  </a>
+                  <p className="item-3">{this.props.desc}
+                    &nbsp;
+                    <CTAArrow link={this.props.link}/>
+                  </p>
+                </div>
+                <div className="image">
+                  <a href={this.props.link}>
+                    <img className="item-1 img-responsive trend-image" src={this.props.image}/>
+                  </a>
+                </div>
+              </div>
+            )
+          } else {
+            return(
+            <div className={classes}>
+              <br/>
+              <a href={this.props.link}>
+                <img className="item-1 img-responsive trend-image text-mod" src={this.props.image}/>
+              </a>
+              <br />
+              <a href={this.props.link}>
+                <h5 className="item-2 trend-column-title text-mod">{this.props.title}</h5>
+              </a>
+              <p className="item-3">{this.props.desc}
+                &nbsp;
+                <CTAArrow link={this.props.link}/>
+              </p>
+            </div>
+            )
+        }
+      } else {
+        if (this.props.size=="large") {
+          return (
+            <div className={classes}>
+              <Modal
+                isOpen={this.state.modalIsOpen}
+                onRequestClose={this.closeModal}
+                style={this.customStyles}
+                contentLabel="Video Modal"
+                >
+                <div className="videoModal">
+                  <div style={{display:'flex', justifyContent: 'flex-end'}}className="videoModalHeader">
+                    <button className="closeButton"
+                      onClick={this.closeModal}> X </button>
+                  </div>
+                  <VideoModal />
+                </div>
+              </Modal>
+              <div className="text">
+                <a href={this.props.link} onClick={this.handleClick}>
+                  <h5 className="trend-column-title text-mod">{this.props.title}</h5>
+                </a>
+                <p>{this.props.desc}
+                  &nbsp;
+                  <a href={this.props.link} onClick={this.handleClick}>
+                     <img src={ctaImage} />
+                  </a>
+                </p>
+              </div>
+              <div className="image">
+                <br/>
+               <a href={this.props.link} onClick={this.handleClick}>
+                 <img className="img-responsive trend-image" src={this.props.image}/>
+               </a>
+             <br />
+
+              </div>
+
+
+            </div>
+          )
+        } else {
+        return(
+        <div className={classes}>
+          <Modal
+            isOpen={this.state.modalIsOpen}
+            onRequestClose={this.closeModal}
+            style={this.customStyles}
+            contentLabel="Video Modal"
+            >
+            <div className="videoModal">
+              <div style={{display:'flex', justifyContent: 'flex-end'}}className="videoModalHeader">
+                <button className="closeButton"
+                  onClick={this.closeModal}> X </button>
+              </div>
+              <VideoModal />
+            </div>
+          </Modal>
+          <br/>
+          <a href={this.props.link} onClick={this.handleClick}>
+            <img className="img-responsive trend-image" src={this.props.image}/>
+          </a>
+          <br />
+          <a href={this.props.link} onClick={this.handleClick}>
+            <h5 className="trend-column-title text-mod">{this.props.title}</h5>
+          </a>
+          <p>{this.props.desc}
+            &nbsp;
+            <a href={this.props.link} onClick={this.handleClick}>
+               <img src={ctaImage} />
+            </a>
+          </p>
+        </div>
+      )}
+    }
+    }
+    })
+
+    var CTAArrow = React.createClass({
+
+      render: function () {
+        return(
+        <a href={this.props.link} onClick={this.props.clickEvent}>
+           <img src={ctaImage} className="grow"/>
+        </a>
+        )
+      }
+    })
+
+
+
+    var HomepageComponent = React.createClass({
+
+      componentDidMount: function () {
+      var app = document.getElementById('container')
+      app.className = 'Homepage'
+
+        $.fn.headshots = function() {
+          $(this).find("a").hide();
+          $(this).hover(
+            function() {
+              $(this).find("a").stop(true).fadeIn(450);
+            },
+            function() {
+              $(this).find("a").stop(true).fadeOut(450);
+            }
+          );
+        }
+
+        function speakerFadeButtons() {
+          if($(window).innerWidth() > 480) {
+            $('.headshot').off();
+            $(".headshot").headshots();
+          } else {
+            $('.headshot').off();
+            $('.headshot').find("a").stop(true).fadeIn(450);
+          }
+        }
+
+        speakerFadeButtons();
+
+        // And recheck when window gets resized.
+        $(window).bind('resize',function(){
+            speakerFadeButtons();
+        });
+     },
+    componentWillUnmount: function(){
+      $('.headshot').off();
+    },
+    render: function () {
+      return (
+        <div>
+          <Header />
+          <Guests/>
+          <TrendComponent
+            mode="large"
+            content={{
+              images: [visionReel, vox],
+              largeMessage: [<h2><a href='https://vision2017.smarteventscloud.com/portal/newreg.do'>Register for Vision 2017.</a> And learn how to keep your information and workloads visible, protected, available, and portable in a multi-cloud world. </h2>],
+              title: [<h5>Welcome to <b>Vision 2017</b></h5>,<h5>Join our VOX <b>Community.</b></h5>],
+              desc: [
+                "Welcome to our new brand. The truth in information", "Find info, gain insights, and discover answers."
+              ],
+              link: ['https://vimeo.com/217206470/51d1e6d23a','https://vox.veritas.com'],
+              videoModal: [false, false]
+            }}/>
+          <Banner image={bandBanner} button={'true'} bandImg={'true'}/>
+          <TrendComponent
+            content={{
+              images: [trend2, trend3],
+              title: ['See Vision 2016 Highlights.', 'View 2016 Keynotes.'],
+              desc: [
+               'Catch the best of last year and prepare for 2017.', 'Watch on-demand replays in the VOX Community.'],
+              link: ['none',
+              'https://vox.veritas.com/t5/Vision-2016-Blog/Veritas-Vision-2016-Keynote-Session-Recordings/ba-p/817103'],
+              videoModal: [true, false]
+            }}/>
+          <SocialQuotes color="#fff"/>
+          <Follow />
+          <Sponsors />
+          <Footer />
+        </div>
+      )
+      }
+    })
+
+    var SocialQuotes = React.createClass({
+      render: function() {
+          return(
+          <section style={{backgroundColor: this.props.color, 'minHeight':'631px'}}
+            className="social-quotes">
+            <div className="container">
+              <div className="row">
+
+              </div>
+              <div className="row">
+                <div className="col-md-12 quote-row">
+                    <div className="carousel slide" data-ride="carousel" id="quote-carousel">
+
+                        <ol className="carousel-indicators" style={{'top':'450px'}}>
+                            <li data-target="#quote-carousel" data-slide-to="0" className="active"></li>
+                            <li data-target="#quote-carousel" data-slide-to="1"></li>
+                            <li data-target="#quote-carousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <div className="carousel-inner">
+
+                            <div className="item active">
+                                <div className="row">
+                                    <div className="col-sm-12">
+                                      <div className="text-center">
+                                        <img src="/content/dam/Veritas/images/vision/twitter-logo.png"></img>
+                                      </div>
+                                        <h3>@LydieVirollet</h3>
+                                        <p>Great...presentation from Mike Palmer on how to get value out of your <span className="hash-tag">#data</span>! <span className="hash-tag"><a className="hash-tag" href="https://twitter.com/search?q=%23vtasvision&src=typd">#VtasVision</a></span></p>
+                                      </div>
+                                </div>
+                            </div>
+
+                            <div className="item">
+                                <div className="row">
+                                    <div className="col-sm-12">
+                                      <div className="text-center">
+                                        <img src="/content/dam/Veritas/images/vision/twitter-logo.png"></img>
+                                      </div>
+                                        <h3>@Doug_Laney</h3>
+                                          <p>Thrilled to be speaking at <span className="hash-tag"><a className="hash-tag" href="https://twitter.com/search?q=%23vtasvision&src=typd">#vtasvision</a></span>... Veritas gets it.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="item">
+                                <div className="row">
+                                    <div className="col-sm-12">
+                                      <div className="text-center">
+                                        <img src="/content/dam/Veritas/images/vision/twitter-logo.png"></img>
+                                      </div>
+                                        <h3>@SwiftStack</h3>
+                                          <p>We had a blast interacting with the <span className="hash-tag"><a className="hash-tag" href="https://twitter.com/search?q=%23veritas&src=typd">#Veritas</a></span> community at <span className="hash-tag"><a className="hash-tag" href="https://twitter.com/search?q=%23vtasvision&src=typd">#vtasvision</a></span>!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+          </section>
+        )
+        }
+    });
+
+    var Sponsors = React.createClass({
+      getInitialState() {
+        return{
+          sponsorSize: document.body.clientWidth
+        }
+      },
+      orientation: function () {
+        if (document.body.clientWidth < 992) {
+          return 'column'
+        } else {
+          return 'row'
+        }
+      },
+      componentDidMount: function () {
+        window.addEventListener('resize', this.responsiveSponsors, false);
+      },
+      responsiveSponsors: function () {
+        this.setState({sponsorSize: document.body.clientWidth})
+      },
+      componentWillUnmount: function () {
+        window.removeEventListener('resize', this.responsiveSponsors, false)
+      },
+      render: function() {
+        var flexDirection = this.orientation()
+        return (
+          <section className="sponsors" style={{
+              'paddingBottom': '10px'
+            }}>
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
+                  <p className="sponsor-header">Thank you to our 2017 Vision Sponsors.</p>
+                    <p className="sponsor-subheader"></p>
+                </div>
+              </div>
+              </div>
+              <br />
+              <br />
+              <br />
+              <br />
+              <div style={{
+                  'display': 'flex',
+                  'justifyContent': 'center',
+                  'width': '100%',
+                  'background': 'white',
+                  'paddingTop': '75px',
+                  'paddingBottom': '75px'
+                }}>
+
+              <div className = "link-container"
+                style={{
+                  'width' :'80%',
+                  'flexDirection': flexDirection
+                }}>
+                <div><img style={{'marginBottom': '40px'}} src={aptareLogo}/></div>
+                <div><img style={{'marginBottom': '40px'}} src={blueSourceLogo}/></div>
+                <div><img style={{'marginBottom': '40px'}} src={cdwLogo}/></div>
+                <div><img style={{'marginBottom': '40px'}} src={microsoftLogo}/></div>
+                <div><img style={{'marginBottom': '40px'}} src={vaultSolutionsLogo}/></div>
+              </div>
+            </div>
+          </section>
+        )}
+    });
+
+    var Follow = React.createClass({
+      createLinks: function () {
+        var links = []
+        var urls = ['https://twitter.com/veritastechllc',
+        'https://www.linkedin.com/company/veritas-technologies-llc',
+        'https://www.youtube.com/channel/UCVb__XbSVgaxo1d6B1x2ZoQ',
+        'http://www.slideshare.net/VeritasTechLLC',
+        'https://instagram.com/veritastechllc']
+
+        var images = [twitter, linkedin, youtube, slideshare, instagram]
+
+        for (let i = 0; i < urls.length; i++){
+          links = links.concat(
+            <FollowLink image={images[i]} link={urls[i]}
+              key={'follow'+i}/>)
+        }
+        return links
+      },
+      render: function () {
+        let followLinks = this.createLinks()
+
+        return(
+          <section className = "follow">
+            <div className="container" >
+              <div className="row">
+                <div className="col-md-12 text-center">
+                  <h1 style={{fontFamily: 'polaris-light'}}>Follow Us On:</h1>
+                </div>
+              </div>
+              <br/>
+              <br/>
+            <div className="row">
+              <div className="link-container col-md-8 col-md-offset-2">
+                {followLinks}
+              </div>
+            </div>
+          </div>
+        </section>
+        )
+      }
+    })
+
+    var FollowLink = React.createClass({
+      render: function() {
+        return (
+        <div>
+          <a href={this.props.link}><img src={this.props.image} className="grow"/></a>
+        </div>
+      )
+      }
+    })
+
+    var Footer = React.createClass({
+      render: function() {
+        return (
+          <footer className="vision-footer">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
+                <p className="footer-contact">CONTACT US: Telephone: +1 (415) 446-7732 (international)<br />
+                Telephone: +1 800-719-3391 (toll free) or <a href="mailto:vision2017@veritas.events?subject=Vision 2017">Email</a></p>                    <img src="/content/dam/Veritas/images/vision/veritas-logo-small.png" alt="Veritas Logo" className="img-responsive veritas-small"/>
+                </div>
+              </div>
+            </div>
+          </footer>
+        )
+      }
+    });
+
+    var Banner = React.createClass({
+      getInitialState: function () {
+        return {image: 'http://www.placekitten.com/g/1000/1000'};
+      },
+      createButton: function () {
+        return(
+          <Link to='/bios' query={{anchor: '#fifth-row'}}>
+            <button type="button" className="btn guest-banner-btn">
+              BAND BIO
+            </button>
+          </Link>
+        )
+      },
+      createBandImg: function () {
+        return(
+          <div className="band-img-container">
+            <div className="col-md-12">
+              <img src="/content/dam/Veritas/images/vision/foreigner-logo.png" className="img-responsive"/>
+            </div>
+          </div>
+        )
+      },
+      render: function() {
+        var url = 'url(' + this.props.image + ')'
+        var button = this.createButton();
+        var bandImg = this.createBandImg();
+        return(
+          <section className="banner" style={{'backgroundImage': url}}>
+            <div className="container">
+              {(this.props.bandImg == 'true') ? bandImg : ""}
+              {(this.props.button == 'true') ? button : ""}
+            </div>
+          </section>
+        )
+      }
+    });
+
+    // Reusuables
+    var InfoHeader = React.createClass({
+      render:function() {
+        var url = 'url(' + this.props.image + ')'
+        return(
+          <section className={"agenda-header " + this.props.extraClasses} style={{'backgroundImage': url}}>
+            <div className="container-fluid">
+              <div className="nav-icon">
+                <img src={navHammy} className="burger-spacer" id="open-menu"/>
+                <img src={navIcon}/>
+              </div>
+            </div>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-8 col-md-offset-2 text-center">
+                <h2>{this.props.title}</h2>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-8 col-md-offset-2 text-center">
+                <h4>{this.props.desc}
+                </h4>
+              </div>
+            </div>
+          </div>
+          </section>
+        )
+      }
+    })
+
+
+    //TODO: New Infoheader for new branding
+    //TODO: New Agenda
+    var currentAgendaTemp = ""
+    // Agenda
+    var AgendaPage = React.createClass({
+
+    componentDidMount: function () {
+     var app = document.getElementById('container')
+     app.className = 'Agenda'
+     },
+     readCookie: function() {
+       var allcookies = document.cookie;
+       // Get all the cookies pairs in an array
+       var cookiearray  = allcookies.split(';');
+       // Now take key value pair out of this array
+       for(var i=0; i<cookiearray.length; i++){
+          if (cookiearray[i].split('=')[0] == ' agenda' || cookiearray[i].split('=')[0] == 'agenda'){
+            return cookiearray[i].split('=')[1]
+          }
+       }
+       return "OtherRegular"
+     },
+      render: function () {
+        //Think about how to push schedules object into the component
+        var currentAgenda = this.readCookie()
+        if (currentAgenda == "gis" || currentAgendaTemp == "gis") {
+          cookiePresent = true
+          return(
+            <GISAgendaPage />
+          )
+        } else if (currentAgenda == "partner" || currentAgendaTemp == "partner") {
+          cookiePresent = true
+          return(
+            <PartnerAgendaPage />
+          )
+        } else {
+          cookiePresent = false
+          return(
+            <div>
+              <InfoHeader image={AgendaHeader} title='Agenda' desc=''/>
+              <Schedule currentSchedule={regularSchedule} />
+              <SocialQuotes color="#bcf8ff"/>
+              <Banner image={AgendaBanner}/>
+              <Follow />
+              <Footer />
+            </div>
+          )
+        }
+      }
+    })
+
+    // Partner Agenda
+    var PartnerAgendaPage = React.createClass({
+      componentDidMount: function () {
+        var app = document.getElementById('container')
+        app.className = 'Partner Agenda'
+        document.cookie="agenda=partner; expires= Sat, 30 September 2017 12:00:00 UTC"
+        currentAgendaTemp = 'partner'
+        $('#agendaLink').addClass('active')
+      },
+      componentWillUnmount: function () {
+        $('#agendaLink').removeClass('active')
+      },
+      render: function() {
+        return(
+          <div>
+          <ThreadHeader image={ThreadImage} title="Veritas Vision"
+          subtitle="Partner Link Conference" secondTitle="The truth in information"/>
+          <AgendaContent title="Veritas Partner Link Conference 2017" subtitle="September 18-19 | Aria Resort and Casino, Las Vegas"
+            content={[<div className="agenda-content" key="2">
+              <p>Partner Link is designed to provide our top Americas partners with the strategic business insights needed to deliver best-in-class solutions for our joint customers. There will be opportunities to engage with the Veritas Leadership team and network with peers throughout the event. </p>
+              <br/>
+              <p>At this year’s Partner Link Conference, attendees will hear from the Veritas Leadership Team on our vision, strategy and direction for product, sales and marketing areas of the business. Additionally, you will be able to attend the Vision keynote, gain industry insights from guest speakers, interact with peers and Veritas Channel Leaders in partner-specific breakout sessions, and more.</p>
+              <br/>
+              <p>Please see below for the latest Partner Link agenda* and be sure to check back for updates and additional detail.</p>
+            </div>]}/>
+          <Schedule currentSchedule={partnerSchedule} />
+          <Banner image={partnerBanner}/>
+          <Follow />
+          <Footer />
+          </div>
+        )
+
+      }
+
+    })
+
+    // Global Influencers Agenda (GIS)
+    var GISAgendaPage = React.createClass({
+      componentDidMount: function () {
+        var app = document.getElementById('container')
+        app.className = 'GIS Agenda'
+        document.cookie="agenda=gis; expires= Sat, 30 September 2017 12:00:00 UTC"
+        currentAgendaTemp = 'gis'
+       $('#agendaLink').addClass('active')
+      },
+      componentWillUnmount: function () {
+        $('#agendaLink').removeClass('active')
+      },
+      render: function() {
+        return(
+          <div>
+          <ThreadHeader image={ThreadImage} title="Veritas Vision"
+          subtitle="Global Influencers Summit" secondTitle="The truth in information"/>
+          <AgendaContent title="Veritas Global Influencers Summit 2017" subtitle="September 18-19 | Aria Resort and Casino, Las Vegas"
+          content={[<div className="agenda-content" key="1">
+                  <p>The Global Influencers Summit (GIS) is an exclusive, invitation-only event designed to share the latest Veritas corporate and solutions strategies directly from the senior executive and product teams. In addition to GIS, you will have the opportunity to attend Vision: the only conference that helps our customers harness the power of their most valuable asset— information.</p>
+                    <br/>
+                  <p>For more information, please contact <a href="mailto:esther.kim@veritas.com">Esther.Kim@veritas.com</a>.</p>
+                    <br/>
+                  <p>Please see below a high-level GIS agenda*. Each attendee will receive a personalized agenda.  Be sure to check back for updates and additional details about the summit.</p></div>]} />
+          <Schedule currentSchedule = {gisSchedule} />
+          <Banner image={gisBanner}/>
+          <Follow />
+          <Footer />
+          </div>
+        )
+      }
+    })
+
+    var ThreadHeader = React.createClass({
+      render: function() {
+        var titleClass = (this.props.subtitle) ? "progressive-form-title" : "progressive-form-title2"
+        return(
+          <div className="header-container">
+            <div className="progressive-form-background">
+                <div className="flex-heading">
+                    <h1 className={titleClass}>{this.props.title}</h1>
+                    <h2 className="progressive-form-subtitle">{this.props.subtitle}</h2>
+                    <h1 className="progressive-form-second-title">{this.props.secondTitle}</h1>
+                </div>
+            </div>
+        </div>
+        )
+      }
+    })
+
+    var AgendaContent = React.createClass({
+      render: function(){
+        return(
+          <section className="agenda-container">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="inner-agenda">
+                    <h3 className="agenda-title">{this.props.title}</h3>
+                    <h4 className="agenda-subtitle">{this.props.subtitle}</h4>
+                    <br/>
+                    {this.props.content}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        )
+      }
+    })
+
+    var SchedulePanel = React.createClass({
+      createEvents: function () {
+        var events = []
+        var content = this.props.content.events
+        for (var i = 0; i < content.length; i++){
+          events = events.concat(
+            <EventTime time={content[i].time} title={content[i].title}
+              key={this.props.content.date.slice(3) + i}/>)
+        }
+
+        return events
+      },
+      render: function() {
+        var panels = this.createEvents()
+        return(
+          <div>
+            {panels}
+          </div>
+        );
+      }
+    })
+
+    var Schedule = React.createClass({
+      //refactor out the header element
+      getInitialState: function () {
+        var currentDate = new Date()
+        var activeKeyNumber = '0'
+        var currentSchedule = this.props.currentSchedule
+        switch (currentDate.toDateString()) {
+          case 'Mon Sep 18 2017':
+            activeKeyNumber = '1'
+            break;
+          case 'Tue Sep 19 2017':
+            activeKeyNumber = '2'
+            break;
+          case 'Wed Sep 20 2017':
+            activeKeyNumber = '3'
+            break;
+          default:
+            activeKeyNumber = '4'
+        }
+
+        return {activeKeyNumber}
+      },
+      generateThirdPanel: function() {
+        if (this.props.currentSchedule[2]) {
+       return (<Panel collapsible defaultExpanded={
+            (this.state.activeKeyNumber == '3' || this.state.activeKeyNumber == '4' ) ? true : false }
+            header={
+            <div>
+              <img className='day' id='wednesday' style={{display:'inline', marginTop: '-11px'}}
+                src={(this.state.activeKeyNumber == '3' || this.state.activeKeyNumber == '4' )? activeButton : closeButton}/>
+              &nbsp;&nbsp;
+              <h3 style={{display:'inline'}}>{this.props.currentSchedule[2].date}</h3>
+            </div>} eventKey='3'
+            onEnter={function(){
+                var panel = document.getElementById('wednesday')
+                panel.src = activeButton
+            }}
+            onExit={function(){
+              var panel = document.getElementById('wednesday')
+              panel.src = closeButton
+            }}>
+            <SchedulePanel content={this.props.currentSchedule[2]} />
+        </Panel>
+        )
+        }
+        return (
+          <div></div>
+        )
+      },
+      render: function() {
+        // <Accordion defaultActiveKey={this.state.activeKeyNumber}>
+        var thirdPanel = this.generateThirdPanel()
+        return(
+          <section className='schedule'>
+            <div className='container' style={{width:'80%'}}>
+              <Panel collapsible defaultExpanded={
+                  (this.state.activeKeyNumber == '1' || this.state.activeKeyNumber == '4' ) ? true : false }
+                    header= {
+                  <div>
+                    <img className='day' id='monday' style={{display:'inline', marginTop: '-11px'}}
+                      src={(this.state.activeKeyNumber == '1' || this.state.activeKeyNumber == '4' )? activeButton : closeButton}/>
+                    &nbsp;&nbsp;
+                    <h3 style={{display:'inline', textDecoration:'none'}}>{this.props.currentSchedule[0].date}</h3>
+                    </div>}
+                    eventKey='1'
+                    onEnter={function(){
+                      var panel = document.getElementById('monday')
+                      panel.src = activeButton
+                    }}
+                    onExit={function(){
+                      var panel = document.getElementById('monday')
+                      panel.src = closeButton
+                    }}
+                    >
+                <SchedulePanel content={this.props.currentSchedule[0]} />
+              </Panel>
+              <Panel collapsible defaultExpanded={
+                  (this.state.activeKeyNumber == '2' || this.state.activeKeyNumber == '4' ) ? true : false }
+                   header ={
+                  <div>
+                    <img className='day' id='tuesday' style={{display:'inline', marginTop: '-11px'}}
+                      src={(this.state.activeKeyNumber == '2' || this.state.activeKeyNumber == '4' )? activeButton : closeButton}/>
+                    &nbsp;&nbsp;
+                    <h3 style={{display:'inline'}}>{this.props.currentSchedule[1].date}</h3>
+                  </div>} eventKey='2'
+                  onEnter={function(){
+                    var panel = document.getElementById('tuesday')
+                    panel.src = activeButton
+                  }}
+                  onExit={function(){
+                    var panel = document.getElementById('tuesday')
+                    panel.src = closeButton
+                  }}
+                  >
+                <SchedulePanel content={this.props.currentSchedule[1]} />
+              </Panel>
+              {thirdPanel}
+              <div>
+                <p>*Agenda Subject to Change</p>
+              </div>
+            </div>
+          </section>
+        )
+      // </Accordion>
+      }
+    })
+
+    var partnerSchedule = [
+      { date: 'Monday, September 18*',
+        events: [
+          {
+            time: '1:00p.m. - 5:00p.m.',
+            title: 'Partner Link General Sessions Presented By The Veritas Leadership Team'
+          },
+          {
+            time:'',
+            title: ''
+          },
+          {
+            time: '5:00p.m. - 8:00p.m.',
+            title: 'Exclusive Partner Link Reception'
+          }
+        ]},
+      { date: 'Tuesday, September 19*',
+        events: [
+          {
+            time: '8:30a.m. - 12:00p.m.',
+            title: 'Vision Opening Keynote'
+          },
+          {
+            time: ' ',
+            title: 'Vision Super Session'
+          },
+          {
+            time:'',
+            title: ''
+          },
+          {
+            time: '12:00p.m. - 1:00p.m.',
+            title: 'Lunch'
+          },
+          {
+            time:'',
+            title: ''
+          },
+          {
+            time: '1:00p.m. - 5:00p.m.',
+            title: 'Partner Link General Sessions with Guest Speaker'
+          },
+          {
+            time: ' ',
+            title: 'Partner Link Breakout Sessions with Veritas Channel Leaders'
+          },
+          {
+            time: ' ',
+            title: 'Annual Partner Awards Ceremony'
+          }
+        ]},
+
+    ]
+
+    var gisSchedule = [
+      { date: 'Monday, September 18*',
+        events: [
+          {
+            time: '7:00p.m. - 8:30p.m.',
+            title: 'Veritas Global Influencers Summit Welcome Reception'
+          }
+        ]},
+      { date: 'Tuesday, September 19*',
+        events: [
+          {
+            time: '8:30a.m. - 11:30a.m.',
+            title: 'Vision Opening Keynote'
+          },
+          {
+            time: ' ',
+            title: 'Vision Super Session'
+          },
+          {
+            time:'',
+            title: ''
+          },
+          {
+            time: '12:00p.m. - 1:00p.m.',
+            title: 'Lunch'
+          },
+          {
+            time:'',
+            title: ''
+          },
+          {
+            time: '1:00p.m. - 6:00p.m.',
+            title: 'GIS General Session'
+          },
+          {
+            time: ' ',
+            title: 'GIS Breakout Sessions'
+          },
+          {
+            time: ' ',
+            title: "CEO/Executive Panel Q&A"
+          }
+        ]
+      }
+
+    ]
+
+    var regularSchedule = [
+      {date: 'Monday, September 18*',
+      events: [
+        {
+          time: '7:00 a.m. – 6:00 p.m.',
+          title: 'Registration Open'
+        },
+        {
+          time: '8:00 a.m. – 5:00 p.m.',
+          title: 'Certifications & Pre-Conference Workshops'
+        }
+        ]
+      },
+      {date: 'Tuesday, September 19*',
+      events: [
+        {
+          time: '7:00 a.m. – 6:00 p.m.',
+          title: 'Registration Open'
+        },
+        {
+          time: '8:30 a.m. – 10:00 a.m.',
+          title: 'Opening Keynote'
+        },
+        {
+          time: '10:00 a.m. – 5:00 p.m.',
+          title: 'Certifications'
+        },
+        {
+          time: '10:00 a.m. - 7:00 p.m.',
+          title: 'VisionCity Open'
+        },
+        {
+          time: '10:30 a.m. - 6:15 p.m.',
+          title: 'Breakout Sessions & Hands-On Labs'
+        }
+        ]
+      },
+      {date: 'Wednesday, September 20*',
+      events: [
+        {
+          time: '7:00 a.m. – 6:00 p.m.',
+          title: 'Registration Open'
+        },
+        {
+          time: '8:30 a.m. – 10:00 a.m.',
+          title: 'Day Two Keynote'
+        },
+        {
+          time: '10:00 a.m. – 5:00 p.m.',
+          title: 'Certifications'
+        },
+        {
+          time: '10:00 a.m. - 4:00 p.m.',
+          title: 'VisionCity Open'
+        },
+        {
+          time: '10:30 a.m. - 3:45 p.m.',
+          title: 'Breakout Sessions & Hands-On Labs'
+        },
+        {
+          time: '5:30 p.m. - 7:30 p.m.',
+          title: 'VisionCity Closing Reception'
+        },
+        {
+          time: '7:30 p.m. - 10:00 p.m.',
+          title: 'Vision Concert'
+        }
+        ]
+      }
+    ]
+    var EventTime = React.createClass({
+      render: function () {
+        return(
+          <div className="container centered">
+            <div className="row">
+              <div className="col text-left col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h4>
+                  {this.props.time}
+                </h4>
+              </div>
+              <div className="col text-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                <h4 className="event-title">
+                  {this.props.title}
+                </h4>
+              </div>
+            </div>
+          </div>
+        );
+      }
+    })
+
+
+    var EventInfoComponent = React.createClass({
+
+      componentDidMount: function () {
+      var app = document.getElementById('container')
+      app.className = 'Event'
+      },
+
+      render: function () {
+        return(
+          <section className="event-container">
+            <InfoHeader  extraClasses='agenda-info-header' image={EventHeader} title='Event Information' desc=''/>
+          <section className="event-info-container">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="inner-event-container">
+                    <h2>Event Info</h2>
+                    <p>Veritas looks forward to welcoming you to Las Vegas for Vision 2017 at the ARIA Resort & Casino the week of September 18–20, 2017. With its luxurious amenities, gourmet restaurants, and world-class conference facilities, the ARIA provides the ideal backdrop for all the education, networking, and fun Vision has to offer.</p>
+                    <p>Please visit the event information section for details on the ARIA Resort & Casino, travel logistics to Las Vegas, typical weather, and much more. Information is also available for those needing assistance with Visa requests.</p>
+                  </div>
+                </div>
+              </div>
+        <hr/>
+        <div className="row">
+          <div className="col-md-12">
+            <div className="inner-event-container">
+              <h2>Hotel and Travel</h2>
+              <p>Attendees will have access to exclusive hotel conference rates for the ARIA during the registration process.</p>
+              <p><b>Room Rates</b>—Participants of Veritas Vision will be able to reserve accommodations at the room rate of USD $169–$209 (plus tax) with a $29 per night resort fee at the ARIA Resort & Casino. The resort fee includes unlimited local and toll-free calls, high-speed wireless Internet in-suite and on CityCenter campus, access to The Spa at ARIA Fitness Center, daily newspaper, and airline boarding pass printing.</p>
+              <p><b>Note:</b> Hotel accommodations are not included in conference registration fees.</p>
+              <p><b>Room Reservations</b>—You’ll have the opportunity to register for a room in the Vision hotel block during the online registration process. Please do not contact the ARIA directly. </p>
+              <p><b>Flying into Las Vegas</b>—McCarran International Airport (LAS) is the main commercial airport, approximately five miles south of downtown Las Vegas. </p>
+              <p>Traveling to and from Las Vegas should be a seamless experience for most visitors. The Las Vegas airport (LAS) offers many direct flights per day and the ARIA is conveniently located to the airport. </p>
+              <p><b>Taxi Service</b>—Taxi service is readily available at McCarran International Airport (LAS). It is approximately 10 minutes to the ARIA Resort & Casino. Expect to pay $20–$30 with gratuity. </p>
+              <p><b>Time Zone</b>—Las Vegas is in the Pacific Standard Time Zone, eight hours behind Greenwich Mean Time (-8 GMT). </p>
+              <p><b>Credit Cards</b>—Major credit cards, including American Express, MasterCard, and Visa, are accepted in virtually all restaurants and shops. </p>
+              <p><b>Electricity</b>—The electrical current is 110 volts, 60 Hz. European appliances without dual-voltage capabilities require an adapter, which you can purchase in most major departure airports. </p>
+              <p><b>Weather</b>—Temperatures in September range from highs of 95ºF (35ºC) to lows of 66ºF (19ºC). The air conditioning in the conference rooms can be quite cool, so bring a light jacket or sweater. Please visit weather.com for an accurate forecast before traveling.</p>
+              <h2>Visa Assistance</h2>
+              <p>For those needing assistance with obtaining a Visa, Veritas has put a formal process in place. Please complete the Visa Invitation request form and submit a completed version to askhr@veritas.com. Note: The Vision events team is unable to issue Visa letters.</p>
+              <h2></h2>
+            </div>
+          </div>
+        </div>
+        <hr/>
+        <div className="row">
+          <div className="col-md-12">
+            <div className="inner-event-container">
+              <h2>Frequently Asked Questions (FAQ)</h2>
+              <br/>
+              <ul style={{'textDecoration':'none','listStyle':'none'}}>
+                <li>
+                  <p><b>Where and when is Vision being held?</b><br/>
+                    Vision is the week of September 18–20, 2017, at the ARIA Resort & Casino in Las Vegas, Nevada. Vision will span two and a half days of unique opportunities for attendees to get trained, network, and learn about the future of information management and how Veritas plays a vital role. Pre-conference day(s) will offer in-depth training workshops and a variety of ancillary meetings. </p>
+                </li>
+                <li>
+                  <p><b>What is the cost to attend?</b><br/>
+                    Please see the  <Link to="/registration" className="nav-item">Registration</Link> page with pricing information.</p>
+                  <p>Note: Hotel accommodations are not included in conference registration fees.</p>
+                </li>
+                <li>
+                  <p><b>What are the session tracks and content?</b><br/>
+                  Veritas Vision will target keynotes, sessions, and activities for C-level executives, strategic IT leaders and professionals, and digital information specialists. Sessions will be presented by industry experts, customers, and Veritas experts, with a focus on the following areas: hybrid cloud, unified data protection, software-defined storage, information governance, and OpenStack and containers.
+                  </p>
+                </li>
+                <li>
+                  <p><b> Will there be a Call for Papers?</b><br/>
+                  The Veritas Vision team believes it is important to invite customers and partners to share their knowledge at Vision 2017. If you’re interested in submitting a proposal, please email your suggested topic to vision2017@veritas.com for the content team to review.
+               </p>
+             </li>
+                <li>
+                  <p><b> Is there only one Veritas Vision conference in 2017?</b><br/>
+                  At this time, there will be only one multi-day, paid event in North America. After Veritas Vision, Veritas will take the Vision content on the road with Veritas Solution Days and Executive Forums across APJ, EMEA, and the Americas during the remainder of 2017 and throughout early 2018.
+                </p>
+              </li>
+                <li>
+                  <p><b> Who should attend the Vision conference?</b><br/>
+                 Vision will include offerings for all attendee types, including strategic and functional. Keynotes and sessions will deliver thought leadership content and feature industry luminaries/disrupters as well as select customers. Innovation and technical training will be offered in the deep-dive breakout sessions, partner-featured solutions showcase, hands-on labs, and certification workshops. All users of Veritas technologies will benefit from Vision 2017.
+              </p>
+            </li>
+                <li>
+                  <p><b> Are there sponsors besides Veritas?</b><br/>
+                 Yes, sponsorships are being offered to industry-leading solution providers in the hardware, software, and services partner categories. Platinum, gold, and silver sponsorship packages are now available, along with a range of additional product branding and social event sponsorship opportunities.Feel free to share the current prospectus with customers and partners.
+               </p>
+             </li>
+             <li> <p><b>What does the Vision Las Vegas Conference fee include?</b></p>
+              <ul>
+                <li><p>Admission to all keynotes, breakouts, hands-on labs, and evening activities</p></li>
+                <li><p>Breakfast, lunch, and breaks according to the posted schedule</p></li>
+                <li><p>All conference materials</p></li>
+                <li><p>Wireless access in the designated conference areas</p></li>
+                <li><p>Access to discounted hotel rates at the ARIA Resort & Casino (through the Vision registration site)</p></li>
+                <li><p>A variety of Veritas Vision promotional items and opportunities to win prizes throughout the conference</p></li>
+                <li><p>Veritas will not cover any flight accommodations; additional hospitality will be limited and must be pre-approved by Veritas’ Legal Office of Ethics & Compliance (OEC)</p></li>
+                <li><p>Retail value per pass: $995</p></li>
+              </ul>
+             </li>
+             <li><p><b> Are hotel accommodations included in the conference price?</b><br/>
+             Accommodations are not included; however, you should make reservations through the Vision registration site to receive the exclusive conference rates.</p>
+              </li>
+
+             <li><p><b> Are guests allowed at the evening functions?</b><br/>
+             Yes, you may purchase a guest pass along with your conference pass through the online registration system for $175. (On-site cost is $200.) We have some fun events with great food and entertainment planned for Tuesday and Wednesday evenings at the conference, but keep in mind that guests must be at least 21 to attend. Guests are not allowed to attend any daytime sessions, meals, or other conference activities.
+           </p>
+              </li>
+              </ul>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+          <SocialQuotes color="#bcf8ff"/>
+          <Banner image={EventBanner}/>
+          <Follow/>
+          <Footer/>
+      </section>
+
+        )
+      }
+    });
+
+    var moreBio = [
+      {
+        bio:<p>Since starting youth culture magazine Student at age 16, Sir Richard has found entrepreneurial ways to drive positive change in the world. In 2004 he established non-profit foundation Virgin Unite to tackle tough social and environmental problems and strive to make business a force for good. Most of his time is now spent building businesses that will make a positive difference in the world and working with Virgin Unite and organizations it has incubated, such as The Elders, The Carbon War Room, The B Team, Ocean Unite and Branson Centre of Entrepreneurship. He also serves on the Global Commission on Drug Policy and supports ocean conservation with the Ocean Elders.</p>
+      },
+      {
+        bio:<p>Bill holds a bachelor’s degree in Computer Science from the U. S. Air Force Academy and master’s degrees in computer science and computer engineering from Stanford University. He also holds an honorary doctorate from the University of Colorado, where he founded the Coleman Institute for Cognitive Disabilities. He is a member of the board of directors of Seagate, is a Commissioner of the Trilateral Commission and a Trustee of Santa Clara University.</p>
+      },
+      {
+        bio:<p>Mike holds a bachelor’s degree in Developmental Biology from the University of Rochester in New York. He speaks Spanish and Swedish and has extensive experience working abroad.</p>
+      },
+      {
+        bio:<p>Before that Lynn was with Cisco Systems, where she served in various executive roles, most recently as Vice President, Global Collaboration Marketing. At Cisco she led successful marketing strategies for a $5 billion portfolio that spanned a wide range of market audiences and Cisco business units. Lynn holds a B.S. in Electrical Engineering and Computer Science from the University of California, Berkeley.</p>
+      },
+      {
+        bio:<p>At Foreigner’s core is the founder and Songwriters Hall of Fame member Mick Jones, the visionary maestro whose stylistic songwriting, indelible guitar hooks and multi-layered talents continue to escalate Foreigner’s influence and guide the band to new horizons. He reformed the band after a 2002 hiatus and selected lead singer Kelly Hansen to help write an inspired new chapter in the history of Foreigner. One of rock’s greatest showmen, Hansen is known for his innate ability to connect with the crowds.  As a front man and lead vocalist, Hansen is among the most respected, consummate professionals in rock and roll. With a 35-year career that spans almost every area of music, from the role of lead vocalist to producing and engineering, Kelly has the unique ability to advance and excel when faced with new challenges.</p>
+      },
+    ]
+
+
+    var ReadMoreButton = React.createClass({
+      getInitialState: function() {
+            return {
+               expanded: false
+           };
+        },
+        expandedText: function() {
+          if (this.state.expanded === false) {
+            this.setState({
+                expanded: true
+            });
+          }
+        },
+        getMoreTextDiv: function() {
+            if (this.state.expanded) {
+              return moreBio[this.props.index].bio
+            } else {
+              return null;
+            }
+        },
+      render: function(){
+        var expandedDiv = this.getMoreTextDiv()
+        return (
+          <span>
+            {(this.state.expanded === true) ? '' : <a onClick={this.expandedText}> See More.</a>}
+            <div> { expandedDiv } </div>
+          </span>
+        );
+      }
+    })
+    var GuestBioPage = React.createClass({
+  componentDidMount: function() {
+    var app = document.getElementById('container')
+    app.className = 'Bios'
+    if (this.props.location.query.anchor) {
+      var navHeight = $('.vision-main-nav')[0].clientHeight
+      var navLinkHeight = $('.vision-menu')[0].clientHeight
+      var elPosition = $(this.props.location.query.anchor).position().top
+      window.setTimeout(function() {
+        window.scrollTo(0, elPosition - navHeight - navLinkHeight - 10)
+      }, 10)
+    }
+  },
+  componentDidUpdate() {
+    let hash = this.props.location.hash.replace('#', '');
+    if (hash) {
+        let node = ReactDOM.findDOMNode(this.hrefs[hash]);
+        if (node) {
+            node.scrollIntoView();
+        }
+    }
+  },
+  returnButton: function() {
+   return (
+   <div className="back-button">
+    <Link to="/"><img src={backButton}/></Link><Link to="/"><span className="back-button-text">Back Home </span></Link>
+    </div>
+   )
+  },
+
+  render: function() {
+    var returnButton = this.returnButton();
+
+    return(
+      <div>
+      <div className="container bio-spacer">
+        <div id="first-row" className="row">
+          <div className="col-md-3">
+            <div className="headshot">
+              <img src="/content/dam/Veritas/images/vision/richard-headshot.png" className="img-circle img-bio"/>
+            </div>
+            <div className="bio-gray-container bio-one">
+              <div className="band-title">
+                Sir Richard Branson
+              </div>
+              <div className="band-subtitle">
+                Founder of the Virgin Group
+              </div>
+            </div>
+          </div>
+          <div className="col-md-9">
+            <div className="bio-text bio-text-spacer">
+              <p>Sir Richard Branson is Founder of the Virgin Group. Virgin is a leading international investment group and one of the worlds most recognized and respected brands. Conceived in 1970 by Sir Richard Branson, the Virgin Group has gone on to grow successful businesses in sectors including mobile telephony, travel and transportation, financial services, leisure and entertainment and health and wellness.</p>
+              <br/>
+              <p>Sir Richard has challenged himself with many record breaking adventures, including the fastest ever Atlantic Ocean crossing, a series of hot air balloon journeys and kitesurfing across the Channel. He has described Virgin Galactic, the world’s first commercial spaceline, as “the greatest adventure of all.”
+              <ReadMoreButton index={0}/>
+              </p>
+              <br/>
+            </div>
+            {returnButton}
+          </div>
+        </div>
+        <div id="second-row" className="row">
+          <div className="col-md-3">
+            <div className="headshot">
+              <img src="/content/dam/Veritas/images/vision/bill-headshot.png" className="img-circle img-bio mobile-spacer"/>
+            </div>
+            <div className="bio-gray-container bio-two">
+              <div className="band-title">
+                Bill Coleman
+              </div>
+              <div className="band-subtitle">
+                Chief Executive Officer, Veritas
+              </div>
+            </div>
+          </div>
+          <div className="col-md-9">
+            <div className="bio-text bio-text-spacer">
+              <p>Bill Coleman is the Chief Executive Officer at Veritas. Bill is an industry veteran who has spent 25 years running prominent Silicon Valley companies including his years as the founder/CEO of BEA Systems.</p>
+              <br/>
+              <p>Bill founded BEA Systems in 1995 and was Chairman and CEO of the company from its founding through October 2001, during which time BEA became the fastest software company to reach a billion dollars in annual revenue. Following BEA, Bill was Founder, Chairman and CEO of Cassatt, Inc. an enterprise cloud software company which was acquired by CA, Inc. in 2009, and has been a partner with Alsop Louie Partners, an early stage Silicon Valley venture capital firm, since 2010. During this time, he was also Chairman and CEO of Resilient Network Systems, a cyber security software company from Feb 2012 until Dec 2013. Prior to BEA, Bill held various management positions at Sun Microsystems, Inc., where he co-founded Sun Federal; founded Sun Professional Services; and was VP System Software, where he led the initial development of Solaris and related products. He began his career in the USAF as chief of satellite operations, Office of the Secretary. <ReadMoreButton index={1}/></p>
+              <br/>
+            </div>
+            {returnButton}
+          </div>
+        </div>
+        <div id="third-row" className="row">
+          <div className="col-md-3">
+            <div className="headshot">
+              <img src="/content/dam/Veritas/images/vision/mike-headshot.png" className="img-circle img-bio mobile-spacer"/>
+            </div>
+            <div className="bio-gray-container bio-three">
+              <div className="band-title">
+                Mike Palmer
+              </div>
+              <div className="band-subtitle">
+                Executive Vice President, Chief Product Officer, Veritas
+              </div>
+            </div>
+          </div>
+          <div className="col-md-9">
+            <div className="bio-text bio-text-spacer">
+              <p>Mike Palmer is Executive Vice President and Chief Product Officer (CPO) at Veritas.</p>
+              <br/>
+              <p>As CPO, Mike is responsible for driving Veritas’ $2.5 billion products organization, which includes the Veritas Information Availability, Information Management, Backup and Recovery and Appliances portfolios.</p>
+              <br/>
+              <p>Prior to this role, Mike was Senior Vice President and General Manager of Veritas’ Solutions for Data Insight and Orchestration organization, where he drove the strategic vision for bringing Veritas Information Availability and Insight solutions to market. </p>
+              <br/>
+              <p>He has extensive leadership experience across diverse roles and technology areas, with companies ranging from startups to the Fortune 20. Mike joined Veritas from Seagate Technologies, where his responsibilities as Senior Vice President and General Manager (GM) of the Cloud Services business unit included engineering, product management, sales and marketing, service and operations and profit and loss management.</p>
+              <br/>
+              <p>Prior to Seagate, Mike spent nine years with Verizon in various leadership positions. These ranged from Vice President and GM of Cloud Information Technology Solutions and Security, to leading Global Engineering, Product Strategy and Alliances and Chief Marketing Officer. Before that he spent eight years in leadership positions at Totality Corporation (which was sold to Verizon) and Xuma. <ReadMoreButton index={2} /></p>
+              <br/>
+            </div>
+            {returnButton}
+          </div>
+        </div>
+        <div id="fourth-row" className="row">
+          <div className="col-md-3">
+            <div className="headshot">
+              <img src="/content/dam/Veritas/images/vision/lynn-headshot.png" className="img-circle img-bio mobile-spacer"/>
+            </div>
+            <div className="bio-gray-container bio-four">
+              <div className="band-title">
+                Lynn Lucas
+              </div>
+              <div className="band-subtitle">
+                Chief Marketing Officer, Veritas
+              </div>
+            </div>
+          </div>
+          <div className="col-md-9">
+            <div className="bio-text bio-text-spacer">
+              <p>Lynn Lucas is Chief Marketing Officer (CMO) at Veritas. She leads the global marketing organization and is responsible for all aspects including the customer experience, corporate positioning and communications, brand and digital strategy, orchestrated demand generation, and regional marketing.</p>
+              <br/>
+              <p>A seasoned and innovative CMO with a reputation for driving marketing strategies that grow awareness and business impact, Lynn brings more than 20 years of B2B marketing experience to Veritas. Her experience ranges from large, high tech enterprises to cloud-focused mid-sized organizations. Prior to Veritas she served as Chief Marketing Officer of Good Technology. She relaunched their brand, developed new messaging and positioning, and delivered sales pipeline through integrated demand generation programs, ultimately culminating in the successful sale of Good in the highly competitive mobile security market. <ReadMoreButton index={3} /></p>
+              <br/>
+            </div>
+            {returnButton}
+          </div>
+        </div>
+        <div id="fifth-row" className="row">
+          <div className="col-md-3">
+            <div className="headshot">
+              <img src="/content/dam/Veritas/images/vision/band-circle.png" className="img-circle img-bio mobile-spacer"/>
+            </div>
+            <div className="bio-gray-container bio-five">
+              <div className="band-title">
+                Foreigner
+              </div>
+              <div className="band-subtitle">
+                Vision 2017 Musical Performer
+              </div>
+            </div>
+          </div>
+          <div className="col-md-9">
+            <div className="bio-text bio-text-spacer">
+              <p>With ten multi-platinum albums and sixteen Top 30 hits, Foreigner is universally hailed as one of the most popular rock acts in the world with a formidable musical arsenal that continues to propel sold-out tours and album sales, now exceeding 75 million. Responsible for some of rock and roll’s most enduring anthems including “Juke Box Hero,” “Feels Like The First Time,” “Urgent,” “Head Games,” “Hot Blooded,” “Cold As Ice,” “Dirty White Boy,” “Waiting For A Girl Like You,” and the worldwide #1 hit, “I Want To Know What Love Is,” Foreigner continues to rock the charts almost 40 years into the game.</p>
+              <br/>
+              <p>Founded in 1976, Foreigner’s debut album produced the hits “Feels Like The First Time,” “Cold As Ice” and “Long, Long Way From Home.”  The album Double Vision followed, as did a string of hits like “Urgent,” “Juke Box Hero” and “Waiting For A Girl Like You.”  Those songs helped give Foreigner’s next album, 4, its impressive run at #1 on the Billboard chart.  At the zenith of 80’s sound, Foreigner’s fifth album, Agent Provocateur, gave the world the incredible #1 global hit,” I Want To Know What Love Is.” This musical milestone followed the record-breaking song “Waiting For A Girl Like You.” <ReadMoreButton index={4} /></p>
+              <br/>
+            </div>
+            {returnButton}
+
+          </div>
+
+        </div>
+      </div>
+      <SocialQuotes color="#bcf8ff"/>
+      <Banner image={biosBanner}/>
+      <Follow />
+      <Footer />
+      </div>
+    )
+  }
+})
+
+  var Guests = React.createClass({
+    createGuest: function() {
+      //Speaker Object
+      var guestList = [];
+      var guestInfo = [
+        { name: 'Sir Richard Branson',
+          bio: 'Founder of the Virgin Group',
+          image: '/content/dam/Veritas/images/vision/richard-headshot.png',
+          cta: 'SPEAKER BIO',
+          anchor: '#first-row',
+          bgimg: 'url(/content/dam/Veritas/images/vision/box-bg-1.png)'
+        },
+        { name: 'Bill Coleman',
+          bio: 'Chief Executive Officer, Veritas',
+          image: '/content/dam/Veritas/images/vision/bill-headshot.png',
+          cta: 'SPEAKER BIO',
+          anchor: '#second-row',
+          bgimg: 'url(/content/dam/Veritas/images/vision/box-bg-2.png)'
+        },
+        { name: 'Mike Palmer',
+          bio: 'Executive Vice President, Chief Product Officer, Veritas',
+          image: '/content/dam/Veritas/images/vision/mike-headshot.png',
+          cta: 'SPEAKER BIO',
+          anchor: '#third-row',
+          bgimg: 'url(/content/dam/Veritas/images/vision/box-bg-3.png)'
+        },
+        { name: 'Lynn Lucas',
+          bio: 'Chief Marketing Officer, Veritas',
+          image: '/content/dam/Veritas/images/vision/lynn-headshot.png',
+          cta: 'SPEAKER BIO',
+          anchor: '#fourth-row',
+          bgimg: 'url(/content/dam/Veritas/images/vision/box-bg-4.png)'
+        }
+      ];
+    for (let i = 0; i < guestInfo.length; i++){
+      guestList = guestList.concat(
+        <Guest key={'guest'+i} guestInfo={guestInfo[i]} />
+      )
+    }
+    return guestList;
+  },
+  render: function(){
+    var allGuests = this.createGuest();
+    return (
+      <section className="guest-container">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <p className="guest-title">Featured Keynote Speakers</p>
+            </div>
+          </div>
+          <div className="row">
+            {allGuests}
+          </div>
+        </div>
+      </section>
+    )
+  }
+  })
+
+  //Guest
+  var Guest = React.createClass({
+  render: function(){
+    return(
+      <div className="col-md-3">
+        <div className="headshot">
+          <img src={this.props.guestInfo.image} className="img-circle guest-img" />
+            <div className="gray-container" style={{backgroundImage: this.props.guestInfo.bgimg}}>
+              <p className="band-title">
+                {this.props.guestInfo.name}
+              </p>
+              <p className="band-subtitle">
+                {this.props.guestInfo.bio}
+              </p>
+              <Link to="/bios" className="btn guest-btn" query={{anchor: this.props.guestInfo.anchor}}>
+                {this.props.guestInfo.cta}
+              </Link>
+            </div>
+        </div>
+      </div>
+    )
+  }
+  })
+
+    // Registration
+
+    var Registration = React.createClass({
+      componentDidMount: function () {
+      var app = document.getElementById('container')
+      app.className = 'Registration'
+    },
+      render: function() {
+        return(
+          <div>
+            <InfoHeader image={RegHeader} title="Registration"
+              desc=""/>
+            <RegistrationInfo />
+            <SocialQuotes color="#bcf8ff" />
+            <Banner image={RegBanner} />
+            <Follow />
+            <Footer />
+          </div>
+        )
+      }
+    })
+
+
+    var RegistrationInfo = React.createClass({
+      render: function () {
+          return(
+            <section className="reg-info">
+              <div className="container centered" >
+                <div className="row">
+                  <div className="general col-md-4 col-md-offset-1">
+                    <h2>General Attendees</h2>
+                    <h4><b>Early Bird Registration</b></h4>
+                    <h4><b>$895:</b> February 1 – July 2</h4>
+                    <h4>Save $100 off standard registration</h4>
+                    <br/>
+                    <h4><b>Regular Registration </b></h4>
+                    <h4><b>$995:</b> July 3 – September 15</h4>
+                  </div>
+
+                  <div className="alumni col-md-4 col-md-offset-2 ">
+                    <h2>Alumni* Registration </h2>
+<h4>(*Have attended 3+ Visions)</h4>
+                    <h4><b>Early Bird Registration</b></h4>
+                    <h4><b>$795:</b> February 1 – July 2</h4>
+                    <h4>Save an additional $100 off the going registration rate PLUS receive an exclusive
+                      <b> Vision Alumni gift</b></h4>
+                    <br/>
+                    <h4><b>Regular Registration </b></h4>
+                    <h4><b>$895:</b> July 3 – September 15</h4>
+                    <h4>Save an additional $100 off the going registration rate PLUS receive an exclusive
+                      <b> Vision Alumni gift</b></h4>
+                  </div>
+                </div>
+                <hr />
+                <div className="row">
+                  <div className="col-md-10 col-md-offset-1">
+                  <h2>What’s Included in Your Registration:</h2>
+                  <ul>
+                    <li><h4>Admission to all keynotes, super sessions, breakouts, hands-on labs, and evening activities</h4></li>
+                    <li><h4>Breakfast, lunch, and breaks according to the posted schedule</h4></li>
+                    <li><h4>All conference materials</h4></li>
+                    <li><h4>Wireless access in the designated conference areas</h4></li>
+                    <li><h4>Access to discounted hotel rates at the ARIA Resort & Casino </h4></li>
+                    <li><h4>A variety of Veritas Vision promotional items and opportunities to win prizes throughout the conference</h4></li>
+
+                  </ul>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-10 col-md-offset-1">
+                    <h2>Vision Alumni Program</h2>
+                        <h4 style={{lineHeight: '2'}}>If you’ve attended three or more previous Vision conferences*, you qualify for the Vision Alumni Program. That means you get $100 off the going rate for a full conference pass, plus an impressive list of exclusive benefits. Check our Vision Alumni page often for updated information about the program—along with a growing list of perks we’re offering our Vision Alumni members.</h4>
+                        <br />
+                        <p>* You qualify as a Vision alumnus if you’ve previously attended three (3) or more Veritas or Symantec Vision or other legacy conferences in the United States and EMEA.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          )
+      }
+    })
+
+    // <h1> Response Time! </h1>
+    // <p>{JSON.stringify(lanyonResponse, null, 4)}</p>
+    //Session Scheduler
+    var SessionPage = React.createClass({
+      getInitialState: function() {
+        return {showMode: "Tracks",
+          "Modern Data Protection": "false",
+          "Multi-Cloud": "false",
+          "Software-defined Storage": "false",
+          "Risk Mitigation and Compliance": "false"
+        }
+      },
+      componentDidMount: function() {
+        var response = ""
+        var app = document.getElementById('container')
+        app.className = 'Sessions'
+      },
+
+      handleTrackClick: function(event) {
+        event.preventDefault()
+          this.setState({"showMode": "Tracks"})
+      },
+      handleSessionClick: function(event) {
+        event.preventDefault()
+           this.setState({"showMode": "Sessions"})
+
+      },
+      showContent: function() {
+        var stateKeys = Object.keys(this.state)
+        var filters = []
+        for (var i = 0; i < stateKeys.length; i++) {
+          if(this.state[stateKeys[i]] == "true") {
+            filters = filters.concat(stateKeys[i])
+          }
+        }
+        if (this.state.showMode !== "Sessions") {
+          return(<TrackOverviews key={"trackoverview"} filters={filters} metaTagHandler={this.metaTagHandler} handleSessionClick={this.handlfeSessionClick}/>)
+        }else {
+          return(<SessionEvents filters={filters} metaTagHandler={this.metaTagHandler}/>)
+        }
+      },
+      setFilter: function(e) {
+          // var filterTrack = e.target.name
+          // var newFilters = this.state.filters
+          // console.log(newFilters[e.target.id])
+          // newFilters[e.target.id] = e.target.value
+          // console.log(newFilters[e.target.id])
+          var stateObject = function() {
+            var returnObj = {};
+            returnObj[e.target.id] = (e.target.value=="false") ? "true" :"false";
+            returnObj["showMode"] = "Sessions"
+            return returnObj;
+          }.bind(e)();
+          this.setState( stateObject );
+      },
+      metaTagHandler: function(e) {
+        e.preventDefault
+        var newState = this.state
+        var stateObject = function() {
+          Object.keys(newState).forEach(function(key, value) {
+            return newState[key] = false;
+          })
+          console.log(e.target)
+          newState["showMode"] = "Sessions"
+          newState[e.target.id] = "true"
+          return newState;
+        }.bind(e)();
+        window.scrollTo(0,400)
+        this.replaceState(newState)
+      },
+      render: function() {
+        var content = this.showContent()
+        return(
+          <div>
+          <ThreadHeader image={ThreadImage} title="Session Scheduler"
+           secondTitle="The truth in information"/>
+           <div className="container">
+             <div className="row event-spacer">
+              <div className="col-sm-3 session-sidebar">
+              <h3 className="event-list-header">Event Details</h3>
+              <ul>
+                <li><a href="#" className={(this.state.showMode=="Tracks") ? "activeSchedulerLink" : "inactiveSchedulerLink"}
+                 onClick={this.handleTrackClick}>Tracks</a></li>
+                <li><a href="#" className={(this.state.showMode=="Tracks") ? "inactiveSchedulerLink" : "activeSchedulerLink"}
+                onClick={this.handleSessionClick}>Sessions</a></li>
+              </ul>
+              <br/>
+              <fieldset>
+                <legend>Filter Sessions</legend>
+                <div>
+                <label>
+                  <input type="checkbox" id="Modern Data Protection" name="track"
+                  onChange={this.setFilter} value={this.state["Modern Data Protection"]}
+                  checked={(this.state["Modern Data Protection"] == "true")? true : false}>
+                  </input>
+                  Modern Data Protection</label>
+                </div>
+                <div>
+                <label>
+                  <input type="checkbox" id="Multi-Cloud" name="track"
+                  onChange={this.setFilter} value={this.state["Multi-Cloud"]}
+                  checked={(this.state["Multi-Cloud"] == "true")? true : false}>
+                  </input>
+                  Multi-Cloud</label>
+                </div>
+                <div>
+                <label>
+                  <input type="checkbox" id="Risk Mitigation and Compliance" name="track"
+                   onChange={this.setFilter} value={this.state["Risk Mitigation and Compliance"]}
+                   checked={(this.state["Risk Mitigation and Compliance"] == "true")? true : false}>
+                  </input>
+                  Risk Mitigation & Compliance</label>
+                </div>
+                <div>
+                <label>
+                  <input type="checkbox" id="Software-defined Storage" name="track"
+                   onChange={this.setFilter} value={this.state["Software-defined Storage"]}
+                   checked={(this.state["Software-defined Storage"] == "true")? true : false}>
+                  </input>
+                  Software-defined Storage</label>
+                </div>
+              </fieldset>
+              </div>
+              <div className="col-sm-9 vert-rule">
+                {content}
+              </div>
+             </div>
+           </div>
+
+
+          <SocialQuotes color="#bcf8ff" />
+          <Follow />
+          <Footer />
+          </div>
+        )
+
+      }
+    })
+
+    var overviewsObject = [
+      {
+        tag: 'Multi-Cloud',
+        title: "Multi-Cloud Adoption",
+        abstract: [<p key="abstract1">According to IDC, 73% of enterprises have a hybrid cloud strategy in place—and 85% will commit to using multiple cloud services by 2018. The reasons for this rapid shift to the multi-cloud are compelling and well documented—from nearly unlimited infrastructure flexibility to dramatically lower storage costs.
+                    <br/>
+                    <br/>
+                    But this multi-cloud world also introduces important new questions and challenges. Smart, successful multi-cloud adoption requires careful planning, a thoughtful approach, and technology solutions that allow your organization to move data freely and confidently between cloud platforms, keep data in the cloud protected and recoverable, and maintain consistent service uptime and availability across whatever cloud platforms and services you choose.
+                    <br/>
+                    <br/>
+                    The Multi-cloud Adoption track at Vision 2017 focuses on these important multi-cloud challenges—and shows how specific Veritas solutions address them by extending proven, industry-leading data management and data protection capabilities to multi-cloud environments. Attend this track to learn how your organization can use Veritas products—including Velocity, Access, VRP, CloudMobility, CloudPoint, NetBackup, and more—to move and protect data and boost protection, continuity, and compliance in a multi-cloud world.
+                    </p>]
+      },
+      {
+        tag: 'Software-defined Storage',
+        title: "Software-defined Storage",
+        abstract: [<p key="abstract2">Unrelenting data growth has become an unavoidable fact of IT life, and there’s no end in sight. To keep up, you can continue to overpay for expensive storage labels. Or you can embrace a smarter, software-defined approach that provides true platform independence, creates more storage efficiency and scalability, and allows you to manage all types of storage—across every tier, platform, and architecture—as a unified whole.
+                  <br/>
+                  <br/>
+                  Sessions in the Software-Defined Storage track will show you how Veritas products like Access, ObjectStore, HyperScale for OpenStack and Containers, InfoScale, and others can help make this “software-defined everything” alternative a practical reality for your business. This includes taking a close look at how a Veritas-powered software-defined approach can eliminate the VMware licensing tax and help you tap into the full potential of object storage. You’ll also learn how Veritas allows you to take full advantage of open architectures like containers and OpenStack, boost application performance and availability on-prem or in the cloud, and manage every part of your software-defined world from a single console.
+                  </p>]
+      },
+      {
+        tag: 'Modern Data Protection',
+        title: "Modern Data Protection",
+        abstract: [<p key="abstract3">Protecting data by cobbling together expensive limited-function or single-platform backup tools is no longer a viable option in a multi-cloud world. Modern enterprises need a unified approach to data protection that identifies and protects data across every cloud and on-prem environment, makes it possible to delete worthless data with confidence, and gives users convenient and secure access to the information they need.
+                    <br/>
+                    <br/>
+                    The Modern Data Protection track at Vision 2017 features sessions that show how industry-leading Veritas data protection solutions work together to replace limited and isolated backup tools with modern data protection solutions.  You’ll learn how NetBackup, NetBackup Appliances, Backup Exec, VRP, Velocity, CloudPoint, and other Veritas products deliver fully unified data protection across all your physical, virtual, and cloud platforms and applications, create new options for using inexpensive cloud storage as a backup target, incorporate machine learning technology to accelerate recovery times, take full advantage of hyper-converged and other advanced scale-out architectures, and much more.
+                    <br/>
+                    <br/>
+                    You will also have the opportunity to explore the implications and advantages of a new 360 Data Management Suite that combines modern data protection, visibility, resiliency, software-defined storage, and more into a comprehensive data management suite that delivers incredible value.
+                    </p>]
+      },
+      {
+        tag:'Risk Mitigation and Compliance',
+        title:"Risk Mitigation and Compliance",
+        abstract: [<p key="abstract4">As the regulatory landscape evolves and more data moves to the cloud, compliance has become an increasingly difficult, high-priority challenge. Meeting this challenge—and keeping legal, financial, and other risks in check—requires new levels of visibility into and control over all of your data regardless of where it’s located.
+        <br/>
+        <br/>
+        Attend sessions in the Vision 2017 Risk Mitigation and Compliance track to learn how Veritas can reduce data risks by providing you with a clear line of site into all of your data, helping you quickly classify that data within the context of your established policies, and respond quickly and intelligently to data risks and regulatory requests. This includes sessions that show how Enterprise Vault, Information Map, Veritas Information Classifier, Data Insight, and other products can help you add machine learning and an advanced classification engine to your compliance efforts, automatically manage and pre-determine the regulatory relevance of every document in your organization, gain the deep insights you need to quickly assess your data risks and make smart, informed decisions, and more.
+        </p>]
+      }
+    ]
+    var TrackOverviews = React.createClass({
+      // <a onClick={this.props.metaTagHandler} id={overviewsObject[i].tag}>See {overviewsObject[i].tag} sessions</a>
+        createOverviews: function() {
+          var content = []
+            for (var i = 0; i < overviewsObject.length; i++){
+              // if (this.props.filters.length == 0 || this.props.filters.includes(overviewsObject[i].tag)) {
+                var text="See " + overviewsObject[i].tag + " sessions"
+                var sessionLink= [<a className="filter-link" onClick={this.props.metaTagHandler} id={overviewsObject[i].tag}>{text}</a>]
+              content = content.concat(
+                <div key={"tracks" + i + i} >
+                  <h3> {overviewsObject[i].title}</h3>
+                  {overviewsObject[i].abstract}
+                  {sessionLink}
+                  <hr/>
+                </div>
+              )
+            // }
+          }
+            return content
+        },
+        render: function(){
+          var overviews = this.createOverviews()
+          return(
+            <div>
+              <h1> Vision Track Overview </h1>
+              <hr/>
+              {overviews}
+              </div>
+          )
+        }
+    })
+
+    var lanyonObject = lanyonResponse["session-data"]
+    var tagsInOrder = [
+      "test",
+      "test",
+      "Risk Mitigation and Compliance",
+      "Risk Mitigation and Compliance",
+      "Risk Mitigation and Compliance",
+      "Risk Mitigation and Compliance",
+      "Risk Mitigation and Compliance",
+      "Risk Mitigation and Compliance",
+      "Risk Mitigation and Compliance",
+      "Software-defined Storage",
+      "Software-defined Storage",
+      "Software-defined Storage",
+      "Software-defined Storage",
+      "Software-defined Storage",
+      "Software-defined Storage",
+      "Multi-Cloud",
+      "Multi-Cloud",
+      "Multi-Cloud",
+      "Multi-Cloud",
+      "Multi-Cloud",
+      "Multi-Cloud",
+      "Multi-Cloud",
+      "Modern Data Protection",
+      "Modern Data Protection",
+      "Modern Data Protection",
+      "Modern Data Protection",
+      "Modern Data Protection",
+      "Modern Data Protection",
+      "Modern Data Protection",
+      "Modern Data Protection",
+      "Modern Data Protection",
+      "Modern Data Protection",
+      "Modern Data Protection",
+      "Modern Data Protection",
+      "Modern Data Protection",
+      "Modern Data Protection",
+      "Modern Data Protection",
+      "Modern Data Protection",
+      "Modern Data Protection",
+      "Modern Data Protection",
+      "Modern Data Protection"
+    ]
+    var testFilters = {}
+    for (var i = 0; i < lanyonObject.session.length; i++) {
+      testFilters[lanyonObject.session[i].title] = tagsInOrder[i]
+    }
+
+    var SessionEvents = React.createClass({
+      createContent: function() {
+        var arrayOfContent = []
+
+        for (var i = 2; i < lanyonObject.session.length; i++) {
+
+          if (this.props.filters.includes(testFilters[lanyonObject.session[i].title]) || this.props.filters.length == 0)
+          arrayOfContent = arrayOfContent.concat(
+          <SessionEventsContent
+            key={"sessionContent" + i}
+            metaTagHandler = {this.props.metaTagHandler}
+            title={lanyonObject.session[i].title}
+            abstract={lanyonObject.session[i].abstract}
+            filter={this.props.filters}
+            metaTags={[testFilters[lanyonObject.session[i].title]]}
+            date={""}
+          />
+        )
+        }
+
+        return arrayOfContent
+      },
+      render: function(){
+        var content = this.createContent();
+        return(
+          <div>
+            <h1> Vision Session Overview </h1>
+            <hr/>
+            {content}
+          </div>
+        )
+      }
+    })
+
+    var SessionEventsContent = React.createClass({
+      createMetaTags: function() {
+        var tags = []
+
+        for (var i = 0; i < this.props.metaTags.length; i++) {
+          tags = tags.concat(<div className="metaTag" key={"metaTag" + this.props.title.slice(4,6) + i}><p>{this.props.metaTags[i]}</p></div>)
+        }
+
+        return tags
+      },
+      render: function() {
+        // <div className="date">
+        //   <h4> {this.props.date}</h4>
+        // </div>
+        var tags = this.createMetaTags()
+        var text = "Log in to sign up for " + this.props.metaTags[0] + " sessions"
+        var link = <a href="https://vision2017.smarteventscloud.com/portal/newreg.ww">{text}</a>
+        return(
+          <div>
+            <div className="metaTags">
+              {tags}
+            </div>
+            <h3> {this.props.title} </h3>
+            <p> {this.props.abstract} </p>
+            {link}
+          <hr/>
+          </div>
+        )
+      }
+    })
+
+    var HandsOnPage = React.createClass({
+      getInitialState: function() {
+        return {
+          "Modern Data Protection": "false",
+          "Multi-Cloud": "false",
+          "Software-defined Storage": "false",
+          "Risk Mitigation and Compliance": "false"
+        }
+      },
+      componentDidMount: function() {
+        var response = ""
+        var app = document.getElementById('container')
+        app.className = 'Hands-On'
+      },
+      showContent: function() {
+        var stateKeys = Object.keys(this.state)
+        var filters = []
+        for (var i = 0; i < stateKeys.length; i++) {
+          if(this.state[stateKeys[i]] == "true") {
+            filters = filters.concat(stateKeys[i])
+          }
+        }
+          return(<HandsOnEvents filters={filters}/>)
+        },
+      setFilter: function(e) {
+          var stateObject = function() {
+            var returnObj = {};
+            returnObj[e.target.id] = (e.target.value=="false") ? "true" :"false";
+            return returnObj;
+          }.bind(e)();
+          this.setState( stateObject );
+      },
+      render: function() {
+        var content = this.showContent()
+        return(
+          <div>
+          <ThreadHeader image={ThreadImage} title="Session Scheduler"
+           secondTitle="The truth in information"/>
+           <div className="container">
+             <div className="row event-spacer">
+              <div className="col-sm-3 session-sidebar">
+              <h3 className="event-list-header">Event Details</h3>
+              <ul>
+                <li><a href="#" className={(this.state.showMode=="Tracks") ? "activeSchedulerLink" : "inactiveSchedulerLink"}
+                 onClick={this.handleTrackClick}>Tracks</a></li>
+                <li><a href="#" className={(this.state.showMode=="Tracks") ? "inactiveSchedulerLink" : "activeSchedulerLink"}
+                onClick={this.handleSessionClick}>Sessions</a></li>
+              </ul>
+              <br/>
+              <fieldset>
+                <legend>Filter Labs</legend>
+                <div>
+                <label>
+                  <input type="checkbox" id="Modern Data Protection" name="track"
+                  onChange={this.setFilter} value={this.state["Modern Data Protection"]}
+                  checked={(this.state["Modern Data Protection"] == "true")? true : false}>
+                  </input>
+                  Modern Data Protection</label>
+                </div>
+                <div>
+                <label>
+                  <input type="checkbox" id="Multi-Cloud" name="track"
+                  onChange={this.setFilter} value={this.state["Multi-Cloud"]}
+                  checked={(this.state["Multi-Cloud"] == "true")? true : false}>
+                  </input>
+                  Multi-Cloud</label>
+                </div>
+                <div>
+                <label>
+                  <input type="checkbox" id="Risk Mitigation and Compliance" name="track"
+                   onChange={this.setFilter} value={this.state["Risk Mitigation and Compliance"]}
+                   checked={(this.state["Risk Mitigation and Compliance"] == "true")? true : false}>
+                  </input>
+                  Risk Mitigation & Compliance</label>
+                </div>
+                <div>
+                <label>
+                  <input type="checkbox" id="Software-defined Storage" name="track"
+                   onChange={this.setFilter} value={this.state["Software-defined Storage"]}
+                   checked={(this.state["Software-defined Storage"] == "true")? true : false}>
+                  </input>
+                  Software-defined Storage</label>
+                </div>
+              </fieldset>
+              </div>
+              <div className="col-sm-9 vert-rule">
+                {content}
+              </div>
+             </div>
+           </div>
+         <SocialQuotes color="#bcf8ff" />
+         <Follow />
+         <Footer />
+         </div>
+         )
+       }
+    })
+
+    var HandsOnEvents = React.createClass({
+      createContent: function() {
+        var arrayOfContent = []
+
+        var filterConversion = {
+          "Cloud": "Multi-Cloud",
+          "SDS": "Software-defined Storage",
+          "Modern Data Protection": "Modern Data Protection",
+          "Risk & Compliance": "Risk Mitigation and Compliance"
+        }
+
+        for (var i = 0; i < handsOnObjects.length; i++) {
+
+          if (this.props.filters.includes(filterConversion[handsOnObjects[i]["Track"]]) || this.props.filters.length == 0)
+          arrayOfContent = arrayOfContent.concat(
+          <HandsOnEventContent
+            key={"handsOnContent" + i}
+            title={handsOnObjects[i]["Session Title"]}
+            abstract={handsOnObjects[i]["Session Description (Maximum of 150 words!!)"]}
+            filter={this.props.filters}
+            metaTags={filterConversion[handsOnObjects[i]["Track"]]}
+            product={(handsOnObjects[i]["Product"] != "") ? (handsOnObjects[i]["Product"]: ""}
+            date={""}
+          />
+        )
+        }
+
+        return arrayOfContent
+      },
+      render: function(){
+        var content = this.createContent();
+        return(
+          <div>
+            <h1> Vision Hands On Labs Overview </h1>
+            <hr/>
+            {content}
+          </div>
+        )
+      }
+
+    })
+
+    var handsOnObjects = [
+    {
+    "Session identifier": "",
+    "Track": "Cloud",
+    "Session Title": "Backup your data faster to cloud with Open Dedupe",
+    "Session Description (Maximum of 150 words!!)": "Show the benefits of BE dedup to cloud and how much efficiency it provides by reducing the amount of data storage and transmitted",
+    "Product": "Backup Exec",
+    "Priority": "no, merge in with line #3 HOL",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Cloud",
+    "Session Title": "Optimizing Your Backups to the Cloud with CloudConnect Optimizer",
+    "Session Description (Maximum of 150 words!!)": "Backup Exec is ready to streamline and optimize your backups to the cloud--whether you use Amazon S3 storage, Azure Cloud, Google Cloud storage, or all three. In this lab, you'll learn how to configure your preferred cloud platforms to achieve optimal resource utilization. You'll also explore the benefits of Backup Exec's dedup to the cloud capabilities and gain valuable hands-on experience backing up Microsoft Office 365.",
+    "Product": "Backup Exec",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Cloud",
+    "Session Title": "SaaS backup",
+    "Session Description (Maximum of 150 words!!)": "Hands on experience in backing uo O365 such as Exchange, Business OneDrive or SharePoint",
+    "Product": "Backup Exec",
+    "Priority": "no, merge in with line #3 HOL",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Cloud",
+    "Session Title": "Migrate to Microsoft Azure in Less than One Hour",
+    "Session Description (Maximum of 150 words!!)": "How much time does it really take to migrate a complete data center environment to Microsoft Azure? With the Veritas Resiliency Platform--the core technology that powers Veritas CloudMobility--the answer is less than an hour. Attend this lab to learn how how  Resiliency Platform dramatically streamlines and simplifies data center migrations to Microsoft Azure--and gain valuable hands-on experience with CloudMobility migration deployment, configuration, pre-migration testing, and workload migration for Microsoft Azure environments.",
+    "Product": "CloudMobility, VRP + Azure",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "Niclas Blaback (PM) + TBC-Nomination from PM is Kushal Shah (Engineering)",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": "Workstation or VM to run web browser - IE\nMust have public network connectivity - to connect to SkyTap and Public Clouds"
+    },
+    {
+    "Session identifier": "",
+    "Track": "Cloud",
+    "Session Title": "Complex Workload Migration and Recovery for Amazon Web Services",
+    "Session Description (Maximum of 150 words!!)": "Leveraging the cloud for disaster recovery or as a migration target can be riddled with complexity, especially when multi-tier workloads are involved. Attend this lab to learn how Resiliency Platform, the technology that powers Veritas CloudMobility, simplifies every step in the process. This includes gaining hands-on experience with complete orchestrated migrations of complex workloads to and from AWS, disaster recovery takeover to AWS, and optimized cloud data movement to AWS.",
+    "Product": "CloudMobility, VRP + AWS",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "Lisa Erickson (PM) + Tushar Bandopadhyay (Architect)",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": "Workstation or VM to run web browser - IE\nMust have public network connectivity - to connect to SkyTap and Public Clouds"
+    },
+    {
+    "Session identifier": "",
+    "Track": "Cloud",
+    "Session Title": "Using Cloud Catalyst to Reduce Data in the Cloud",
+    "Session Description (Maximum of 150 words!!)": "CloudCatalyst is a new Veritas offering that provides deduplication that is optimized for object storage platforms. In this lab, you'll learn how CloudCatalyst can minimize both storage and bandwidth consumption when you deploy to public cloud platforms such as AWS, Azure, and others, as well as private cloud platforms such as Veritas Access.  You'll also have the opportunity to configure and explore CloudCatalyst's capabilities in a controlled environment.",
+    "Product": "NetBackup",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Cloud",
+    "Session Title": "Using Information Map for Global Data Visibility",
+    "Session Description (Maximum of 150 words!!)": "Veritas is preparing to launch an \"explosion\" of new data store connectors for Information Map at Vision 2017. Attend this lab to learn how these new connectors turn Information Map into an even more powerful and unified tool for vizualizing all of your structured and unstructured data, both on-prem and in the cloud. Don't miss this opportunity to see and work with these new connectors first-hand--from initial configuration to seeing the results appear on the Map.",
+    "Product": "Information Map",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "Darren Locke, Karl Woodrow",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": "PC's with a good internet connection and modern versions of Chrome / Firefox / IE installed"
+    },
+    {
+    "Session identifier": "",
+    "Track": "Cloud",
+    "Session Title": "Multi-Cloud Hosting for Tier 1 Applications",
+    "Session Description (Maximum of 150 words!!)": "With Veritas InfoScale, hosting and migrating tier 1 applications on multiple cloud platforms doesn't have to be a difficult, time consuming undertaking.  This lab will walk you through the process of replicating an entire Oracle/SQL application and all of its data hosted on AWS to Microsoft Azure over a fully-encrypted connection. Then, you will see first-hand how the application seamlessly fails over from AWS to Azure in the event that AWS becomes unavailable.",
+    "Product": "InfoScale for AWS",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "Amit Rastogi",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Cloud",
+    "Session Title": "Experience \"No Compromise\" Cloud Data Protection with Veritas",
+    "Session Description (Maximum of 150 words!!)": "Veritas simplifies your work life with seamless cloud application support--whether you choose to run applications on AWS, Azure, Google, or all three. Join this lab to learn how Veritas cloud data protection products easily and seamlessly protect your native cloud applications. This includes learning how to backup and recover popular applications like Oracle and SQL that are running on AWS, Azure, and other common cloud platforms.",
+    "Product": "",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "Alberto Sigismondi and Venky",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Modern Data Protection",
+    "Session Title": "Copy Data virtualization using \nVelocity powered NetBackup",
+    "Session Description (Maximum of 150 words!!)": "It's time to unlock the full potential of your backup data. Attend this lab to learn how new Velocity-powered NetBackup data virtualization capabilities for Oracle Copilot and Microsoft SQL databases make it possible to use backup data for much more than just restores.",
+    "Product": "NetBackup, Velocity",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Modern Data Protection",
+    "Session Title": "Reimagining Veritas Appliance Management",
+    "Session Description (Maximum of 150 words!!)": "The next generation of NetBackup appliances has arrived, and they offer an impressive list of new features and capabilities. Attend this hands-on lab to explore one of those features in depth. You'll see first-hand how the ehnanced appliance management capabilities in the new NetBackup appliances will reduce the cost and effort required to maintain, patch, and upgrade your appliances.",
+    "Product": "Appliances",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Modern Data Protection",
+    "Session Title": "Exploring the Advantages of Individual VMDK Backup and Recovery and the VMware WebClient Plugin",
+    "Session Description (Maximum of 150 words!!)": "NetBackup has improved its market-leading Vmware virtual machine protection capabilities to give you even more control over how you backup your VMware virtual machines.  Attend this lab to get a detailed, hands-on look at how you can use NetBackup to backup any combination of your virtual disks--whether it's one, some, or all of the VDMKs on your virtual machines.  You'll also learn how you can restore specific VMDKs during a recovery operation--without restoring the entire virtual machine.",
+    "Product": "NetBackup",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Modern Data Protection",
+    "Session Title": "Protecting Your Big Data Workloads with NetBackup (Hadoop, HBase, and NoSQL)",
+    "Session Description (Maximum of 150 words!!)": "Big Data analytical processing is rapidly becoming a mission-critical requirement for organizations that need to store, process, and extract value from data in all of its various forms and sizes.  Systems that support large volumes of both structured and unstructured data continue to grow--and not just for large enterprises.  In these big data environments, you need platforms that can help you govern and secure big data while empowering end users to analyze trends and relationships.  Attend this lab to see how NetBackup provides a mature,  seamless solution for protecting big data--and makes it possible to protect original source data as you move from RDMS models to open-source, unstructured, large scale-out, NoSQL data environments.",
+    "Product": "NetBackup",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Modern Data Protection",
+    "Session Title": "Protecting Your Nutanix Hyper-converged Infrastructures",
+    "Session Description (Maximum of 150 words!!)": "Did you know that NetBackup is ready to protect your Nutanix workloads? Attend this lab to learn how. This includes a detailed, hands-on look at how the current version of NetBackup protects workloads on Nutanix when Vmware or Hyper-V is used as the virtualization technology.  You'll also get a sneak peek at how the next version of NetBackup will allow you to protect workloads hosted on Nutanix when Acropolis Hypervisor is used as the virtualization technology.",
+    "Product": "NetBackup",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Modern Data Protection",
+    "Session Title": "Protecting Your Open Source RDBMS workloads (MySQL, PostgreSQL)",
+    "Session Description (Maximum of 150 words!!)": "Open source RDBMS databases are becoming more popular every day, even among large, influential enterprises. As more organizations decide to move their production workloads away from traditional RDBMS databases and embrace open source alternatives, they are looking for proven, mature data protection solutions for these new environments. Attend this session to learn how NetBackup is delivering those solutions today. You'll see first-hand how NetBackup can support your organization in the modern workload era--with an XBSA API platform that is designed specifically to protect open source RDBMS workloads today and into the future.",
+    "Product": "NetBackup",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Modern Data Protection",
+    "Session Title": "Intalling or Upgrading to NetBackup 8.1 with Secure Comms",
+    "Session Description (Maximum of 150 words!!)": "Data security has never been more important. Attend this lab for a close, detailed look at the enhanced data security capabilities in NetBackup 8.1. You'll learn about the complete suite of  modern security protocols we've added to the latest version of NetBackup, and a data security expert  will walk you through process of making your NetBackup 8.1 environment as secure as possible.",
+    "Product": "NetBackup",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Modern Data Protection",
+    "Session Title": "Copilot Instant Recovery",
+    "Session Description (Maximum of 150 words!!)": "No description provided",
+    "Product": "NetBackup",
+    "Priority": "no",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Modern Data Protection",
+    "Session Title": "Automated client deployments using Veritas' SCCM & Chef templates",
+    "Session Description (Maximum of 150 words!!)": "In order to ease the deployment burden in large scale, globally managed environments, we understand that many customers leverage 3rd party deployment tools. In an effort to maximize this customer investment as well as make your NetBackup upgrades a breeze. we have built templates for SCCM & Chef. In this HOL, you will get to see NetBackup's foray into this space.",
+    "Product": "NetBackup",
+    "Priority": "no",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Modern Data Protection",
+    "Session Title": "Leveraging Secure Communications in NetBackup",
+    "Session Description (Maximum of 150 words!!)": "How can you make your NetBackup environment even more secure? Attend this lab to walk through the process of creating recovery change catalogs, enabling only secure communications, creating trusted master setup changes to support auto image replications, and taking full advantage of the other security features in NetBackup.",
+    "Product": "NetBackup",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Modern Data Protection",
+    "Session Title": "Instant GRT, Instant Recovery and Recovery Ready for Virtual Machines using Backup Exec",
+    "Session Description (Maximum of 150 words!!)": "Achieve a single E-Mail restore with a view klicks to it's origin mailbox, recovery of Virtual Machines in a few minutes. Verify your Recovery Readiness through the Recovery Ready feature in Backup Exec",
+    "Product": "Backup Exec",
+    "Priority": "no",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Modern Data Protection",
+    "Session Title": "Now is the time to move from Veeam",
+    "Session Description (Maximum of 150 words!!)": "Marketing to provide more details here. Proposed by David Wright",
+    "Product": "Backup Exec",
+    "Priority": "no",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Modern Data Protection",
+    "Session Title": "Data Protection and Revival from ransomware with Veritas Desktop and Laptop Option (DLO)",
+    "Session Description (Maximum of 150 words!!)": "With the next release of DLO, the focus is on protecting the enterprise end-user data and give him a way to revive from modern cyber-attacks like ransomware.",
+    "Product": "Veritas DLO",
+    "Priority": "no",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Modern Data Protection",
+    "Session Title": "This is a placeholder to see if we can have a hands on lab prepared by Vision",
+    "Session Description (Maximum of 150 words!!)": "",
+    "Product": "BE & AI",
+    "Priority": "no",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Modern Data Protection",
+    "Session Title": "Transforming Backup and Recovery into Rapid Automated Disaster Recovery",
+    "Session Description (Maximum of 150 words!!)": "In a critical recovery event, there is no time to restore app by app or machine by machine. You need automation and orchestration to return your business to normal operating mode quickly. Attend this lab so learn how Veritas Resiliency Platform's deep integration with NetBackup allows you to easily automate testing and recovery of single and multi-tier workloads across business services or your entire data center.",
+    "Product": "VRP + NBU",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "Lorenzo Galelli (PM) + TBD (Engineering)",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": "Workstation or VM to run web browser - IE\nMust have public network connectivity - to connect to SkyTap and Public Clouds"
+    },
+    {
+    "Session identifier": "",
+    "Track": "Risk & Compliance",
+    "Session Title": "GDPR – Subject Access Request response (Search)",
+    "Session Description (Maximum of 150 words!!)": "Search for a specific custodians Personal Data, review and redact where required, export and produce results for data subject to review.",
+    "Product": "EDP",
+    "Priority": "no",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Risk & Compliance",
+    "Session Title": "What's New In Enterprise Vault 12.2?",
+    "Session Description (Maximum of 150 words!!)": "This session will provide a deep dive overview of the latest Enterprise Vault features, including Veritas Information Classifier policy creation, configuration of cloud secondary storage, Skype For Business, and Enhanced Retention Management.",
+    "Product": "Enterprise Vault",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "David Scott",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Risk & Compliance",
+    "Session Title": "Minimizing Data to Facilitate GDPR Compliance",
+    "Session Description (Maximum of 150 words!!)": "Knowing what data you need to keep and what data you can safely delete is always a challenge--especially in the age of GDPR. Attend this lab to see how Veritas can help--with a detailed look at solutions that make it easy to create and enforce data retention policies that allow you to retain only the data you need for as long as you need it--and delete the rest with confidence.",
+    "Product": "EV",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Risk & Compliance",
+    "Session Title": "Smart Data Classification for the Financial and Healthcare Industries and Public Sector",
+    "Session Description (Maximum of 150 words!!)": "Financial services, public sector, and healthcare organizations all have unique and highly specialized data initiatives, goals, and regulatory requirements.  Attend this lab to see how Enterprise Vault and other Veritas products are designed to help these and other specialized industries lower their data risks, comply with regulations, and meet their most ambitious data-related goals.",
+    "Product": "EV, DI, EDP, VIC",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "David Scott",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Risk & Compliance",
+    "Session Title": "Accelerate public records and FOIA requests",
+    "Session Description (Maximum of 150 words!!)": "Governments across the globe at all levels are embracing and enabling greater transperancy for citizens. U.S. Federal Agencies by themselves handle 700,000+ FOIA requests per year. Learn how public sector organizations can streamline and accelerate records requests through comprehensive data discovery from EV, EV.cloud and unmanaged sources with rapid review in eDiscovery Platform, powered by planned capabilities for bulk redactions, preset redaction codes and advanced reports.",
+    "Product": "EV, EDP, EVC",
+    "Priority": "no; how different than #29?",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Risk & Compliance",
+    "Session Title": "Accelerating GDPR Subject Access Requests",
+    "Session Description (Maximum of 150 words!!)": "As GDPR takes full effect, compliance and legal teams will be expected to handle a growing volume of Subject Access Requests from residents. Attend this lab to learn how you can streamline and accelerate this process using the comprehensive data discovery capabilities of Enterprise Vault and EV.cloud--together with a rapid review eDiscovery Platform that includes built-in identification of personal data.",
+    "Product": "EV, EDP, EVC, VIC",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Risk & Compliance",
+    "Session Title": "Win Prizes in the Great Information Map Scavenger Hunt",
+    "Session Description (Maximum of 150 words!!)": "The Great Information Map Scavenger Hunt is on at Vision 2017! Participate in this fun and unique lab experience to learn how Information Map can help you reduce costs, risks, and complexity. You'll follow a set of clues and use all of the capabilities in Information Map to solve a series of use cases around the world. If you're the first person to solve all of the use cases, you'll win a prize and earn bragging rights as the official Great Information Map Scavenger Hunt champion.",
+    "Product": "Information Map",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "Darren Locke",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": "PC's with a good internet connection and modern versions of Chrome / Firefox / IE installed"
+    },
+    {
+    "Session identifier": "",
+    "Track": "Risk & Compliance",
+    "Session Title": "Meeting GDPR Requirements with Unstructured Data Discovery",
+    "Session Description (Maximum of 150 words!!)": "GDPR requires organizations to locate personally identifiable information quickly and efficiently. This lab will provide a detailed, hands-on look at how Veritas Information Map and other products can help you uncover all of the personally identifiable information in your organisation, tag it, quickly identify ownership, and apply appropriate controls to your data.",
+    "Product": "Information Map, DI",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Risk & Compliance",
+    "Session Title": "GDPR - Day in the life (could be split into 2 HOL's if too much)",
+    "Session Description (Maximum of 150 words!!)": "You are an IT Admin/Manager of large fictitious company and you get hit with various requests from from your legal team 1) a PII data discovery request 2) Subject Access Request 3) We’ve been hacked  4) We are being audited",
+    "Product": "Information Map, DI, EV, EDP",
+    "Priority": "same as #33 & #35 combined?",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Risk & Compliance",
+    "Session Title": "Meeting GDPR Requirements with Data Protection and Monitoring",
+    "Session Description (Maximum of 150 words!!)": "Attend this lab to learn how Veritas NetBackup, Veritas Resiliency Platform, Veritas Access, Data Insight, and other products work together to make sure you are monitoring and protecting your data in a way that complies with GDPR regulations. This includes ensuring your personally identifiable information (PII) is backed up or replicated, making sure any system that touches PII is highly available and safe from breaches, and making sure PII data stays encrypted.",
+    "Product": "NBU, VRP, DI, Access",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Risk & Compliance",
+    "Session Title": "Creating Policies, Patterns and Tags in Veritas Information Classifier",
+    "Session Description (Maximum of 150 words!!)": "Join this hands-on deep dive lab to learn about the latest tips and tricks and best practices for using classification in Data insight and Enterprise Vault.",
+    "Product": "Veritas Information Classifier, DI, EV",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "David Scott",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Risk & Compliance",
+    "Session Title": "Information Map and BE Integration",
+    "Session Description (Maximum of 150 words!!)": "more detail would be provdied in a couple of weeks",
+    "Product": "Backup Exec & Infomap",
+    "Priority": "no",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "Risk & Compliance",
+    "Session Title": "One Tool to Rule them All: Using a Single Tool to Lower Your Resiliency Operational Risk",
+    "Session Description (Maximum of 150 words!!)": "In this informative lab, you'll learn how you can use a single tool to lower your resiliency operational risk across a diverse ecosystem--and perfectly align your efforts with your application and business service level objectives. Don't miss this chance to gain hands-on experience with the recovery automation, orchestration, and optimized data movement you'll find in Veritas Resiliency Platform--across multiple workload types, operating environments, applications, data movers, and delivery operational models. You will also get an up-close look at the use of auditing, reports, and testing to prove your recovery compliance.",
+    "Product": "VRP + InfoScale + NBU + all 3rd party supported providers",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "Amit Gupte (PM) + TBD (Engineering)",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": "Workstation or VM to run web browser - IE\nMust have public network connectivity - to connect to SkyTap and Public Clouds"
+    },
+    {
+    "Session identifier": "",
+    "Track": "SDS",
+    "Session Title": "Using Veritas Access as LTR and Archival Storage",
+    "Session Description (Maximum of 150 words!!)": "Veritas Access is a policy-driven, scale-out NAS that provisions storage for various workloads over a wide range of protocols. It offers a low TCO compared to other vendors, and it integrates seamlessly with other Veritas products such as NetBackup and Enterprise Vault. In this lab, you will learn how you can use Access as backend storage for Enterprise Vault archived data and NetBackup data. This includes walking through three distinct scenarios: End-to-end EV integration, NBU integration, and replacing tape with Veritas Access S3.",
+    "Product": "Access + NBU",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "Sreeharsha Sarabu, Mukund Paranjape",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "SDS",
+    "Session Title": "Using Veritas Access as Archival Storage for Enterprise Vault",
+    "Session Description (Maximum of 150 words!!)": "Attend this lab to explore how Veritas Access can function as both Write Once Read Many (WORM) storage and non-WORM storage, depending on the retention policies set by Enterprise Vault. This includes learning how you can configure non-WORM storage provisioned by Access over CIFS as vault store, so data written on the storage can be appended, overwritten, and/or deleted by users. This lab will also walk you through using WORM storage provisioned by Access over CIFS as vault store, so data written on the storage cannot be appended or overwritten by users.",
+    "Product": "Access + EV",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "Sreeharsha Sarabu, Mukund Paranjape",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "SDS",
+    "Session Title": "Intelligent data tiering with Machine Learning.",
+    "Session Description (Maximum of 150 words!!)": "Propose for a demo booth instead",
+    "Product": "Access",
+    "Priority": "no",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "Niranjan, Anindya Banerjee",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "SDS",
+    "Session Title": "Software Defined Storage for next-generation containerized applications",
+    "Session Description (Maximum of 150 words!!)": "Application developers are adopting Agile and DevOps methodologies to support faster time-to-market for their applications that run through a CI-CD pipeline.  Containers are the infrastructure that enable this rapid development process. Attend this lab to learn how you can use HyperScale for Containers as a storage solution that provides enterprise-class capabilities to deploy these next-generation applications into production.",
+    "Product": "HyperScale for Containers",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "Chad Thibodeau (PM) and Hari Vemuri (Architect)",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "SDS",
+    "Session Title": "HyperScale for OpenStack: Using Software-defined Storage to Provide Quality of Service and Data Protection using NetBackup for OpenStack Workloads",
+    "Session Description (Maximum of 150 words!!)": "Learn how to use HyperScale for OpenStack to provide quality of service for databases running in OpenStack. This lab will show you how to integrate HyperScale with NetBackup, so you can define specific backup policies for different types of workloads with different data protection needs. You will see first-hand how workloads running within OpenStack can now be easily protected in an application consistent manner, with no impact to your existing appplications, thanks to the seamless integration between HyperScale for OpenStack and NetBackup.",
+    "Product": "HyperScale for OpenStack",
+    "Priority": "yes",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "Kunal Narsinghani(PM)",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "SDS",
+    "Session Title": "Veritas HyperScale for OpenStack Introduction",
+    "Session Description (Maximum of 150 words!!)": "Is your customer evaluating OpenStack?  OpenStack provides a credible alternative ecosystem to VMWare. Add to that is the emergence of architectures leveraging Direct Attached Storage(DAS). Veritas HyperScale for OpenStack  is one such Software-defined storage management solution for virtualized & private cloud environments. Experience & explore this revolutionary product in this guided lab session. During this lab you will learn how you can use HyperScale’s enterprise-grade storage management capabilities to deliver on your OpenStack-based private cloud objectives.",
+    "Product": "HyperScale for OpenStack",
+    "Priority": "same as #43?",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "Kunal Narsinghani(PM)",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    },
+    {
+    "Session identifier": "",
+    "Track": "SDS",
+    "Session Title": "Veritas ObjectStore with scale and intelligence",
+    "Session Description (Maximum of 150 words!!)": "Hands on lab to demonstrate the capabilities like Scaleout, erasure coded storage with Application context, Metadata & Content addressable metadata search to allow smarter application deployments, deeper data classification enabling enterprises for GDPR",
+    "Product": "Object Storage",
+    "Priority": "no, demo booth instead…",
+    "Repeat": "",
+    "Session Type": "HOL",
+    "Related BO Session?": "yes",
+    "Theme": "",
+    "PMM Owner": "",
+    "Session Owner(s)": "Sushil Patil",
+    "SMM Owner": "",
+    "Comments": "",
+    "Secondary Track": "",
+    "Set Up Requirements": ""
+    }
+    ]
+    // images
+
+    var RegHeader = '/content/dam/Veritas/images/vision/reg-bg01.png';
+    var RegBanner = '/content/dam/Veritas/images/vision/reg-bg02.png';
+    var navIcon = '/content/dam/Veritas/images/vision/nav-icon01.png';
+    var navHammy = '/content/dam/Veritas/images/vision/hammy.png';
+    var AgendaHeader = '/content/dam/Veritas/images/vision/agenda-bg01.png';
+    var AgendaBanner = '/content/dam/Veritas/images/vision/agenda-bg02.png';
+    var closeButton = '/content/dam/Veritas/images/vision/openbtn.png';
+    var activeButton = '/content/dam/Veritas/images/vision/closebtn.png';
+    var EventHeader = '/content/dam/Veritas/images/vision/event-bg01.png';
+    var EventBanner = '/content/dam/Veritas/images/vision/event-bg02.png';
+    var ctaImage = '/content/dam/Veritas/images/vision/link.png';
+    var ctaImage = '/content/dam/Veritas/images/vision/link.png';
+    var playButton = '/content/dam/Veritas/images/vision/play-btn.png';
+    var homeBanner = '/content/dam/Veritas/images/vision/vision-banner01.jpg';
+    var trend1 = '/content/dam/Veritas/images/vision/trend01.jpg';
+    var trend2 = '/content/dam/Veritas/images/vision/trend2.jpg';
+    var trend3 = '/content/dam/Veritas/images/vision/trend3.jpg';
+    var instagram = '/content/dam/Veritas/images/vision/vision-instagram.png';
+    var slideshare = '/content/dam/Veritas/images/vision/vision-slideshare.png';
+    var twitter = '/content/dam/Veritas/images/vision/vision-twitter.png';
+    var youtube = '/content/dam/Veritas/images/vision/vision-youtube.png';
+    var linkedin = '/content/dam/Veritas/images/vision/vision-linkedin.png';
+    var aptareLogo = '/content/dam/Veritas/images/vision/aptare-logo.png';
+    var blueSourceLogo = '/content/dam/Veritas/images/vision/bluesource-logo.png';
+    var cdwLogo = '/content/dam/Veritas/images/vision/cdw-logo.png';
+    var microsoftLogo = '/content/dam/Veritas/images/vision/microsoft-logo.png';
+    var vaultSolutionsLogo = '/content/dam/Veritas/images/vision/vault-solutions-logo.png';
+    var ThreadImage ='/content/dam/Veritas/images/vision/vision-banner-thread.jpg';
+    var gisBanner = '/content/dam/Veritas/images/vision/agenda-banner_02.jpg';
+    var partnerBanner = '/content/dam/Veritas/images/vision/agenda-banner_01.jpg';
+    var biosBanner = '/content/dam/Veritas/images/vision/bios-banner.jpg';
+    var bandBanner = '/content/dam/Veritas/images/vision/band-bg-f.jpg';
+    var backButton = '/content/dam/Veritas/images/vision/back-button.png';
+    var vox = '/content/dam/Veritas/images/vision/vox.png'
+    var visionReel = '/content/dam/Veritas/images/vision/visionReel.png'
+
+    destination.innerHTML = ""
+    ReactDOM.render(
+      <Router>
+        <Route path="/" component={App}>
+          <IndexRoute component={HomepageComponent}/>
+          <Route path="agenda" component={AgendaPage}/>
+          <Route path="registration" component={Registration}/>
+          <Route path="event" component={EventInfoComponent}/>
+          <Route path="partneragenda" component={PartnerAgendaPage}/>
+          <Route path="gisagenda" component={GISAgendaPage}/>
+          <Route path="bios" component={GuestBioPage}/>
+          <Route path="sessions" component={SessionPage}/>
+          <Route path="handson" component={HandsOnPage}
+        </Route>
+      </Router>,
+      destination);
+    </script>
+    <script type="text/javascript" src="/content/dam/Veritas/docs/vision/LanyonJson.js">
+    </script>
+</body>
+
+</html>

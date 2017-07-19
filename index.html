@@ -97,9 +97,14 @@
         // <Overview restaurants={this.state.restaurants}/>
         render: function() {
           return (
-            <div className="container">
+            <div>
             <NavBar />
             <DayCounter/>
+            <div className="container">
+              <div className="row">
+                <h3 style={{"textAlign":"left", "paddingLeft":"42px"}}>SCHEDULE</h3>
+              </div>
+            </div>
             <CurrentItinerary restaurants={this.state.restaurants} schedule={this.state.schedule}/>
             <br/>
             <br/>
@@ -359,12 +364,12 @@
         </div>)
       },
         render: function() {
+          // accessibility: true,
           var settings = {
             infinite: true,
             speed: 100,
             slidesToShow: 3,
             slidesToScroll: 1,
-            accessibility: true,
             centerMode: true,
             swipeToSlide: true,
             initialSlide: this.state.startingSlide,
@@ -379,7 +384,7 @@
           // Need Exact keys : DONE
           var spinner = this.spinner()
           return(
-            <div className="container" style={{"width":"80%", "height":"60%"}}>
+            <div className="container slider-box" style={{"width":"100%", "height":"60%", "marginTop":"-50px"}}>
                 {this.props.restaurants? <Slider ref="slider" {...settings}>{content}</Slider>: <div className="spinner">
   <div className="rect1"></div>
   <div className="rect2"></div>
@@ -391,8 +396,12 @@
             <div className="schedule-nav">
             {navButtons}
             </div>
-            <p> Tap on the Place Name for details </p>
-            <p> The * means we goin fo sho </p>
+            {this.props.restaurants ? <Accordion >
+              <Panel header={"?"} className="help-title" eventKey={"help"}>
+                <p> Tap on the Place Name for details </p>
+                <p> The * means we goin fo sho </p>
+              </Panel>
+            </Accordion> : ""}
             </div>
           )
         }

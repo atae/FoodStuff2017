@@ -10,6 +10,8 @@ p{font-size:2vmin;}
 }
 body{background-image:url("FoodStuff2017/background.png")}
 .panel-group .panel{background-color:transparent;}
+.panel-default>.panel-heading{background-color:transparent;}
+.help-title > .panel-heading > h4{text-align:right; color: #3498db; font-size:14px !important;}
 .container .headerContent h1, h2, h3, h4, h5, p{text-align:center;}
 .map{text-align:center;}
 .overview-list{margin-top:20px;padding:0;list-style:none;}
@@ -32,7 +34,7 @@ div .carousel-box{background-color:rgba(255, 255, 255, .5);border:2px #3498db so
 .schedule-nav span{margin:0px 15px;}
 .NavBar{display:flex;justify-content:space-around;}
 .NavBar > h4 > a{font-family:"rift-soft";font-style:italic;font-size:20px;}
-.container > .container > .spinner {
+div > div > .spinner {
   margin: 100px auto;
   width: 50px;
   height: 40px;
@@ -40,7 +42,7 @@ div .carousel-box{background-color:rgba(255, 255, 255, .5);border:2px #3498db so
   font-size: 10px;
 }
 
-.container > .spinner > div {
+div > .spinner > div {
   background-color: white;
   height: 100%;
   width: 6px;
@@ -50,17 +52,17 @@ div .carousel-box{background-color:rgba(255, 255, 255, .5);border:2px #3498db so
   animation: sk-stretchdelay 1.2s infinite ease-in-out;
 }
 
-.container > .spinner .rect2 {
+div > .spinner .rect2 {
   -webkit-animation-delay: -1.1s;
   animation-delay: -1.1s;
 }
 
-.container > .spinner .rect3 {
+div > .spinner .rect3 {
   -webkit-animation-delay: -1.0s;
   animation-delay: -1.0s;
 }
 
-.container > .spinner .rect4 {
+div > .spinner .rect4 {
   -webkit-animation-delay: -0.9s;
   animation-delay: -0.9s;
 }
@@ -83,4 +85,9 @@ div .carousel-box{background-color:rgba(255, 255, 255, .5);border:2px #3498db so
     transform: scaleY(1.0);
     -webkit-transform: scaleY(1.0);
   }
+}
+
+.slider-box{
+  border: 120px solid;
+  border-image: url(FoodStuff2017/schedule_border_objects.png) 135 120 160 130 stretch;
 }
