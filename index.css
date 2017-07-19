@@ -12,7 +12,7 @@ p{font-size:2vmin;}
 .box-headings-left {padding-left:5%;}
 .box-headings-right {padding-right:5%;}
 }
-body{background-image:url("http://res.cloudinary.com/dprtxlyhi/image/upload/v1500447541/FoodFuckers2017/background.png")}
+body{background-image:url("FoodStuff2017/background.png")}
 .panel-group .panel{background-color:transparent;}
 .panel-default>.panel-heading{background-color:transparent;}
 .help-title > .panel-heading > h4{text-align:right; color: #3498db; font-size:14px !important;}
@@ -95,7 +95,7 @@ div > .spinner .rect4 {
 .chat-box{
   box-sizing:border-box;
   border:60px solid;
-  border-image: url(http://res.cloudinary.com/dprtxlyhi/image/upload/v1500447541/FoodFuckers2017/chat_border.png) 100;
+  border-image: url(FoodStuff2017/chat_border.png) 100;
 }
 
 .slider-box{
@@ -103,13 +103,13 @@ div > .spinner .rect4 {
   border: 79px solid;
   border-top: 56px solid;
   border-bottom: 26px solid;
-  border-image: url(http://res.cloudinary.com/dprtxlyhi/image/upload/v1500447541/FoodFuckers2017/schedule_border.png) 67 148 24 131;
+  border-image: url(FoodStuff2017/schedule_border.png) 67 148 24 131;
 }
 
 .map-box{
   box-sizing: border-box;
   border: 55px solid;
-  border-image: url(http://res.cloudinary.com/dprtxlyhi/image/upload/v1500447541/FoodFuckers2017/map_border.png) 100;
+  border-image: url(FoodStuff2017/map_border.png) 100;
 }
 
 .popsicle-boxicle{
