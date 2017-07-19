@@ -201,10 +201,10 @@
           var current = this.props.current
           var content = this.createOverviewItem(current)
           var i = this.props.index
-
+          var restaurantsName = (this.props.required.includes(this.props.tagName)) ? "*" + current.name : current.name
           return(
             <Accordion>
-              <Panel header={current.name} eventKey={current.name + i} bsStyle={{"border":'none', "background-color":'none', 'box-shadow':'none' }}>
+              <Panel header={restaurantsName} eventKey={restaurantsName + i} bsStyle={{"border":'none', "background-color":'none', 'box-shadow':'none' }}>
                 <div style={{"marginTop": "-10px"}}>
                 <a href={content.directionsLink}><h5>{current.address.slice(0,-5)}</h5></a>
                   <h5> Phone: {current.phone} </h5>
@@ -411,7 +411,7 @@
             swipeToSlide: true,
             initialSlide: this.state.startingSlide,
             slickGoTo: this.state.initialSlide,
-            responsive: [{breakpoint: 1024, settings: {slidesToShow: 1}}],
+            responsive: [{breakpoint: 1024, settings: {slidesToShow: 1, arrows: false}}],
           };
           var content = this.createHours()
           var navButtons = this.createNavButtons()
@@ -438,6 +438,7 @@
               <Accordion >
               <Panel header={"?"} className="help-title" eventKey={"help"}>
                 <p> Tap on the Place Name for details </p>
+                <p> Swipe or use the arrow keys to navigate </p>
                 <p> The * means we goin fo sho </p>
               </Panel>
             </Accordion>
@@ -499,7 +500,7 @@
             for (var i = 0; i < this.props.hourContent.length; i++) {
               if (keys.includes(this.props.hourContent[i])){
                 restaurantsObject = this.props.restaurants[this.props.hourContent[i]]
-                content = content.concat(<OverviewItem index={i} current={restaurantsObject} />)
+                content = content.concat(<OverviewItem index={i} tagName = {this.props.hourContent[i]} current={restaurantsObject} required={this.props.required}/>)
               } else {
                 content = content.concat(
                   <Accordion>
