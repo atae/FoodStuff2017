@@ -96,6 +96,12 @@ div > .spinner .rect4 {
   box-sizing:border-box;
   border:60px solid;
   border-image: url(FoodStuff2017/chat_border.png) 155 100 100 100;
+  height:1100px;
+}
+
+.chat-box > iframe {
+  height: 950px;
+  width: 90%;
 }
 
 .slider-box{
@@ -128,20 +134,19 @@ div > .spinner .rect4 {
 
 .leafsicle-boxicle > img{
   z-index:999;
-  transform: scale(1.1);
   margin-right:6px;
 }
 
 
 .topsicle-lollipopsicle {
-  display:flex;
-  margin-bottom: -100px;
-  margin-top: -76px;
-  justify-content:flex-end;
+  display: flex;
+margin-bottom: -131px;
+margin-top: -131px;
+justify-content: flex-end;
+margin-right: -14px;
 }
 
 .popsicle-boxicle > img {
-  transform: scale(1.4)
 }
 
 .bottom-leaf {
@@ -152,7 +157,10 @@ div > .spinner .rect4 {
 }
 
 .bottom-leaf > img {
-  z-index:999;
+  z-index: 999;
+margin-bottom: -47px;
+margin-top: -47px;
+margin-left: -12px;
 }
 
 .box-headings-left{
