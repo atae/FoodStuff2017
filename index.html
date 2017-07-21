@@ -121,7 +121,7 @@
           var headings = this.createHeadings()
           return (
             <div>
-            <DayCounter/>
+            <DayCounter restaurants={this.state.restaurants}/>
             {headings[0]}
             <div className="topsicle-lollipopsicle">
               <img src="./FoodStuff2017/lollipop.png"></img>
@@ -309,10 +309,14 @@
           var displayMinutes = ("0" + minutes).slice(-2)
           var displaySeconds = ("0" + seconds).slice(-2)
           var ampm = (hour >= 12) ? "PM" : "AM"
+
+          var address = (this.props.restaurants) ? this.props.restaurants["Best Western Plus LA Mid-Town Hotel"]["address"] : ""
+          var directionsLink = "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(address)
           return (
             <div style={{"marginBottom":"-40px"}}>
               {timeContent}
               <h4>{displayHour} : {displayMinutes} : {displaySeconds} {ampm}</h4>
+              <h4><a href={directionsLink}>Click for Hotel Directions </a></h4>
             </div>
 
           )
