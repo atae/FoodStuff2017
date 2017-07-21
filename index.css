@@ -119,9 +119,13 @@ div > .spinner .rect4 {
 }
 
 .popsicle-boxicle{
-  margin-top:-109px;
+  margin-top:-150px;
   display:flex;
   justify-content: space-around;
+}
+
+.popsicle-boxicle > img {
+  transform: scale(0.7);
 }
 
 .leafsicle-boxicle{
@@ -134,19 +138,25 @@ div > .spinner .rect4 {
 
 .leafsicle-boxicle > img{
   z-index:999;
-  margin-right:6px;
+  margin-right:-29px;
+  transform: scale(0.7);
 }
 
 
 .topsicle-lollipopsicle {
   display: flex;
-margin-bottom: -131px;
-margin-top: -131px;
+margin-bottom: -135px;
+margin-top: -135px;
 justify-content: flex-end;
-margin-right: -14px;
+margin-right: -32px;
+}
+
+.topsicle-lollipopsicle > img {
+  transform: scale(0.7);
 }
 
 .popsicle-boxicle > img {
+  transform: scale(0.7);
 }
 
 .bottom-leaf {
@@ -160,17 +170,21 @@ margin-right: -14px;
   z-index: 999;
 margin-bottom: -47px;
 margin-top: -47px;
-margin-left: -12px;
+margin-left: -33px;
+transform: scale(0.7);
 }
 
 .box-headings-left{
   text-align: left;
   /*padding-left: 5%;*/
   font-weight: bold;
+  font-family:"rift-soft"
 }
 
 .box-headings-right{
   text-align: right;
   /*padding-right: 5%;*/
   font-weight: bold;
+  font-family:"rift-soft"
+
 }
